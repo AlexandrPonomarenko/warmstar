@@ -18,6 +18,7 @@ public class LogInTest extends HttpServlet {
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User user = new User();
+        ErrorLogIn errorLogIn = new ErrorLogIn();
         ServletContext servletContext = getServletContext();
         ControllerMySQL c = (ControllerMySQL) servletContext.getAttribute("controllerUser");
         String login = request.getParameter("login");
@@ -28,24 +29,59 @@ public class LogInTest extends HttpServlet {
         String age = request.getParameter("age");
         String password = request.getParameter("password");
         String password2 = request.getParameter("password2");
-        user.setNickName(login);
-        user.setFirstName(fName);
-        user.setLastName(lName);
-        user.setEmail(email);
-        user.setPhoneNamber(pNumber);
-        user.setAge(Integer.parseInt(age));
-        long mills = System.currentTimeMillis();
-        user.setData(new Date(mills));
-        user.setPassword(password);
-        user.setPasswordTwo(password2);
-        if(c.getByLogin(login)){
-            request.getRequestDispatcher("test.html").forward(request,response);
+        errorLogIn.checkNickName(login);
+        errorLogIn.checkFirstName(fName);
+        errorLogIn.checkLastName(lName);
+        errorLogIn.checkEmail(email);
+        errorLogIn.checkAge(age);
+        errorLogIn.checkPhoneNumber(pNumber);
+        errorLogIn.checkPasswordOne(password);
+        errorLogIn.checkPasswordTwo(password2);
+        if(errorLogIn.getValidate()){
+            System.out.println("Зашел в валидайтион");
+            user.setNickName(login);
+            user.setFirstName(fName);
+            user.setLastName(lName);
+            user.setEmail(email);
+            user.setPhoneNamber(pNumber);
+            user.setAge(Integer.parseInt(age));
+            long mills = System.currentTimeMillis();
+            user.setData(new Date(mills));
+            user.setPassword(password);
+            user.setPasswordTwo(password2);
+            if(c.getByLogin(login)){
+                System.out.println("проверил логин");
+                request.getRequestDispatcher("test.html").forward(request,response);
+            }else{
+                c.insert(user);
+                response.sendRedirect(request.getContextPath()+ "/logOn");
+            }
         }else{
-            c.insert(user);
-            response.sendRedirect(request.getContextPath()+ "/logOn");
-//            request.getRequestDispatcher("LogOn").forward(request,response);
+            System.out.println("asdasdasdasddsdsdsdsdsdsdsdsdsdsdsdsddsdsdsdsdssdsdssd");
+            request.setAttribute("error", errorLogIn);
+            request.getRequestDispatcher("/logOn").forward(request,response);
+//            response.sendRedirect(request.getContextPath()+ "/logOn");
         }
-        System.out.println(login + fName + lName + pNumber + age + new Date(mills) + password + password2);
+//        user.setNickName(login);
+//        user.setFirstName(fName);
+//        user.setLastName(lName);
+//        user.setEmail(email);
+//        user.setPhoneNamber(pNumber);
+//        user.setAge(Integer.parseInt(age));
+//        long mills = System.currentTimeMillis();
+//        user.setData(new Date(mills));
+//        user.setPassword(password);
+//        user.setPasswordTwo(password2);
+//        if(c.getByLogin(login)){
+//            request.getRequestDispatcher("test.html").forward(request,response);
+//        }else{
+//            c.insert(user);
+////            servletContext.setAttribute("user", user);
+//            response.sendRedirect(request.getContextPath()+ "/logOn");
+////            request.getRequestDispatcher("LogOn").forward(request,response);
+//        }
+//        System.out.println(login + fName + lName + pNumber + age + new Date(mills) + password + password2);
+        System.out.println(user.toString());
 
     }
 

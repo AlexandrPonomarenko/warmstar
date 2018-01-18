@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.ArrayList;
 
 @WebServlet(name = "YourOfficeS" , urlPatterns = "/yourOffice")
 public class YourOfficeS extends HttpServlet {
@@ -15,21 +16,13 @@ public class YourOfficeS extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        HttpSession session = request.getSession();
-        if(session == null){
-            System.out.println("===" + session);
-            response.sendRedirect(request.getContextPath()+"/logOn");
-        }else{
-            System.out.println("++++" + session);
-            String login =(String)session.getAttribute("login");
-            String password =(String)session.getAttribute("password");
-            System.out.println("44444444444444444444444" + login + password);
-            if(login == null && password == null){
-                response.sendRedirect(request.getContextPath()+"/logOn");
-            }else{
-                response.sendRedirect("yourOffice.jsp");
-            }
-        }
+        HttpSession session = request.getSession(false);
+        User user = (User)session.getAttribute("user");
+        ArrayList<User> arrayList = new ArrayList<>();
+        arrayList.add(user);
+        request.setAttribute("user", arrayList);
+        System.out.println(user.toString());
+        request.getRequestDispatcher("yourOffice.jsp").forward(request,response);
         System.out.println("1111111111111111111111111111111111");
     }
 }

@@ -20,8 +20,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 9.0.0.M21" level="application_server_libraries" />
-    <orderEntry type="library" name="jstl:jstl:1.2" level="project" />
     <orderEntry type="library" name="mysql:mysql-connector-java:8.0.8-dmr" level="project" />
     <orderEntry type="library" name="apidocs" level="project" />
+    <orderEntry type="library" name="javax.servlet:jstl:1.2" level="project" />
   </component>
 </module>

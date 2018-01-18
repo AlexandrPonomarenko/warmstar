@@ -12,18 +12,18 @@ public class ControllerCar implements interfaceDAOCar {
 
     }
 
-    public Connection getConnection()throws ClassNotFoundException, SQLException {
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        return DriverManager.getConnection("jdbc:mysql://localhost:3306/warmstar?autoReconnect=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC",
-                userMySQL, passwordMySQL);
-    }
+//    public Connection getConnection()throws ClassNotFoundException, SQLException {
+//        Class.forName("com.mysql.cj.jdbc.Driver");
+//        return DriverManager.getConnection("jdbc:mysql://localhost:3306/warmstar?autoReconnect=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC",
+//                userMySQL, passwordMySQL);
+//    }
 
 
 
     @Override
     public Car getById(int id) {
         Car car = new Car();
-        try(Connection c = getConnection();
+        try(Connection c =  ConnectionPool.getInstance().getConnection();
             PreparedStatement ps = c.prepareStatement("SELECT * FROM car WHERE id=? ")){
             ps.setInt(1,id);
             ResultSet resultSet = ps.executeQuery();
@@ -43,15 +43,13 @@ public class ControllerCar implements interfaceDAOCar {
             }
         }catch (SQLException e){
             e.printStackTrace();
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
         }
         return car;
     }
 
     @Override
     public void insert(Car car) {
-        try(Connection c = getConnection()){
+        try(Connection c =  ConnectionPool.getInstance().getConnection()){
             PreparedStatement ps;
             ps = c.prepareStatement("INSERT INTO car (model, smodel, color, price, type, dateadd, quantity, path3, path2, path1) VALUES(?,?,?,?,?,?,?,?,?,?)");
             ps.setString(1,car.getModel());
@@ -66,8 +64,6 @@ public class ControllerCar implements interfaceDAOCar {
             ps.setString(10,car.getPath1());
             ps.executeUpdate();
             ps.close();
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
         }catch (SQLException ex){
             ex.printStackTrace();
         }
@@ -76,7 +72,7 @@ public class ControllerCar implements interfaceDAOCar {
     @Override
     public List<Car> getAll() {
         List<Car> cars = new ArrayList<>();
-        try(Connection c = getConnection();
+        try(Connection c =  ConnectionPool.getInstance().getConnection();
             PreparedStatement ps = c.prepareStatement("SELECT * FROM car")){
             ResultSet r = ps.executeQuery();
             while (r.next()){
@@ -94,8 +90,6 @@ public class ControllerCar implements interfaceDAOCar {
                 car.setPath1(r.getString("path1"));
                 cars.add(car);
             }
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
         }catch (SQLException ee){
             ee.printStackTrace();
         }
@@ -104,7 +98,7 @@ public class ControllerCar implements interfaceDAOCar {
 
     @Override
     public void update(Car car) {
-        try(Connection c = getConnection()){
+        try(Connection c =  ConnectionPool.getInstance().getConnection()){
             PreparedStatement preparedStatement;
             if(car.getId() > 0){
                 preparedStatement = c.prepareStatement("UPDATE car SET model=?, smodel=?, color=?, price=?,type=?,dateadd=?,quantity=?,path3=?,path2=?,path1=? WHERE id =?");
@@ -122,8 +116,6 @@ public class ControllerCar implements interfaceDAOCar {
                 preparedStatement.executeUpdate();
                 preparedStatement.close();
             }
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
         }catch (SQLException ex){
             ex.printStackTrace();
         }
@@ -131,13 +123,11 @@ public class ControllerCar implements interfaceDAOCar {
 
     @Override
     public void deleteById(int id) {
-        try(Connection c = getConnection()){
+        try(Connection c =  ConnectionPool.getInstance().getConnection()){
             PreparedStatement ps = c.prepareStatement("DELETE FROM car WHERE id=?");
             ps.setInt(1,id);
             ps.executeUpdate();
             ps.close();
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
         }catch (SQLException s){
             s.printStackTrace();
         }
@@ -145,14 +135,12 @@ public class ControllerCar implements interfaceDAOCar {
 
     @Override
     public void deleteAll() {
-        try(Connection c = getConnection()){
+        try(Connection c =  ConnectionPool.getInstance().getConnection()){
             PreparedStatement ps = c.prepareStatement("DELETE * FROM car");
             ResultSet rs = ps.executeQuery();
             while (rs.next()){
 
             }
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
         }catch (SQLException s){
             s.printStackTrace();
         }

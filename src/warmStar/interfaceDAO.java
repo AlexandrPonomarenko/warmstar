@@ -11,4 +11,5 @@ public interface interfaceDAO {
     void deleteAll();
     boolean getByLogin(String login);
     boolean validationUser(String login, String password);
+    int getIdUser(String name);
 }

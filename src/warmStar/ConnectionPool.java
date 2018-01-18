@@ -15,7 +15,6 @@ public class ConnectionPool {
         //private constructor
     }
 
-//    private static ConnectionPool instance = null;
 
     public static ConnectionPool getInstance(){
         if (instance == null)
@@ -28,7 +27,8 @@ public class ConnectionPool {
         Connection c = null;
         try {
             ctx = new InitialContext();
-            DataSource ds = (DataSource)ctx.lookup("java:comp/env/jdbc/warmstar");
+            Context context = (Context)ctx.lookup("java:/comp/env");
+            DataSource ds = (DataSource)context.lookup("jdbc/mypool");
             c = ds.getConnection();
         } catch (NamingException e) {
             e.printStackTrace();

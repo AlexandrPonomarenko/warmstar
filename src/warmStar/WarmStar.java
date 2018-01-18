@@ -9,21 +9,20 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
-@WebServlet(name = "WarmStar", urlPatterns = "/warmStar")
+@WebServlet(name = "WarmStar", urlPatterns = "/warmStar",loadOnStartup = 0)
 public class WarmStar extends HttpServlet {
-    HttpSession httpSession;
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//        httpSession = request.getSession();
-//        if(httpSession != null){
-//            request.getRequestDispatcher("Welcome.html").forward(request,response);
-//        }else{
-//            request.getRequestDispatcher("index.jsp").forward(request,response);
-//        }
-        request.getRequestDispatcher("index.jsp").forward(request,response);
+        HttpSession httpSession = request.getSession();
+        if(httpSession == null){
+            System.out.println("dsdsdsdsdsdsdsdsdsdsdsssdsdsdsdsdsds");
+        }
 
+        System.out.println("111 " + request.getContextPath() + " dddddd " + request.getRequestURI() + "rrr " + request.getServletPath());
+        System.out.println("TYTYTYYTY");
+        request.getRequestDispatcher("index.jsp").forward(request,response);
     }
 }

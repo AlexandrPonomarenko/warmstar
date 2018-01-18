@@ -3,9 +3,47 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    <filter>
+        <filter-name>FilterTrim</filter-name>
+        <filter-class>warmStar.FilterTrim</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>FilterTrim</filter-name>
+        <servlet-name>LogInTest</servlet-name>
+        <servlet-name>LogOn</servlet-name>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>FilterCheckLogOn</filter-name>
+        <filter-class>warmStar.FilterCheckLogOn</filter-class>
+        <init-param>
+            <param-name>active</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>FilterCheckLogOn</filter-name>
+        <!--<servlet-name>YourOfficeS</servlet-name>-->
+        <url-pattern>/yourOffice</url-pattern>
+    </filter-mapping>
+
+    <resource-ref>
+        <description>DB Connection</description>
+        <res-ref-name>jdbc/myoracle</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>/warmStar</welcome-file>
+        <welcome-file>/index.jsp</welcome-file>
     </welcome-file-list>
+
+    <!--<session-config>-->
+        <!--<session-timeout>1</session-timeout>-->
+    <!--</session-config>-->
 
     <servlet>
         <servlet-name>WarmStar</servlet-name>

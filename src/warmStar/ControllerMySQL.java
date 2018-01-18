@@ -17,15 +17,15 @@ public class ControllerMySQL implements interfaceDAO{
         this.user = user;
     }
 
-    public Connection getConnection()throws ClassNotFoundException, SQLException{
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        return DriverManager.getConnection("jdbc:mysql://localhost:3306/warmstar?autoReconnect=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC",
-                userMySQL, passwordMySQL);
-    }
+//    public Connection getConnection()throws ClassNotFoundException, SQLException{
+//        Class.forName("com.mysql.cj.jdbc.Driver");
+//        return DriverManager.getConnection("jdbc:mysql://localhost:3306/warmstar?autoReconnect=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC",
+//                userMySQL, passwordMySQL);
+//    }
     @Override
     public User getById(int id) {
         User u = new User();
-        try(Connection c = getConnection();
+        try(Connection c = ConnectionPool.getInstance().getConnection();
             PreparedStatement ps = c.prepareStatement("SELECT * FROM user WHERE id=? ")){
             ps.setInt(1,id);
             ResultSet resultSet = ps.executeQuery();
@@ -40,26 +40,27 @@ public class ControllerMySQL implements interfaceDAO{
                 u.setData(resultSet.getDate(8));
                 u.setPasswordTwo(resultSet.getString(9));
                 u.setPassword(resultSet.getString(10));
-                System.out.println(u.toString() + "trererer");
+//                System.out.println(u.toString() + "trererer");
             }
         }catch (SQLException e){
             e.printStackTrace();
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
         }
+//        catch (ClassNotFoundException e){
+//            e.printStackTrace();
+//        }
         return u;
     }
 
     @Override
     public boolean getByLogin(String login) {
-        try(Connection c = getConnection();
+        try(Connection c = ConnectionPool.getInstance().getConnection();
             PreparedStatement ps = c.prepareStatement("SELECT nickname FROM user WHERE nickname=" + "'" + login + "'")){
             ResultSet resultSet = ps.executeQuery();
             if (resultSet.next()){
+                resultSet.close();
                 return true;
             }
-        }catch (ClassNotFoundException cl){
-                cl.printStackTrace();
+            resultSet.close();
         }catch (SQLException e){
             e.printStackTrace();
         }
@@ -68,8 +69,7 @@ public class ControllerMySQL implements interfaceDAO{
 
     @Override
     public boolean validationUser(String login, String password) {
-//        String s = "''";
-        try(Connection c = getConnection();
+        try(Connection c = ConnectionPool.getInstance().getConnection();
             PreparedStatement ps = c.prepareStatement("SELECT nickname, password FROM user WHERE nickname=" + "'" + login + "'" +" AND password="+ "'" + password + "'")){
             ResultSet resultSet = ps.executeQuery();
             if (resultSet.next()){
@@ -79,8 +79,6 @@ public class ControllerMySQL implements interfaceDAO{
             }
             System.out.println("FALSE");
             resultSet.close();
-        }catch (ClassNotFoundException cl){
-            cl.printStackTrace();
         }catch (SQLException e){
             e.printStackTrace();
         }
@@ -88,8 +86,28 @@ public class ControllerMySQL implements interfaceDAO{
     }
 
     @Override
+    public int getIdUser(String user) {
+        int id;
+        int numero = 0;
+        String sql = "SELECT id FROM user WHERE nickname=" + "'" + user + "'";
+        try(Connection c = ConnectionPool.getInstance().getConnection();
+            PreparedStatement ps = c.prepareStatement(sql)){
+            ResultSet resultSet = ps.executeQuery();
+            if (resultSet.next()){
+                id = resultSet.getInt(1);
+                resultSet.close();
+                return id;
+            }
+            resultSet.close();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return -1;
+    }
+
+    @Override
     public void insert(User user) {
-        try(Connection c = getConnection()){
+        try(Connection c = ConnectionPool.getInstance().getConnection()){
             PreparedStatement ps;
             ps = c.prepareStatement("INSERT INTO user (nickname, firsname, lastname, email, phonenumber, age, date, repit_password, password) VALUES(?,?,?,?,?,?,?,?,?)");
             ps.setString(1,user.getNickName());
@@ -104,8 +122,6 @@ public class ControllerMySQL implements interfaceDAO{
             ps.executeUpdate();
             ps.close();
             System.out.println("OTRABOTAL");
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
         }catch (SQLException ex){
             ex.printStackTrace();
         }
@@ -114,7 +130,7 @@ public class ControllerMySQL implements interfaceDAO{
     @Override
     public List<User> getAll() {
         List<User> users = new ArrayList<>();
-        try(Connection c = getConnection();
+        try(Connection c = ConnectionPool.getInstance().getConnection();
             PreparedStatement ps = c.prepareStatement("SELECT * FROM user")){
             ResultSet r = ps.executeQuery();
             while (r.next()){
@@ -131,8 +147,6 @@ public class ControllerMySQL implements interfaceDAO{
                 u.setPassword(r.getString("password"));
                 users.add(u);
             }
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
         }catch (SQLException ee){
             ee.printStackTrace();
         }
@@ -141,7 +155,7 @@ public class ControllerMySQL implements interfaceDAO{
 
     @Override
     public void update(User user) {
-        try(Connection c = getConnection()){
+        try(Connection c = ConnectionPool.getInstance().getConnection()){
             PreparedStatement preparedStatement;
             if(user.getId() > 0){
                 preparedStatement = c.prepareStatement("UPDATE user SET nickname=?, firsname=?, lastname=?,email=?,phonenumber=?,age=?,date=?, repit_password=?,password=? WHERE id =?");
@@ -158,8 +172,6 @@ public class ControllerMySQL implements interfaceDAO{
                 preparedStatement.executeUpdate();
                 preparedStatement.close();
             }
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
         }catch (SQLException ex){
             ex.printStackTrace();
         }
@@ -167,13 +179,11 @@ public class ControllerMySQL implements interfaceDAO{
 
     @Override
     public void deleteById(int id) {
-        try(Connection c = getConnection()){
+        try(Connection c = ConnectionPool.getInstance().getConnection()){
             PreparedStatement ps = c.prepareStatement("DELETE FROM user WHERE id=?");
             ps.setInt(1,id);
             ps.executeUpdate();
             ps.close();
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
         }catch (SQLException s){
             s.printStackTrace();
         }
@@ -181,14 +191,12 @@ public class ControllerMySQL implements interfaceDAO{
 
     @Override
     public void deleteAll() {
-        try(Connection c = getConnection()){
+        try(Connection c = ConnectionPool.getInstance().getConnection();){
             PreparedStatement ps = c.prepareStatement("DELETE * FROM user");
             ResultSet rs = ps.executeQuery();
             while (rs.next()){
 
             }
-        }catch (ClassNotFoundException e){
-            e.printStackTrace();
         }catch (SQLException s){
             s.printStackTrace();
         }

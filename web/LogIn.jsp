@@ -5,7 +5,9 @@
   Time: 15:23
   To change this template use File | Settings | File Templates.
 --%>
+<%@ page import="warmStar.ErrorLogIn" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <title>LogIn</title>
@@ -35,7 +37,8 @@
             <p>
                 <label for="login">Логин</label>
                 <input type="text" name="login" id="login"/>
-            </p>
+                <%--<p><c:out value="${requestScope.error.getErrorMessage(login)}"></c:out></p>--%>
+                <c:out value="${requestScope.error.getErrorMessage(login)}"></c:out>
             <p>
                 <label for="email">E-Mail</label>
                 <input type="email" name="email" id="email"/>

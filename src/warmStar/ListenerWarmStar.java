@@ -10,13 +10,12 @@ import javax.servlet.http.HttpSessionListener;
 import javax.servlet.http.HttpSessionBindingEvent;
 
 @WebListener()
-public class ListenerWarmStar implements ServletContextListener,
-        HttpSessionListener, HttpSessionAttributeListener {
+public class ListenerWarmStar implements ServletContextListener {
 
     // Public constructor is required by servlet spec
     public ListenerWarmStar() {
     }
-
+//    HttpSessionListener, HttpSessionAttributeListener
     // -------------------------------------------------------
     // ServletContextListener implementation
     // -------------------------------------------------------
@@ -38,33 +37,35 @@ public class ListenerWarmStar implements ServletContextListener,
     // -------------------------------------------------------
     // HttpSessionListener implementation
     // -------------------------------------------------------
-    public void sessionCreated(HttpSessionEvent se) {
-      /* Session is created. */
-    }
-
-    public void sessionDestroyed(HttpSessionEvent se) {
-      /* Session is destroyed. */
-    }
-
-    // -------------------------------------------------------
-    // HttpSessionAttributeListener implementation
-    // -------------------------------------------------------
-
-    public void attributeAdded(HttpSessionBindingEvent sbe) {
-      /* This method is called when an attribute 
-         is added to a session.
-      */
-    }
-
-    public void attributeRemoved(HttpSessionBindingEvent sbe) {
-      /* This method is called when an attribute
-         is removed from a session.
-      */
-    }
-
-    public void attributeReplaced(HttpSessionBindingEvent sbe) {
-      /* This method is invoked when an attibute
-         is replaced in a session.
-      */
-    }
+//    public void sessionCreated(HttpSessionEvent se) {
+//      /* Session is created. */
+//        System.out.println("sessionCreated");
+//    }
+//
+//    public void sessionDestroyed(HttpSessionEvent se) {
+//      /* Session is destroyed. */
+//        System.out.println("sessionDestroyed");
+//    }
+//
+//    // -------------------------------------------------------
+//    // HttpSessionAttributeListener implementation
+//    // -------------------------------------------------------
+//
+//    public void attributeAdded(HttpSessionBindingEvent sbe) {
+//      /* This method is called when an attribute
+//         is added to a session.
+//      */
+//    }
+//
+//    public void attributeRemoved(HttpSessionBindingEvent sbe) {
+//      /* This method is called when an attribute
+//         is removed from a session.
+//      */
+//    }
+//
+//    public void attributeReplaced(HttpSessionBindingEvent sbe) {
+//      /* This method is invoked when an attibute
+//         is replaced in a session.
+//      */
+//    }
 }
