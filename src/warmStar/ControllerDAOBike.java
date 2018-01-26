@@ -12,12 +12,6 @@ public class ControllerDAOBike implements interfaceDAOBike {
 
     }
 
-//    public Connection getConnection()throws ClassNotFoundException, SQLException {
-//        Class.forName("com.mysql.cj.jdbc.Driver");
-//        return DriverManager.getConnection("jdbc:mysql://localhost:3306/warmstar?autoReconnect=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC",
-//                userMySQL, passwordMySQL);
-//    }
-
     @Override
     public Bike getById(int id) {
         Bike bike = new Bike();
@@ -46,6 +40,41 @@ public class ControllerDAOBike implements interfaceDAOBike {
     }
 
     @Override
+    public int getIDBike(String model, String smodel) {
+        int id;
+//        String sql = "SELECT id FROM car WHERE model=" + "'" + model + "'" + "AND smodel=" + "'" + smodel + "'";
+        try(Connection c = ConnectionPool.getInstance().getConnection();
+            PreparedStatement ps = c.prepareStatement("SELECT id FROM bike WHERE model=" + "'" + model + "'" + "AND smodel=" + "'" + smodel + "'")){
+            ResultSet resultSet = ps.executeQuery();
+            if (resultSet.next()){
+                id = resultSet.getInt(1);
+                closeRs(resultSet);
+                return id;
+            }
+            closeRs(resultSet);
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return -1;
+    }
+
+    @Override
+    public boolean checkBikeModel(String model, String smodel) {
+//        String sql = "SELECT id FROM bike WHERE model=" + "'" + model + "'" + "AND smodel=" + "'" + smodel + "'";
+        try(Connection c = ConnectionPool.getInstance().getConnection();
+            PreparedStatement ps = c.prepareStatement("SELECT id FROM bike WHERE model=" + "'" + model + "'" + "AND smodel=" + "'" + smodel + "'")){
+            ResultSet resultSet = ps.executeQuery();
+            if (resultSet.next()){
+                return true;
+            }
+            closeRs(resultSet);
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    @Override
     public void insert(Bike bike) {
         try(Connection c =  ConnectionPool.getInstance().getConnection()){
             PreparedStatement ps;
@@ -68,8 +97,8 @@ public class ControllerDAOBike implements interfaceDAOBike {
     }
 
     @Override
-    public List<Bike> getAll() {
-        List<Bike> bikes = new ArrayList<>();
+    public ArrayList<Bike> getAll() {
+        ArrayList<Bike> bikes = new ArrayList<>();
         try(Connection c =  ConnectionPool.getInstance().getConnection();
             PreparedStatement ps = c.prepareStatement("SELECT * FROM bike")){
             ResultSet r = ps.executeQuery();
@@ -141,6 +170,14 @@ public class ControllerDAOBike implements interfaceDAOBike {
             }
         }catch (SQLException s){
             s.printStackTrace();
+        }
+    }
+
+    private void closeRs(ResultSet resultSet){
+        try {
+            resultSet.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 }

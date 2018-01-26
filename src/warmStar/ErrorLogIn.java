@@ -1,6 +1,7 @@
 package warmStar;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class ErrorLogIn {
     private HashMap<String,String> error;
@@ -75,15 +76,23 @@ public class ErrorLogIn {
         return validate;
     }
 
-    public String getErrorMessage(String key){
-        String errorMessage = error.get(key.trim());
-        return (errorMessage == null)? "null" : errorMessage;
-    }
-
     private boolean checkPasswords(String password){
         if((this.password != null) && this.password.equals(password)){
             return true;
         }
         return false;
+    }
+
+    public HashMap<String, String> getMapError(){
+        return error;
+    }
+
+    public static void printValues(Map<String, String> map)
+    {
+        for(Map.Entry<String, String> pair : map.entrySet())
+        {
+            String value = pair.getValue();
+            System.out.println(value);
+        }
     }
 }

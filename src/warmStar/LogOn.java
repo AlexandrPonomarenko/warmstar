@@ -19,36 +19,43 @@ public class LogOn extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ServletContext servletContext = getServletContext();
         ControllerMySQL c = (ControllerMySQL) servletContext.getAttribute("controllerUser");
+        ErrorLogOn errorLogOn = new ErrorLogOn();
 //        String login = request.getParameter("login");
 //        String password = request.getParameter("password");
         String login = (String) request.getAttribute("login");
         String password = (String) request.getAttribute("password");
-        System.out.println(login);
-        System.out.println(password);
-        System.out.println(login +" --- " + password);
-        if(login != null && password != null) {
-            if (c.validationUser(login, password)) {
-                HttpSession session = request.getSession(true);
-                session.setAttribute("login", login);
-                session.setAttribute("password", password);
-                if(session.getAttribute("user") == null){
-                    int id = c.getIdUser(login);
-                    System.out.println("ID " + id);
-                    if(id > 0) {
-                        session.setAttribute("user", c.getById(id));
+        errorLogOn.checkNickName(login);
+        errorLogOn.checkPassword(password);
+        if(errorLogOn.getValidate()) {
+            System.out.println(login + " это в LOGON");
+            System.out.println(password + " это в LOGON");
+            System.out.println(login + " это в LOGON " + password);
+            if (login != null && password != null) {
+                if (c.validationUser(login, password)) {
+                    HttpSession session = request.getSession(true);
+                    session.setAttribute("login", login);
+                    session.setAttribute("password", password);
+                    System.out.println(session.getId());
+                    if (session.getAttribute("user") == null) {
+                        int id = c.getIdUser(login);
+                        System.out.println("ID " + id);
+                        if (id > 0) {
+                            session.setAttribute("user", c.getById(id));
+                        }
                     }
+                    response.sendRedirect(request.getContextPath() + "/yourOffice");
+                    System.out.println("if");
+                } else {
+                    request.getRequestDispatcher("/LogOn.jsp").forward(request, response);
+                    System.out.println("ELSE");
                 }
-                response.sendRedirect(request.getContextPath() + "/yourOffice");
-                System.out.println("if");
-            } else {
-                if(login == null || password == null){
-
-                }
-//                request.getRequestDispatcher("test.html").forward(request, response);
-                System.out.println("ELSE");
+                System.out.println(login + password);
             }
+//            System.out.println(login + password);
+        }else{
+            request.setAttribute("error", errorLogOn.getMapError());
+            request.getRequestDispatcher("/LogOn.jsp").forward(request,response);
         }
-        System.out.println(login + password );
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -13,6 +13,7 @@
 <html>
 <head>
     <title>Office</title>
+    <link type="text/css" rel="stylesheet" href="css/fonts.css"/>
 </head>
 <body>
     <jsp:include page="headers/head.jsp"/>

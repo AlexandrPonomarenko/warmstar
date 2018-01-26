@@ -9,20 +9,30 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <link type="text/css" rel="stylesheet" href="css/header.css"/>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/header.css"/>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/fonts.css"/>
 </head>
 <body>
 <header>
     <div id="nav-curtain"></div>
     <div class="nav-content">
-        <a class="logo" href="index.jsp" ><img src="images/star-electronics-120x120.png"></a>
+        <a class="logo" href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/images/star-electronics-120x120.png"></a>
         <nav id="nav">
             <ul>
-                <li><a href="#">Регистрация</a></li>
+                <li><a href="#">Автор</a></li>
                 <li><a href="#">О Нас</a></li>
-                <li><a href="#">Товар</a></li>
-                <li><a href="LogIn.jsp">LogIn</a></li>
-                <li><a href="${pageContext.request.contextPath}/logOn">LogOn</a></li>
+                <li><a href="#">Наши партеры</a></li>
+                <li><a href="#">Галерея</a></li>
+                <%--<li><a href="">Выход</a></li>--%>
+                <%--<li><a href="${pageContext.request.contextPath}/logIn">Регистрация</a></li>--%>
+                <%--<li><a href="${pageContext.request.contextPath}/logOn">Вход</a></li>--%>
+                <c:if test="${sessionScope.user == null}">
+                    <li><a href="${pageContext.request.contextPath}/logIn">Регистрация</a></li>
+                    <li><a href="${pageContext.request.contextPath}/logOn">Вход</a></li>
+                </c:if>
+                <c:if test="${sessionScope.user != null}">
+                    <li><a href="${pageContext.request.contextPath}/logOut">Выход</a></li>
+                </c:if>
             </ul>
         </nav>
         <%--<a class="garage" href="#"><img src="images/garage.png" width="32" height="26"></a>--%>

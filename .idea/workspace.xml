@@ -7,45 +7,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="934605fe-e220-4564-91f5-83ad68284c4b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jstl_jstl_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/META-INF/context" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/Bike.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/Bike.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/Car.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/Car.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/ControllerCar.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/ControllerCar.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/ControllerDAOBike.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/ControllerDAOBike.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/ControllerMySQL.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/ControllerMySQL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/ListenerWarmStar.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/ListenerWarmStar.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/ErrorLogIn.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/ErrorLogIn.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/LogInTest.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/LogInTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/LogOn.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/LogOn.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/WarmStar.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/WarmStar.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/YourOfficeS.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/YourOfficeS.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/interfaceDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/interfaceDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/interfaceDAOBike.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/interfaceDAOBike.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/interfaceDAOCar.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/interfaceDAOCar.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/Bike.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/Bike.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/Car.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/Car.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/ControllerCar.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/ControllerCar.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/ControllerDAOBike.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/ControllerDAOBike.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/ControllerMySQL.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/ControllerMySQL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/ListenerWarmStar.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/ListenerWarmStar.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/ErrorLogIn.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/ErrorLogIn.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/LogInTest.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/LogInTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/LogOn.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/LogOn.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/WarmStar.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/WarmStar.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/YourOfficeS.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/YourOfficeS.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/interfaceDAO.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/interfaceDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/WarmStar_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/WarmStar_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/interfaceDAOBike.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/interfaceDAOBike.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/interfaceDAOCar.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/interfaceDAOCar.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/5e22a3c7-d428-42c5-bc7a-200de3384d6b.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/5e22a3c7-d428-42c5-bc7a-200de3384d6b.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WarmStar.iml" afterPath="$PROJECT_DIR$/WarmStar.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/LogIn.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/LogIn.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/LogOn.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/LogOn.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/css/styleMainPage.css" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/css/styleMainPage.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/headers/head.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/headers/head.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/yourOffice.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/yourOffice.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/ConnectionPool.java" afterPath="$PROJECT_DIR$/src/warmStar/ConnectionPool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/Bike.java" afterPath="$PROJECT_DIR$/src/warmStar/Bike.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/Car.java" afterPath="$PROJECT_DIR$/src/warmStar/Car.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/ControllerCar.java" afterPath="$PROJECT_DIR$/src/warmStar/ControllerCar.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/ControllerDAOBike.java" afterPath="$PROJECT_DIR$/src/warmStar/ControllerDAOBike.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/ControllerMySQL.java" afterPath="$PROJECT_DIR$/src/warmStar/ControllerMySQL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/ListenerWarmStar.java" afterPath="$PROJECT_DIR$/src/warmStar/ListenerWarmStar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/ErrorLogIn.java" afterPath="$PROJECT_DIR$/src/warmStar/ErrorLogIn.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/LogInTest.java" afterPath="$PROJECT_DIR$/src/warmStar/LogInTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/LogOn.java" afterPath="$PROJECT_DIR$/src/warmStar/LogOn.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/WarmStar.java" afterPath="$PROJECT_DIR$/src/warmStar/WarmStar.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/YourOfficeS.java" afterPath="$PROJECT_DIR$/src/warmStar/YourOfficeS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/interfaceDAO.java" afterPath="$PROJECT_DIR$/src/warmStar/interfaceDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/interfaceDAOBike.java" afterPath="$PROJECT_DIR$/src/warmStar/interfaceDAOBike.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/interfaceDAOCar.java" afterPath="$PROJECT_DIR$/src/warmStar/interfaceDAOCar.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/LogIn.jsp" afterPath="$PROJECT_DIR$/web/LogIn.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/LogOn.jsp" afterPath="$PROJECT_DIR$/web/LogOn.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/styleMainPage.css" afterPath="$PROJECT_DIR$/web/css/styleMainPage.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/headers/head.jsp" afterPath="$PROJECT_DIR$/web/headers/head.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/yourOffice.jsp" afterPath="$PROJECT_DIR$/web/yourOffice.jsp" />
     </list>
@@ -56,6 +64,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/WebSiteWarmStar$Tomcat_9_0_0_M21.coverage" NAME="Tomcat 9.0.0.M21 Coverage Results" MODIFIED="1516276419754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -79,7 +90,7 @@
         <item name="" type="eadb38e5:DatabaseStructure$Root" />
         <item name="warmstar@localhost" type="e3449647:DbNodeDescriptor" />
         <item name="warmstar" type="e3449647:DbNodeDescriptor" />
-        <item name="user" type="e3449647:DbNodeDescriptor" />
+        <item name="bike" type="e3449647:DbNodeDescriptor" />
       </path>
     </expand>
     <select />
@@ -89,86 +100,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LogInTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/warmStar/LogInTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="61" column="77" lean-forward="false" selection-start-line="61" selection-start-column="77" selection-end-line="61" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ErrorLogIn.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/warmStar/ErrorLogIn.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="78" column="35" lean-forward="false" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="35" />
-              <folding>
-                <element signature="e#2115#2116#0" expanded="true" />
-                <element signature="e#2146#2147#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogIn.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/LogIn.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="53" lean-forward="false" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yourOffice.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/yourOffice.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WarmStar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/warmStar/WarmStar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2499">
-              <caret line="147" column="56" lean-forward="false" selection-start-line="147" selection-start-column="56" selection-end-line="147" selection-end-column="56" />
+            <state relative-caret-position="272">
+              <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
               <folding>
-                <marker date="1516190956955" expanded="false" signature="4957:4963" ph="©" />
+                <marker date="1516885885186" expanded="false" signature="4434:4440" ph="©" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/footer/footer.jsp">
+      <file leaf-file-name="car.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/galery/cars/products/car.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/headers/head.jsp">
+      <file leaf-file-name="bikes.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/galery/bikes/bikes.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="272">
+              <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SBike.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/warmStar/SBike.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -177,11 +145,50 @@
       <file leaf-file-name="LogOn.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/warmStar/LogOn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="37" column="59" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="59" />
+            <state relative-caret-position="153">
+              <caret line="45" column="71" lean-forward="false" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="106" column="46" lean-forward="true" selection-start-line="106" selection-start-column="46" selection-end-line="106" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControllerDAOBike.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/warmStar/ControllerDAOBike.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1516881291195" expanded="true" signature="483:512" ph="SELECT * FRO... bike" />
+                <marker date="1516881291195" expanded="true" signature="1527:1615" ph="SELECT id FR... car" />
+                <marker date="1516881291195" expanded="true" signature="1746:1835" ph="SELECT id FR... bike" />
+                <marker date="1516881291195" expanded="true" signature="2284:2373" ph="SELECT id FR... bike" />
+                <marker date="1516881291195" expanded="true" signature="2504:2593" ph="SELECT id FR... bike" />
+                <marker date="1516881291195" expanded="true" signature="3062:3182" ph="INSERT INTO bike... " />
+                <marker date="1516881291195" expanded="true" signature="4007:4025" ph="SELECT * FRO... bike" />
+                <marker date="1516881291195" expanded="true" signature="5139:5254" ph="UPDATE bike " />
+                <marker date="1516881291195" expanded="true" signature="6329:6356" ph="DELETE FROM " />
+                <marker date="1516881291195" expanded="true" signature="6702:6720" ph="DELETE * FRO... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GalleryBikes.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/warmStar/GalleryBikes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="23" column="89" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="89" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -195,10 +202,10 @@
         <option value="jsf" />
         <option value="FxmlFile" />
         <option value="Tag Library Descriptor" />
-        <option value="CSS File" />
         <option value="HTML File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="CSS File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -213,20 +220,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/styleMainPage.css" />
-        <option value="$PROJECT_DIR$/web/registrations.jsp" />
-        <option value="$PROJECT_DIR$/src/warmStar/interfaceDAOCar.java" />
-        <option value="$PROJECT_DIR$/src/warmStar/interfaceDAOBike.java" />
-        <option value="$PROJECT_DIR$/web/Access.html" />
-        <option value="$PROJECT_DIR$/src/warmStar/Bike.java" />
-        <option value="$PROJECT_DIR$/src/warmStar/Car.java" />
-        <option value="$PROJECT_DIR$/web/LogIn.css" />
         <option value="$PROJECT_DIR$/src/warmStar/Main.java" />
         <option value="$PROJECT_DIR$/web/test.html" />
         <option value="$PROJECT_DIR$/web/Welcome.html" />
         <option value="$PROJECT_DIR$/src/warmStar/User.java" />
         <option value="$PROJECT_DIR$/web/yourOffice.xhtml" />
-        <option value="$PROJECT_DIR$/web/LogOn.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/context.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/context.xml.fxml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/context.fxml" />
@@ -235,28 +233,44 @@
         <option value="$PROJECT_DIR$/web/META-INF/context" />
         <option value="$PROJECT_DIR$/src/warmStar/ConnectionPool.java" />
         <option value="$PROJECT_DIR$/web/META-INF/context.xml" />
-        <option value="$PROJECT_DIR$/src/warmStar/ControllerDAOBike.java" />
-        <option value="$PROJECT_DIR$/src/warmStar/ControllerCar.java" />
         <option value="$PROJECT_DIR$/web/css/footerStyle.css" />
         <option value="$PROJECT_DIR$/web/css/header.css" />
         <option value="$PROJECT_DIR$/web/footer/footer.html" />
         <option value="$PROJECT_DIR$/src/warmStar/interfaceDAO.java" />
-        <option value="$PROJECT_DIR$/src/warmStar/ControllerMySQL.java" />
         <option value="$PROJECT_DIR$/web/headers/header.html" />
-        <option value="$PROJECT_DIR$/src/warmStar/ListenerWarmStar.java" />
-        <option value="$PROJECT_DIR$/src/warmStar/WarmStar.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/warmStar/LogOn.java" />
         <option value="$PROJECT_DIR$/src/warmStar/FilterCheckLogOn.java" />
-        <option value="$PROJECT_DIR$/src/warmStar/YourOfficeS.java" />
         <option value="$PROJECT_DIR$/web/footer/footer.jsp" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/headers/head.jsp" />
-        <option value="$PROJECT_DIR$/web/yourOffice.jsp" />
         <option value="$PROJECT_DIR$/src/warmStar/FilterTrim.java" />
+        <option value="$PROJECT_DIR$/src/warmStar/ErrorLogOn.java" />
         <option value="$PROJECT_DIR$/src/warmStar/ErrorLogIn.java" />
-        <option value="$PROJECT_DIR$/web/LogIn.jsp" />
         <option value="$PROJECT_DIR$/src/warmStar/LogInTest.java" />
+        <option value="$PROJECT_DIR$/src/warmStar/LogOn.java" />
+        <option value="$PROJECT_DIR$/src/warmStar/YourOfficeS.java" />
+        <option value="$PROJECT_DIR$/web/yourOffice.jsp" />
+        <option value="$PROJECT_DIR$/src/warmStar/ControllerMySQL.java" />
+        <option value="$PROJECT_DIR$/src/warmStar/Car.java" />
+        <option value="$PROJECT_DIR$/src/warmStar/Bike.java" />
+        <option value="$PROJECT_DIR$/src/warmStar/WarmStar.java" />
+        <option value="$PROJECT_DIR$/web/css/styleMainPage.css" />
+        <option value="$PROJECT_DIR$/src/warmStar/LogOut.java" />
+        <option value="$PROJECT_DIR$/src/warmStar/interfaceDAOBike.java" />
+        <option value="$PROJECT_DIR$/src/warmStar/ControllerDAOBike.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/LogOn.jsp" />
+        <option value="$PROJECT_DIR$/web/LogIn.jsp" />
+        <option value="$PROJECT_DIR$/web/css/gallery.css" />
+        <option value="$PROJECT_DIR$/src/warmStar/ListenerWarmStar.java" />
+        <option value="$PROJECT_DIR$/src/warmStar/interfaceDAOCar.java" />
+        <option value="$PROJECT_DIR$/src/warmStar/ControllerCar.java" />
+        <option value="$PROJECT_DIR$/web/galery/cars/cars.jsp" />
+        <option value="$PROJECT_DIR$/src/warmStar/GalleryCars.java" />
+        <option value="$PROJECT_DIR$/src/warmStar/GalleryBikes.java" />
+        <option value="$PROJECT_DIR$/web/headers/head.jsp" />
+        <option value="$PROJECT_DIR$/web/galery/bikes/bikes.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/warmStar/SBike.java" />
+        <option value="$PROJECT_DIR$/web/galery/bikes/products/bike.jsp" />
+        <option value="$PROJECT_DIR$/web/galery/cars/products/car.jsp" />
       </list>
     </option>
   </component>
@@ -436,6 +450,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -463,7 +480,37 @@
               <item name="WebSiteWarmStar" type="b2602c69:ProjectViewProjectNode" />
               <item name="WarmStar" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="footer" type="462c0819:PsiDirectoryNode" />
+              <item name="galery" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebSiteWarmStar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WarmStar" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="galery" type="462c0819:PsiDirectoryNode" />
+              <item name="bikes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebSiteWarmStar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WarmStar" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="galery" type="462c0819:PsiDirectoryNode" />
+              <item name="bikes" type="462c0819:PsiDirectoryNode" />
+              <item name="products" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebSiteWarmStar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WarmStar" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="galery" type="462c0819:PsiDirectoryNode" />
+              <item name="cars" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebSiteWarmStar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WarmStar" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="galery" type="462c0819:PsiDirectoryNode" />
+              <item name="cars" type="462c0819:PsiDirectoryNode" />
+              <item name="products" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebSiteWarmStar" type="b2602c69:ProjectViewProjectNode" />
@@ -481,9 +528,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -503,16 +547,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\www\WarmStar\web\META-INF" />
+      <recent name="E:\www\WarmStar\web\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\www\WarmStar\web\bike_for_sale_img" />
       <recent name="E:\www\WarmStar\library" />
       <recent name="E:\www\WarmStar\web\video" />
       <recent name="E:\www\WarmStar\web\cars_for_sale_img" />
       <recent name="E:\www\WarmStar\web\images" />
-      <recent name="E:\www\WarmStar\web" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\www\WarmStar\web\META-INF" />
-      <recent name="E:\www\WarmStar\web\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -548,6 +592,7 @@
       <envs />
     </configuration>
     <configuration name="Tomcat 9.0.0.M21" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M21" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8085/warmStar" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="WarmStar:war exploded">
@@ -750,12 +795,21 @@
       <workItem from="1516100067272" duration="18843000" />
       <workItem from="1516177447996" duration="1203000" />
       <workItem from="1516189577024" duration="20924000" />
-      <workItem from="1516267931299" duration="265000" />
+      <workItem from="1516267931299" duration="12266000" />
+      <workItem from="1516359671549" duration="4267000" />
+      <workItem from="1516379377488" duration="2198000" />
+      <workItem from="1516456578950" duration="5273000" />
+      <workItem from="1516611387187" duration="14975000" />
+      <workItem from="1516701400637" duration="25253000" />
+      <workItem from="1516786393778" duration="11088000" />
+      <workItem from="1516873472702" duration="12861000" />
+      <workItem from="1516893950795" duration="7547000" />
+      <workItem from="1516961897836" duration="12284000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="310156000" />
+    <option name="totallyTimeSpent" value="417903000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -768,24 +822,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30769232" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18532526" sideWeight="0.65561223" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17776097" sideWeight="0.34438777" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18154311" sideWeight="0.5925926" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18154311" sideWeight="0.4074074" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.48979592" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -797,42 +851,10 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.48979592" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17776097" sideWeight="0.65561223" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17776097" sideWeight="0.34438777" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21785174" sideWeight="0.5739796" order="6" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -842,7 +864,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -851,324 +873,378 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/warmStar/Bike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="101" column="5" lean-forward="true" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/bike_for_sale_img/state_bicycle_co_crimson_ashford_fixie_9.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/bike_for_sale_img/state_blcycle_6061_black_label_v2_purple_track_2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/bike_for_sale_img/state_blcycle_6061_black_label_v2_purple_track_6.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/interfaceDAOBike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/bike_for_sale_img/11092041703_857fb31179_b.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Access.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/bike_for_sale_img/vossen-shows-sleek-x-state-bicycle-photo-galleryvideo_1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.8-dmr/mysql-connector-java-8.0.8-dmr.jar!/com/mysql/cj/jdbc/exceptions/SQLError.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/bike_for_sale_img/11091845135_a6c86b844e_b.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/yourOffice.xhtml" />
-    <entry file="file://$PROJECT_DIR$/web/Welcome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/bike_for_sale_img/vossen-shows-sleek-x-state-bicycle-photo-galleryvideo_3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/LogIn.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="25" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/bike_for_sale_img/11091986534_b2797d7e3b_o_d.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/context.tld" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/context.xml" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/context.xml.fxml" />
-    <entry file="file://$PROJECT_DIR$/web/META-INF/test" />
-    <entry file="file://$PROJECT_DIR$/web/META-INF/context.fxml" />
-    <entry file="file://$PROJECT_DIR$/web/META-INF/contextt" />
-    <entry file="file://$PROJECT_DIR$/web/META-INF/inrer" />
-    <entry file="file://$PROJECT_DIR$/web/META-INF/uuuu" />
-    <entry file="file://$PROJECT_DIR$/web/META-INF/uiyu" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/rrr" />
-    <entry file="file://$PROJECT_DIR$/web/META-INF/kkk" />
-    <entry file="file://$PROJECT_DIR$/web/META-INF/fff.tld" />
-    <entry file="file://$PROJECT_DIR$/web/META-INF/fff.xml" />
-    <entry file="file://$PROJECT_DIR$/web/META-INF/context" />
-    <entry file="file://$PROJECT_DIR$/src/warmStar/ConnectionPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="67" lean-forward="false" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="67" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/bike_for_sale_img/vossen_polar_white_bike_9.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/META-INF/context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="24" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/bike_for_sale_img/Vossen-x-State-Bicycle-2016-Collab-Road-Bike-©-Vossen-Wheels-2016-1010-840x560.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/ControllerDAOBike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2363">
-          <caret line="141" column="9" lean-forward="false" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/web/bike_for_sale_img/Vossen-x-State-Bicycle-2016-Collab-Road-Bike-©-Vossen-Wheels-2016-1030-840x560.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/ControllerCar.java">
+    <entry file="file://$PROJECT_DIR$/src/warmStar/interfaceDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-          <folding>
-            <marker date="1515583793921" expanded="true" signature="829:857" ph="SELECT * FRO... car" />
-            <marker date="1515583793921" expanded="true" signature="1942:2061" ph="INSERT INTO car... " />
-            <marker date="1515583793921" expanded="true" signature="2863:2880" ph="SELECT * FRO... car" />
-            <marker date="1515583793921" expanded="true" signature="3974:4088" ph="UPDATE car S... " />
-            <marker date="1515583793921" expanded="true" signature="5152:5178" ph="DELETE FROM " />
-            <marker date="1515583793921" expanded="true" signature="5524:5541" ph="DELETE * FRO... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/footerStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/styleMainPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="61" column="15" lean-forward="true" selection-start-line="61" selection-start-column="15" selection-end-line="61" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="187">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/warmStar/ControllerMySQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2482">
-          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding>
-            <marker date="1515864080920" expanded="true" signature="943:967" ph="SELECT * FRO... test_user" />
-            <marker date="1515864080920" expanded="true" signature="943:972" ph="SELECT * FRO... test_user" />
-            <marker date="1515864080920" expanded="true" signature="2090:2131" ph="SELECT nickn... test_user" />
-            <marker date="1515864080920" expanded="true" signature="2090:2137" ph="SELECT nickn... user" />
-            <marker date="1515864080920" expanded="true" signature="2090:2151" ph="SELECT nickn... user" />
-            <marker date="1515864080920" expanded="true" signature="2667:2721" ph="SELECT nickn... user" />
-            <marker date="1515864080920" expanded="true" signature="2667:2756" ph="SELECT nickn... user" />
-            <marker date="1515864080920" expanded="true" signature="2667:2761" ph="SELECT nickn... user" />
-            <marker date="1515864080920" expanded="true" signature="2667:2778" ph="SELECT nickn... user" />
-            <marker date="1515864080920" expanded="true" signature="3286:3340" ph="SELECT id FR... user" />
-            <marker date="1515864080920" expanded="true" signature="4011:4141" ph="INSERT INTO test_user... " />
-            <marker date="1515864080920" expanded="true" signature="4011:4143" ph="INSERT INTO user... " />
-            <marker date="1515864080920" expanded="true" signature="4022:4088" ph="UPDATE test_... " />
-            <marker date="1515864080920" expanded="true" signature="4974:4992" ph="SELECT * FRO... test_user" />
-            <marker date="1515864080920" expanded="true" signature="6055:6181" ph="UPDATE test_... " />
-            <marker date="1515864080920" expanded="true" signature="7209:7236" ph="DELETE FROM " />
-            <marker date="1515864080920" expanded="true" signature="7582:7600" ph="DELETE * FRO... " />
-          </folding>
+        <state relative-caret-position="149">
+          <caret line="72" column="149" lean-forward="false" selection-start-line="72" selection-start-column="149" selection-end-line="72" selection-end-column="149" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/interfaceDAO.java">
+    <entry file="file://$PROJECT_DIR$/web/yourOffice.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="17">
+          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/headers/header.html">
+    <entry file="file://$PROJECT_DIR$/src/warmStar/Bike.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="70" lean-forward="true" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/LogOn.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/FilterCheckLogOn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="33" column="52" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/ListenerWarmStar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <element signature="e#2271#2272#0" expanded="true" />
-            <element signature="e#2305#2306#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="910">
+          <caret line="125" column="20" lean-forward="false" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/warmStar/YourOfficeS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-          <folding />
+          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/WarmStar.java">
+    <entry file="file://$PROJECT_DIR$/web/META-INF/context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/footer/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2499">
-          <caret line="147" column="56" lean-forward="false" selection-start-line="147" selection-start-column="56" selection-end-line="147" selection-end-column="56" />
-          <folding>
-            <marker date="1516190956955" expanded="false" signature="4957:4963" ph="©" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/headers/head.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/header.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/LogOn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="37" column="59" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/footer/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/yourOffice.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/FilterTrim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/ErrorLogIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="78" column="35" lean-forward="false" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="35" />
-          <folding>
-            <element signature="e#2115#2116#0" expanded="true" />
-            <element signature="e#2146#2147#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/LogIn.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="53" lean-forward="false" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/warmStar/LogInTest.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="56" column="65" lean-forward="false" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/LogOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/FilterCheckLogOn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="35" column="50" lean-forward="false" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/interfaceDAOBike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/WarmStar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/LogIn.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/LogOn.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="54" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/styleMainPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="235" column="0" lean-forward="true" selection-start-line="235" selection-start-column="0" selection-end-line="248" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/gallery.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bike_for_sale_img/The_Simpsons_x_State_Bicycle_Color_Block_Bike_4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bike_for_sale_img/The_Simpsons_x_State_Bicycle_Color_Block_Bike_1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bike_for_sale_img/The_Simpsons_x_State_Bicycle_Springfield_Character_Bike_6.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bike_for_sale_img/The_Simpsons_x_State_Bicycle_Springfield_Character_Bike_4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bike_for_sale_img/The_Simpsons_x_State_Bicycle_Springfield_Character_Bike_1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bike_for_sale_img/The_Simpsons_x_State_Bicycle_Color_Block_Bike_14.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/ListenerWarmStar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="61" column="77" lean-forward="false" selection-start-line="61" selection-start-column="77" selection-end-line="61" selection-end-column="77" />
+          <caret line="88" column="22" lean-forward="false" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
+          <folding>
+            <element signature="e#1821#1822#0" expanded="false" />
+            <element signature="e#1850#1851#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/galery/cars/cars.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/interfaceDAOCar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/ControllerCar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="62" column="35" lean-forward="false" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
+          <folding>
+            <marker date="1516901408171" expanded="true" signature="471:499" ph="SELECT * FRO... car" />
+            <marker date="1516901408171" expanded="true" signature="1497:1548" ph="SELECT id FR... car" />
+            <marker date="1516901408171" expanded="true" signature="1497:1563" ph="SELECT id FR... car" />
+            <marker date="1516901408171" expanded="true" signature="1497:1564" ph="SELECT id FR... car" />
+            <marker date="1516901408171" expanded="true" signature="1497:1568" ph="SELECT id FR... car" />
+            <marker date="1516901408171" expanded="true" signature="1497:1570" ph="SELECT id FR... car" />
+            <marker date="1516901408171" expanded="true" signature="1497:1585" ph="SELECT id FR... car" />
+            <marker date="1516901408171" expanded="true" signature="2163:2251" ph="SELECT id FR... car" />
+            <marker date="1516901408171" expanded="true" signature="2850:2969" ph="INSERT INTO car... " />
+            <marker date="1516901408171" expanded="true" signature="3781:3798" ph="SELECT * FRO... car" />
+            <marker date="1516901408171" expanded="true" signature="4892:5006" ph="UPDATE car S... " />
+            <marker date="1516901408171" expanded="true" signature="6070:6096" ph="DELETE FROM " />
+            <marker date="1516901408171" expanded="true" signature="6442:6459" ph="DELETE * FRO... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/GalleryCars.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/GalleryBikes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="89" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/LogIn.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding>
+            <marker date="1516885885506" expanded="true" signature="534:1301" ph="..." />
+            <marker date="1516885885506" expanded="false" signature="3490:3496" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/LogOn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="45" column="71" lean-forward="false" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="106" column="46" lean-forward="true" selection-start-line="106" selection-start-column="46" selection-end-line="106" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/ControllerDAOBike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding>
+            <marker date="1516881291195" expanded="true" signature="483:512" ph="SELECT * FRO... bike" />
+            <marker date="1516881291195" expanded="true" signature="1527:1615" ph="SELECT id FR... car" />
+            <marker date="1516881291195" expanded="true" signature="1746:1835" ph="SELECT id FR... bike" />
+            <marker date="1516881291195" expanded="true" signature="2284:2373" ph="SELECT id FR... bike" />
+            <marker date="1516881291195" expanded="true" signature="2504:2593" ph="SELECT id FR... bike" />
+            <marker date="1516881291195" expanded="true" signature="3062:3182" ph="INSERT INTO bike... " />
+            <marker date="1516881291195" expanded="true" signature="4007:4025" ph="SELECT * FRO... bike" />
+            <marker date="1516881291195" expanded="true" signature="5139:5254" ph="UPDATE bike " />
+            <marker date="1516881291195" expanded="true" signature="6329:6356" ph="DELETE FROM " />
+            <marker date="1516881291195" expanded="true" signature="6702:6720" ph="DELETE * FRO... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/SBike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding>
+            <marker date="1516885885186" expanded="false" signature="4434:4440" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/galery/bikes/products/bike.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/headers/head.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/galery/cars/products/car.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/galery/bikes/bikes.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
           <folding />
         </state>
       </provider>

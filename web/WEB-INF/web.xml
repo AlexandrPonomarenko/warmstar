@@ -25,7 +25,6 @@
 
     <filter-mapping>
         <filter-name>FilterCheckLogOn</filter-name>
-        <!--<servlet-name>YourOfficeS</servlet-name>-->
         <url-pattern>/yourOffice</url-pattern>
     </filter-mapping>
 
@@ -55,6 +54,15 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>LogOut</servlet-name>
+        <servlet-class>warmStar.LogOut</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogOut</servlet-name>
+        <url-pattern>/logOut</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>LogInTest</servlet-name>
         <servlet-class>warmStar.LogInTest</servlet-class>
     </servlet>
@@ -70,6 +78,33 @@
     <servlet-mapping>
         <servlet-name>LogOn</servlet-name>
         <url-pattern>/logOn</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GalleryBikes</servlet-name>
+        <servlet-class>warmStar.GalleryBikes</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GalleryBikes</servlet-name>
+        <url-pattern>/galery/bikes</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GalleryCars</servlet-name>
+        <servlet-class>warmStar.GalleryCars</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GalleryCars</servlet-name>
+        <url-pattern>/galery/cars</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SBike</servlet-name>
+        <servlet-class>warmStar.SBike</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SBike</servlet-name>
+        <url-pattern>/galery/bikes/products/bike</url-pattern>
     </servlet-mapping>
 
     <servlet>

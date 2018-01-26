@@ -10,6 +10,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Date;
+import java.util.Map;
 
 @WebServlet(name = "LogInTest" , urlPatterns = "/logIn")
 public class LogInTest extends HttpServlet {
@@ -37,6 +38,7 @@ public class LogInTest extends HttpServlet {
         errorLogIn.checkPhoneNumber(pNumber);
         errorLogIn.checkPasswordOne(password);
         errorLogIn.checkPasswordTwo(password2);
+        errorLogIn.printValues(errorLogIn.getMapError());
         if(errorLogIn.getValidate()){
             System.out.println("Зашел в валидайтион");
             user.setNickName(login);
@@ -49,8 +51,11 @@ public class LogInTest extends HttpServlet {
             user.setData(new Date(mills));
             user.setPassword(password);
             user.setPasswordTwo(password2);
+//            errorLogIn.printValues(errorLogIn.getMapError());
             if(c.getByLogin(login)){
                 System.out.println("проверил логин");
+                // перенаправить на ту же страницу с уведомлением что пользователь с таким логином уже существует!
+                request.setAttribute("failLogin", new String("User with such login already exists"));
                 request.getRequestDispatcher("test.html").forward(request,response);
             }else{
                 c.insert(user);
@@ -58,9 +63,8 @@ public class LogInTest extends HttpServlet {
             }
         }else{
             System.out.println("asdasdasdasddsdsdsdsdsdsdsdsdsdsdsdsddsdsdsdsdssdsdssd");
-            request.setAttribute("error", errorLogIn);
-            request.getRequestDispatcher("/logOn").forward(request,response);
-//            response.sendRedirect(request.getContextPath()+ "/logOn");
+            request.setAttribute("error", errorLogIn.getMapError());
+            request.getRequestDispatcher("/LogIn.jsp").forward(request,response);
         }
 //        user.setNickName(login);
 //        user.setFirstName(fName);

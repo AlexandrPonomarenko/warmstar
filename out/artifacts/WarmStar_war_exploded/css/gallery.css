@@ -1,0 +1,14 @@
+.gallery_bikes {
+    padding-top: 10px;
+    display: flex;
+}
+
+.gallery_bikes figure {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    align-items: stretch;
+}
+.gallery_bikes figure img {
+    width: 100%;
+}

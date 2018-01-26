@@ -17,6 +17,7 @@ public class YourOfficeS extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession(false);
+        System.out.println(session.getId());
         User user = (User)session.getAttribute("user");
         ArrayList<User> arrayList = new ArrayList<>();
         arrayList.add(user);

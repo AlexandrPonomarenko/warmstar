@@ -124,7 +124,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "Car{" +
                 "id=" + id +
                 ", model=" + model + ", smodel=" + smodel + ", color=" + color +
                 ", price=" + price + ",type=" + type + ", dateadd=" + dateadd + ", quantity=" + quantity +

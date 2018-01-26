@@ -12,14 +12,6 @@ public class ControllerCar implements interfaceDAOCar {
 
     }
 
-//    public Connection getConnection()throws ClassNotFoundException, SQLException {
-//        Class.forName("com.mysql.cj.jdbc.Driver");
-//        return DriverManager.getConnection("jdbc:mysql://localhost:3306/warmstar?autoReconnect=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC",
-//                userMySQL, passwordMySQL);
-//    }
-
-
-
     @Override
     public Car getById(int id) {
         Car car = new Car();
@@ -48,6 +40,41 @@ public class ControllerCar implements interfaceDAOCar {
     }
 
     @Override
+    public int getIDCar(String model, String smodel) {
+        int id;
+        String sql = "SELECT id FROM car WHERE model=" + "'" + model + "'" + "AND smodel=" + "'" + smodel + "'";
+        try(Connection c = ConnectionPool.getInstance().getConnection();
+            PreparedStatement ps = c.prepareStatement(sql)){
+            ResultSet resultSet = ps.executeQuery();
+            if (resultSet.next()){
+                id = resultSet.getInt(1);
+                closeRs(resultSet);
+                return id;
+            }
+            closeRs(resultSet);
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return -1;
+    }
+
+    @Override
+    public boolean checkCarModel(String model, String smodel) {
+        String sql = "SELECT id FROM car WHERE model=" + "'" + model + "'" + "AND smodel=" + "'" + smodel + "'";
+        try(Connection c = ConnectionPool.getInstance().getConnection();
+            PreparedStatement ps = c.prepareStatement(sql)){
+            ResultSet resultSet = ps.executeQuery();
+            if (resultSet.next()){
+                return true;
+            }
+            closeRs(resultSet);
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    @Override
     public void insert(Car car) {
         try(Connection c =  ConnectionPool.getInstance().getConnection()){
             PreparedStatement ps;
@@ -70,8 +97,8 @@ public class ControllerCar implements interfaceDAOCar {
     }
 
     @Override
-    public List<Car> getAll() {
-        List<Car> cars = new ArrayList<>();
+    public ArrayList<Car> getAll() {
+        ArrayList<Car> cars = new ArrayList<>();
         try(Connection c =  ConnectionPool.getInstance().getConnection();
             PreparedStatement ps = c.prepareStatement("SELECT * FROM car")){
             ResultSet r = ps.executeQuery();
@@ -143,6 +170,14 @@ public class ControllerCar implements interfaceDAOCar {
             }
         }catch (SQLException s){
             s.printStackTrace();
+        }
+    }
+
+    private void closeRs(ResultSet resultSet){
+        try {
+            resultSet.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 }

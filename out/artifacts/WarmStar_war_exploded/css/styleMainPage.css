@@ -233,6 +233,21 @@ header .garage span {
     width: 100%;
 }
 
+.bike_for_sale {
+    padding-top: 10px;
+    display: flex;
+}
+
+.bike_for_sale figure {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    align-items: stretch;
+}
+.bike_for_sale figure img {
+    width: 100%;
+}
+
 .socialNetwork{
     display: inline-block;
     width: 100%;

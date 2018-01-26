@@ -1,3 +1,4 @@
+<%--<%@ page import="warmStar.Car"--%>
 <%--
   Created by IntelliJ IDEA.
   User: Alexandr
@@ -6,19 +7,17 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
-<%--<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>--%>
-<%--<%@taglib  uri="http://java.sun.com/jsp/jstl/fmt"  prefix="fmt"%>--%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
   <head>
      <meta content="text/html;charset=UTF-8">
       <%--<jsp:forward page="warmStar"/>--%>
     <title>WARM STAR</title>
-    <link type="text/css" rel="stylesheet" href="css/fonts.css"/>
+    <%--<link type="text/css" rel="stylesheet" href="css/fonts.css"/>--%>
     <link type="text/css" rel="stylesheet" href="css/styleMainPage.css"/>
   </head>
   <body>
 
-  <%--<%@include file="headers/header.html"%>--%>
   <jsp:include page="headers/head.jsp"/>
   <%--<header>--%>
     <%--<div id="nav-curtain"></div>--%>
@@ -102,45 +101,27 @@
   <div id="onSale">В продаже</div>
 
   <div class="cars_for_sale">
+  <c:forEach items="${requestScope.cars}" var="car">
     <figure>
-      <img src="cars_for_sale_img/All Other Makes_Tesla Model S_VVSCVT_fd4.jpg">
+      <img src="${car.path1}">
       <figcation>
-        <p>Tesla Model S</p>
+        <p>${car.model} ${car.smodel}</p>
         <a href="#">Подробнее >></a>
       </figcation>
     </figure>
+  </c:forEach>
+  </div>
 
-    <figure>
-      <img src="cars_for_sale_img/Audi_A4_VVSCV7_202.jpg">
-      <figcation>
-        <p>Audi A4</p>
-        <a href="#">Подробнее >></a>
-      </figcation>
-    </figure>
-
-    <figure>
-      <img src="cars_for_sale_img/Ferrari_488 GTB_VPS-310_4315c9bb.jpg">
-      <figcation>
-        <p>Ferrari 488</p>
-        <a href="#">Подробнее >></a>
-      </figcation>
-    </figure>
-
-    <figure>
-      <img src="cars_for_sale_img/Ford_Mustang_VFS5_f405ffef.jpg">
-      <figcation>
-        <p>Ford Mustang</p>
-        <a href="#">Подробнее >></a>
-      </figcation>
-    </figure>
-
-    <figure>
-      <img src="cars_for_sale_img/Lexus_RC_LC-105T_b85101b6.jpg">
-      <figcation>
-        <p>Lexus RC</p>
-        <a href="#">Подробнее >></a>
-      </figcation>
-    </figure>
+  <div class="bike_for_sale">
+    <c:forEach items="${requestScope.bikes}" var="bike">
+      <figure>
+        <img src="${bike.path1}">
+        <figcation>
+          <p>${bike.model} ${bike.smodel}</p>
+          <a href="#">Подробнее >></a>
+        </figcation>
+      </figure>
+    </c:forEach>
   </div>
 
   <div class="socialNetwork">
