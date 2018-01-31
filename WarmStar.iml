@@ -23,5 +23,32 @@
     <orderEntry type="library" name="mysql:mysql-connector-java:8.0.8-dmr" level="project" />
     <orderEntry type="library" name="apidocs" level="project" />
     <orderEntry type="library" name="javax.servlet:jstl:1.2" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/java/java mail/mail-1.4.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/java/java mail/smtp-1.4.5.jar/smtp-1.4.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://E:/java/java mail/activation-1.1.jar/activation-1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

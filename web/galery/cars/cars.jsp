@@ -18,7 +18,9 @@
 <div class="gallery_bikes">
     <c:forEach items="${requestScope.allcars}" var="car">
         <figure>
-            <img src="${pageContext.request.contextPath}/${car.path1}">
+            <a href="${pageContext.request.contextPath}/galery/bikes/products/car?id=${car.id}&model=${car.model}&smodel=${car.smodel}">
+                <img src="${pageContext.request.contextPath}/${car.path1}">
+            </a>
             <figcation>
                 <p>${car.model} ${car.smodel}</p>
                 <p>${car.price}</p>

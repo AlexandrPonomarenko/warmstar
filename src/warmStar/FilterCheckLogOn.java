@@ -20,13 +20,13 @@ public class FilterCheckLogOn implements Filter {
         HttpServletRequest  request = (HttpServletRequest)req;
         HttpServletResponse  response = (HttpServletResponse)resp;
         HttpSession session = request.getSession(false);
-        String url = request.getContextPath() + "/yourOffice";
+        String url = "/galery/bikes";
         if(session != null) {
             System.out.println(session + " NOT NULL");
         }else {
             System.out.println("null");
         }
-
+//        if(url.)
         if(filterConfig.getInitParameter("active").equals("true")){
             System.out.println(filterConfig.getInitParameter("active") + "+++++++++++++++++++++++++++++++++");
             System.out.println("111 " + request.getContextPath() + " dddddd " + request.getRequestURI() + "rrr " + request.getServletPath());
@@ -37,9 +37,9 @@ public class FilterCheckLogOn implements Filter {
                 User uu = (User) session.getAttribute("user");
                 System.out.println(uu.toString());
 //                System.out.println(uu.getPassword() + " +++++++++++++ " + uu.);
-                String login =(String)session.getAttribute("login");
-                String password =(String)session.getAttribute("password");
-                System.out.println(login + " 44444444444444444444444 " +  password);
+//                String login =(String)session.getAttribute("login");
+//                String password =(String)session.getAttribute("password");
+//                System.out.println(login + " 44444444444444444444444 " +  password);
 //                response.sendRedirect(url);
                 chain.doFilter(req, resp);
             }

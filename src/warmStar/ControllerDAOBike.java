@@ -149,6 +149,20 @@ public class ControllerDAOBike implements interfaceDAOBike {
     }
 
     @Override
+    public void updateQ(int id, int q) {
+        try(Connection c =  ConnectionPool.getInstance().getConnection()){
+            PreparedStatement preparedStatement;
+                preparedStatement = c.prepareStatement("UPDATE bike SET quantity=? WHERE id =?");
+                preparedStatement.setInt(1, id);
+                preparedStatement.setInt(2, q);
+                preparedStatement.executeUpdate();
+                preparedStatement.close();
+        }catch (SQLException ex){
+            ex.printStackTrace();
+        }
+    }
+
+    @Override
     public void deleteById(int id) {
         try(Connection c =  ConnectionPool.getInstance().getConnection()){
             PreparedStatement ps = c.prepareStatement("DELETE FROM bike WHERE id=?");

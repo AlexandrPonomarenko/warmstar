@@ -28,6 +28,8 @@ public class ListenerWarmStar implements ServletContextListener {
         servletContext.setAttribute("controllerUser", new ControllerMySQL());
         servletContext.setAttribute("controllerCar", new ControllerCar());
         servletContext.setAttribute("controllerDAOBike", new ControllerDAOBike());
+        servletContext.setAttribute("controllerBasket", new ControllerBasket());
+
     }
 
     public void contextDestroyed(ServletContextEvent sce) {

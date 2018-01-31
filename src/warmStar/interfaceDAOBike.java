@@ -8,6 +8,7 @@ public interface interfaceDAOBike {
     void insert(Bike bike);
     ArrayList<Bike> getAll();
     void update(Bike bike);
+    void updateQ(int id, int q);
     void deleteById(int id);
     void deleteAll();
     int getIDBike(String model, String smodel);

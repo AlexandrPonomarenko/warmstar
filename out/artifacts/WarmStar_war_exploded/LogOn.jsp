@@ -14,23 +14,19 @@
     <%--<link type="text/css" rel="stylesheet" href="css/fonts.css"/>--%>
 </head>
 <body>
-<%--<header>--%>
-    <%--<div id="nav-curtain"></div>--%>
-    <%--<div class="nav-content">--%>
-        <%--<a class="logo" href="index.jsp" ><img src="images/star-electronics-120x120.png"></a>--%>
-        <%--<nav id="nav">--%>
-            <%--<ul>--%>
-                <%--<li><a href="#">Регистрация</a></li>--%>
-                <%--<li><a href="#">О Нас</a></li>--%>
-                <%--<li><a href="#">Товар</a></li>--%>
-                <%--<li><a href="LogIn.jsp">LogIn</a></li>--%>
-                <%--<li><a href="LogOn.jsp">LogOn</a></li>--%>
-            <%--</ul>--%>
-        <%--</nav>--%>
-        <%--<a class="garage" href="#"><span class="icon-home"></span></a>--%>
-    <%--</div>--%>
-<%--</header>--%>
-<jsp:include page="headers/head.jsp"/>
+
+<jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
+
+
+<div><p>123</p></div>
+    <div><p>12312</p></div>
+        <div><p>123123</p></div>
+            <div><p>123123</p></div>
+
+
+
+
+
     <div class="text-article">
     <form method="POST" action="logOn">
         <p>
@@ -48,14 +44,7 @@
         </p>
     </form>
 </div>
-<jsp:include page="footer/footer.html"/>
-<%--<footer id="footer">--%>
-    <%--&copy; 2017, Warm Star--%>
-    <%--<br/>--%>
-    <%--Все торговые марки, которые появляются на данном сайте,--%>
-    <%--являются собственностью их владельцев. Все права защищены.--%>
-    <%--<br>--%>
-    <%--<a href="#">Политика конфиденциальности</a> <a href="#">Использование cookies</a> <a href="#">Продажа и возврат</a> <a href="#">Карта сайта</a>--%>
-<%--</footer>--%>
+<jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>
+
 </body>
 </html>

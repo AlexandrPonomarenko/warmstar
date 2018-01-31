@@ -11,7 +11,7 @@
 <html>
   <head>
      <meta content="text/html;charset=UTF-8">
-      <%--<jsp:forward page="warmStar"/>--%>
+
     <title>WARM STAR</title>
     <%--<link type="text/css" rel="stylesheet" href="css/fonts.css"/>--%>
     <link type="text/css" rel="stylesheet" href="css/styleMainPage.css"/>
@@ -19,23 +19,7 @@
   <body>
 
   <jsp:include page="headers/head.jsp"/>
-  <%--<header>--%>
-    <%--<div id="nav-curtain"></div>--%>
-    <%--<div class="nav-content">--%>
-      <%--<a class="logo" href="index.jsp" ><img src="images/star-electronics-120x120.png"></a>--%>
-      <%--<nav id="nav">--%>
-        <%--<ul>--%>
-          <%--<li><a href="#">Регистрация</a></li>--%>
-          <%--<li><a href="#">О Нас</a></li>--%>
-          <%--<li><a href="#">Товар</a></li>--%>
-          <%--<li><a href="LogIn.jsp">LogIn</a></li>--%>
-          <%--<li><a href="#">LogOn</a></li>--%>
-        <%--</ul>--%>
-      <%--</nav>--%>
-      <%--&lt;%&ndash;<a class="garage" href="#"><img src="images/garage.png" width="32" height="26"></a>&ndash;%&gt;--%>
-      <%--<a class="garage" href="#"><span class="icon-home"></span></a>--%>
-    <%--</div>--%>
-  <%--</header>--%>
+
   <div class="video-container">
     <video  class="videos" autoplay poster="images/garage.png">
       <source src="video/BMW M6 - 'Gran Coupe' - Vossen VFS-2.mp4">
@@ -129,14 +113,7 @@
     <a href="#"><span class="icon-facebook2"></span></a>
   </div>
 
-  <%@include file="footer/footer.jsp"%>
-  <%--<footer id="footer">--%>
-    <%--&copy; 2017, Warm Star--%>
-    <%--<br/>--%>
-    <%--Все торговые марки, которые появляются на данном сайте,--%>
-    <%--являются собственностью их владельцев. Все права защищены.--%>
-    <%--<br>--%>
-    <%--<a href="#">Политика конфиденциальности</a> <a href="#">Использование cookies</a> <a href="#">Продажа и возврат</a> <a href="#">Карта сайта</a>--%>
-  <%--</footer>--%>
+  <%--<%@include file="footer/footer.jsp"%>--%>
+  <jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>
   </body>
 </html>

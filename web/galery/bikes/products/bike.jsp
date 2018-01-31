@@ -15,17 +15,19 @@
     <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
 </head>
 <body>
-    <div>r${bike.model}</div>
-    <div>r${bike.smodel}</div>
-    <div>r${bike.color}</div>
-    <div>r${bike.price}</div>
-    <div>r${bike.type}</div>
-    <div>r${bike.quantity}</div>
-    <div>r${bike.path1}</div>
-    <div>r${bike.path2}</div>
-    <div>r${bike.path3}</div>
+    <div>${bike.model}</div>
+    <div>${bike.smodel}</div>
+    <div>${bike.color}</div>
+    <div>${bike.price}</div>
+    <div>${bike.type}</div>
+    <div>${bike.quantity}</div>
+    <div>${bike.path1}</div>
+    <div>${bike.path2}</div>
+    <div>${bike.path3}</div>
 
+    <a href="${pageContext.request.contextPath}/buy?id=${bike.id}&model=${bike.model}&smodel=${bike.smodel}&type=bike">Купить</a>
 
 <%@include file="../../../footer/footer.jsp"%>
+<%--<jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp" flush="">--%>
 </body>
 </html>

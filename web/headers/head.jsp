@@ -16,7 +16,7 @@
 <header>
     <div id="nav-curtain"></div>
     <div class="nav-content">
-        <a class="logo" href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/images/star-electronics-120x120.png"></a>
+        <a class="logo" href="${pageContext.request.contextPath}/warmStar"><img src="${pageContext.request.contextPath}/images/star-electronics-120x120.png"></a>
         <nav id="nav">
             <ul>
                 <li><a href="#">Автор</a></li>

@@ -8,6 +8,7 @@ public interface interfaceDAOCar {
     void insert(Car car);
     ArrayList<Car> getAll();
     void update(Car car);
+    void updateQ(int id, int q);
     void deleteById(int id);
     void deleteAll();
     int getIDCar(String model, String smodel);

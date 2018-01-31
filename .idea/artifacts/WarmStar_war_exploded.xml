@@ -11,6 +11,9 @@
           <element id="library" level="project" name="mysql:mysql-connector-java:8.0.8-dmr" />
           <element id="library" level="project" name="apidocs" />
           <element id="library" level="project" name="javax.servlet:jstl:1.2" />
+          <element id="file-copy" path="E:/java/java mail/mail-1.4.5.jar" />
+          <element id="file-copy" path="E:/java/java mail/smtp-1.4.5.jar/smtp-1.4.5.jar" />
+          <element id="file-copy" path="E:/java/java mail/activation-1.1.jar/activation-1.1.jar" />
         </element>
       </element>
     </root>

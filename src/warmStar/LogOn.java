@@ -33,8 +33,8 @@ public class LogOn extends HttpServlet {
             if (login != null && password != null) {
                 if (c.validationUser(login, password)) {
                     HttpSession session = request.getSession(true);
-                    session.setAttribute("login", login);
-                    session.setAttribute("password", password);
+//                    session.setAttribute("login", login);
+//                    session.setAttribute("password", password);
                     System.out.println(session.getId());
                     if (session.getAttribute("user") == null) {
                         int id = c.getIdUser(login);

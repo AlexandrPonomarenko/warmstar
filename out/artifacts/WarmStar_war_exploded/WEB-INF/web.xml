@@ -26,6 +26,7 @@
     <filter-mapping>
         <filter-name>FilterCheckLogOn</filter-name>
         <url-pattern>/yourOffice</url-pattern>
+        <url-pattern>/buy</url-pattern>
     </filter-mapping>
 
     <resource-ref>
@@ -105,6 +106,24 @@
     <servlet-mapping>
         <servlet-name>SBike</servlet-name>
         <url-pattern>/galery/bikes/products/bike</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SCar</servlet-name>
+        <servlet-class>warmStar.SCar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SCar</servlet-name>
+        <url-pattern>/galery/bikes/products/car</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BuyProduct</servlet-name>
+        <servlet-class>warmStar.BuyProduct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BuyProduct</servlet-name>
+        <url-pattern>/buy</url-pattern>
     </servlet-mapping>
 
     <servlet>

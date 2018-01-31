@@ -16,7 +16,7 @@
     <link type="text/css" rel="stylesheet" href="css/fonts.css"/>
 </head>
 <body>
-    <jsp:include page="headers/head.jsp"/>
+    <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
 
     <h1>WELCOME </h1>
     <c:forEach items="${requestScope.user}" var="emp">
@@ -30,6 +30,6 @@
         <td><c:out value="${emp.password}"></c:out></td>
         <td><c:out value="${emp.passwordTwo}"></c:out></td></tr>
     </c:forEach>
-    <jsp:include page="footer/footer.html"/>
+    <jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>
 </body>
 </html>
