@@ -25,7 +25,7 @@ public class WarmStar extends HttpServlet {
             System.out.println("dsdsdsdsdsdsdsdsdsdsdsssdsdsdsdsdsds");
         }
 
-        System.out.println("111 " + request.getContextPath() + " dddddd " + request.getRequestURI() + "rrr " + request.getServletPath());
+        System.out.println("111 " + request.getContextPath() + " dddddd " + request.getRequestURI() + " rrr " + request.getServletPath());
         System.out.println("TYTYTYYTY");
         processCar(request, response);
         processBike(request, response);

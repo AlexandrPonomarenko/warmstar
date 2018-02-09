@@ -12,13 +12,22 @@
 <%@ page session="true" %>
 <html>
 <head>
+    <meta content="text/html;charset=UTF-8">
     <title>Office</title>
     <link type="text/css" rel="stylesheet" href="css/fonts.css"/>
+    <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
 </head>
 <body>
-    <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
 
-    <h1>WELCOME </h1>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+
+    <h1>Добро пожаловать ${sessionScope.user.firstName} в личный кабинет </h1>
+
+    <p><a href="${pageContext.request.contextPath}/youroffice/basket">Корзина</a> ${sessionScope.productBasket.length}</p>
+    <p><a href="${pageContext.request.contextPath}/">Помощь</a></p>
     <c:forEach items="${requestScope.user}" var="emp">
         <tr><td><c:out value="${emp.id}"></c:out></td>
             <td><c:out value="${emp.nickName}"></c:out></td>

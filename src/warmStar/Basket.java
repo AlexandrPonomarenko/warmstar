@@ -81,7 +81,7 @@ public class Basket {
     public String toString() {
         return "Basket{" +
                 "id=" + id +
-                ", idUser=" + idUser + ", idProduct=" + ", typeProduct=" + typeProduct +
+                ", idUser=" + idUser + ", idProduct=" + idProduct +", typeProduct=" + typeProduct +
                 ", model=" + model + ", smodel=" + smodel + "}";
     }
 }

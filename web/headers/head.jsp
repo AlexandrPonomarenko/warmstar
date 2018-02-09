@@ -23,6 +23,7 @@
                 <li><a href="#">О Нас</a></li>
                 <li><a href="#">Наши партеры</a></li>
                 <li><a href="#">Галерея</a></li>
+                <li><a href="${pageContext.request.contextPath}/help">Помощь</a></li>
                 <%--<li><a href="">Выход</a></li>--%>
                 <%--<li><a href="${pageContext.request.contextPath}/logIn">Регистрация</a></li>--%>
                 <%--<li><a href="${pageContext.request.contextPath}/logOn">Вход</a></li>--%>

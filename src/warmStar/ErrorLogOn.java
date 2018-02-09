@@ -21,7 +21,7 @@ public class ErrorLogOn {
 
     public void checkPassword(String password){
         if((password != null) && password.isEmpty()){
-            error.put("FName", "Please enter a valid first name");
+            error.put("password", "Please enter a valid password");
             validate = false;
         }
     }

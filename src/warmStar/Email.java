@@ -49,8 +49,10 @@ public class Email {
     private void setType(String type){
         if(type.equals("car")){
             this.type = "Поздравляем Вы приобрели автомобиль";
-        }else{
+        }else if (type.equals("bike")){
             this.type = "Поздравляем Вы приобрели велосипед";
+        }else if(type.equals("all")){
+            this.type = "Поздравляем Вы приобрели технику";
         }
     }
 

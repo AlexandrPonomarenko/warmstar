@@ -19,6 +19,7 @@ public class LogOn extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ServletContext servletContext = getServletContext();
         ControllerMySQL c = (ControllerMySQL) servletContext.getAttribute("controllerUser");
+        Product productBasket = new Product();
         ErrorLogOn errorLogOn = new ErrorLogOn();
 //        String login = request.getParameter("login");
 //        String password = request.getParameter("password");
@@ -33,21 +34,28 @@ public class LogOn extends HttpServlet {
             if (login != null && password != null) {
                 if (c.validationUser(login, password)) {
                     HttpSession session = request.getSession(true);
+//                    session.setAttribute("productBasket", productBasket);
 //                    session.setAttribute("login", login);
 //                    session.setAttribute("password", password);
                     System.out.println(session.getId());
                     if (session.getAttribute("user") == null) {
+                        System.out.println("User was by null");
                         int id = c.getIdUser(login);
                         System.out.println("ID " + id);
                         if (id > 0) {
                             session.setAttribute("user", c.getById(id));
+                            getProductBasket(request,productBasket, id);
+                            session.setAttribute("productBasket", productBasket);
+                            System.out.println(productBasket.getLength());
+                            productBasket.products();
+                            System.out.println("Create user and product and put to session");
                         }
                     }
                     response.sendRedirect(request.getContextPath() + "/yourOffice");
-                    System.out.println("if");
+                    System.out.println("Work in LogOn SEND REDIRECT");
                 } else {
                     request.getRequestDispatcher("/LogOn.jsp").forward(request, response);
-                    System.out.println("ELSE");
+                    System.out.println("request Dispatcher in the LogOn");
                 }
                 System.out.println(login + password);
             }
@@ -55,6 +63,7 @@ public class LogOn extends HttpServlet {
         }else{
             request.setAttribute("error", errorLogOn.getMapError());
             request.getRequestDispatcher("/LogOn.jsp").forward(request,response);
+            System.out.println("Work error in LogOn");
         }
     }
 
@@ -62,5 +71,12 @@ public class LogOn extends HttpServlet {
         System.out.println("Pered-LogOn");
         request.getRequestDispatcher("LogOn.jsp").forward(request,response);
         System.out.println("WORK-LogOn");
+    }
+
+    private void getProductBasket(HttpServletRequest request, Product product, int userID){
+        ServletContext servletContext = request.getServletContext();
+        ControllerBasket basket = (ControllerBasket)servletContext.getAttribute("controllerBasket");
+        product.addAllProduct(basket.getAllIDUser(userID));
+        System.out.println("Otrabotal getProductBasket ");
     }
 }

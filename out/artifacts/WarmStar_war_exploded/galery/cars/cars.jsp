@@ -11,10 +11,16 @@
 <head>
     <meta content="text/html;charset=UTF-8">
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/gallery.css"/>
-    <title>Title</title>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/jsLibrary/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/ajaxQjueryCar.js"></script>
+    <title>Gallery Cars</title>
     <jsp:include page="../../headers/head.jsp"/>
 </head>
 <body>
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p>4</p>
 <div class="gallery_bikes">
     <c:forEach items="${requestScope.allcars}" var="car">
         <figure>
@@ -24,8 +30,19 @@
             <figcation>
                 <p>${car.model} ${car.smodel}</p>
                 <p>${car.price}</p>
+                <p>${car.color}</p>
             </figcation>
+            <span id="${car.id}"></span>
         </figure>
+
+        <form product="${car.id}">
+            <input type="hidden" name="model" value="${car.model}"/>
+            <input type="hidden" name="smodel" value="${car.smodel}"/>
+            <input type="hidden" name="idproduct" value="${car.id}"/>
+            <input type="hidden" name="cost" value="${car.price}"/>
+            <input type="hidden" name="type" value="car"/>
+        </form>
+        <button product="${car.id}" type="button" class="btn_add">Добавить в корзину</button>
     </c:forEach>
 </div>
 <%@include file="../../footer/footer.jsp"%>

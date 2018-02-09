@@ -17,7 +17,7 @@ public class ControllerBasket implements interfaceDAOBascet {
     public Basket getById(int id) {
         Basket basket = new Basket();
         try(Connection c =  ConnectionPool.getInstance().getConnection();
-            PreparedStatement ps = c.prepareStatement("SELECT iduser FROM basket WHERE id=? ")){
+            PreparedStatement ps = c.prepareStatement("SELECT * FROM basket WHERE idproduct=?")){
             ps.setInt(1,id);
             ResultSet resultSet = ps.executeQuery();
             while (resultSet.next()) {
@@ -46,10 +46,11 @@ public class ControllerBasket implements interfaceDAOBascet {
             ps.setInt(2,basket.getIdProduct());
             ps.setString(3,basket.getTypeProduct());
             ps.setString(4,basket.getModel());
-            ps.setString(4,basket.getSmodel());
-            ps.setInt(4,basket.getCost());
+            ps.setString(5,basket.getSmodel());
+            ps.setInt(6,basket.getCost());
             ps.executeUpdate();
             ps.close();
+            System.out.println(getClass().getName() + "insert work");
         }catch (SQLException ex){
             ex.printStackTrace();
         }
@@ -59,7 +60,7 @@ public class ControllerBasket implements interfaceDAOBascet {
     public ArrayList<Basket> getAllIDUser(int id) {
         ArrayList<Basket> basketIdUser = new ArrayList<>();
         try(Connection c =  ConnectionPool.getInstance().getConnection();
-            PreparedStatement ps = c.prepareStatement("SELECT iduser FROM basket")){
+            PreparedStatement ps = c.prepareStatement("SELECT * FROM basket WHERE iduser=" + "'" + id + "'")){
             ResultSet r = ps.executeQuery();
             while (r.next()){
                 Basket basket = new Basket();
@@ -101,6 +102,7 @@ public class ControllerBasket implements interfaceDAOBascet {
         }catch (SQLException s){
             s.printStackTrace();
         }
+        System.out.println("access");
     }
     private void closeRs(ResultSet resultSet){
         try {
