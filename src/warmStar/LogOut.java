@@ -19,13 +19,14 @@ public class LogOut extends HttpServlet {
         if(session != null && session.getAttribute("user") !=null){
             System.out.println( "before " + session.getId());
             session.removeAttribute("user");
+            session.removeAttribute("productBasket");
             session.invalidate();
-            System.out.println( " After " + session.getId() + " 44444 " + session.getAttribute("user"));
-            if(session.getAttribute("user") != null){
-                System.out.println("HELLLLLLLLLOOOOOOOOOOOOOOOOOO");
-            }else if(session.getAttribute("user") == null){
-                System.out.println("NULLLLLLLLLLLLLLLLLLLLLL");
-            }
+//            System.out.println( " After " + session.getId() + " 44444 " + session.getAttribute("user"));
+//            if(session.getAttribute("user") != null){
+//                System.out.println("HELLLLLLLLLOOOOOOOOOOOOOOOOOO");
+//            }else if(session.getAttribute("user") == null){
+//                System.out.println("NULLLLLLLLLLLLLLLLLLLLLL");
+//            }
             response.sendRedirect(request.getContextPath() + "/warmStar");
         }
     }

@@ -10,60 +10,58 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
+    <meta content="text/html;charset=UTF-8">
     <title>LogIn</title>
+    <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/validateJS.js"></script>
 
 </head>
 <body>
 
-    <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
-
     <div class="text-article">
         <form method="POST" action="logIn">
             <p>
-                <label for="login">Логин</label>
+                <label for="login" class="Login">Логин*</label>
                 <input type="text" name="login" id="login"/>
                 <c:out value = "${requestScope.error['login']}"/>
-                <%--Key: <c:out value="${entry.key}"/>--%>
-                <%--Value: <c:out value="${entry.value}"/>--%>
-                <%--</c:forEach>--%>
             <p>
-                <label for="email">E-Mail</label>
+                <label for="email" class="Email">E-Mail*</label>
                 <input type="email" name="email" id="email"/>
                 <c:out value = "${requestScope.error['email']}"/>
             </p>
             <p>
-                <label for="FName">First name</label>
-                <input type="text" name="FName" id="FName"/>
+                <label for="FName" class="FName">First name*</label>
+                <input type="text" name="FName" id="fName"/>
                 <c:out value = "${requestScope.error['FName']}"/>
             </p>
             <p>
-                <label for="LName">Last name</label>
-                <input type="text" name="LName" id="LName"/>
+                <label for="LName" class="LName">Last name*</label>
+                <input type="text" name="LName" id="lName"/>
                 <c:out value = "${requestScope.error['LName']}"/>
             </p>
 
             <p>
-                <label for="PNumber">phone number</label>
-                <input type="text" name="PNumber" id="PNumber"/>
+                <label for="PNumber" class="PNumber">Phone number*</label>
+                <input type="text" name="PNumber" id="pNumber"/>
                 <c:out value = "${requestScope.error['PNumber']}"/>
             </p>
             <p>
-                <label for="age">Age</label>
+                <label for="age" class="Age">Age*</label>
                 <input type="text" name="age" id="age"/>
                 <c:out value = "${requestScope.error['age']}"/>
             </p>
 
             <p>
-                <label for="password">Пароль</label>
+                <label for="password" class="Password">Пароль*</label>
                 <input type="password" name="password" id="password"/>
                 <c:out value = "${requestScope.error['password']}"/>
 
-                <label for="password2">Повторите пароль</label>
+                <label for="password2" class="Password2">Повторите пароль*</label>
                 <input type="password" name="password2" id="password2"/>
                 <c:out value = "${requestScope.error['password2']}"/>
             </p>
             <p>
-                <button type="submit">Зарегистрироваться</button>
+                <button type="submit" onclick="validateForm(this)">Зарегистрироваться</button>
             </p>
         </form>
     </div>

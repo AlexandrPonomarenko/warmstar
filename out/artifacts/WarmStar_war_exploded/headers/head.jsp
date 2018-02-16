@@ -19,20 +19,20 @@
         <a class="logo" href="${pageContext.request.contextPath}/warmStar"><img src="${pageContext.request.contextPath}/images/star-electronics-120x120.png"></a>
         <nav id="nav">
             <ul>
-                <li><a href="#">Автор</a></li>
-                <li><a href="#">О Нас</a></li>
-                <li><a href="#">Наши партеры</a></li>
-                <li><a href="#">Галерея</a></li>
-                <li><a href="${pageContext.request.contextPath}/help">Помощь</a></li>
+                <li><a href="${pageContext.request.contextPath}/author.jsp">Author</a></li>
+                <li><a href="${pageContext.request.contextPath}/about.jsp">About</a></li>
+                <li><a href="${pageContext.request.contextPath}/partners.jsp">Partners</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="${pageContext.request.contextPath}/help">Help</a></li>
                 <%--<li><a href="">Выход</a></li>--%>
                 <%--<li><a href="${pageContext.request.contextPath}/logIn">Регистрация</a></li>--%>
                 <%--<li><a href="${pageContext.request.contextPath}/logOn">Вход</a></li>--%>
                 <c:if test="${sessionScope.user == null}">
-                    <li><a href="${pageContext.request.contextPath}/logIn">Регистрация</a></li>
-                    <li><a href="${pageContext.request.contextPath}/logOn">Вход</a></li>
+                    <li><a href="${pageContext.request.contextPath}/logIn">Log in</a></li>
+                    <li><a href="${pageContext.request.contextPath}/logOn">Log on</a></li>
                 </c:if>
                 <c:if test="${sessionScope.user != null}">
-                    <li><a href="${pageContext.request.contextPath}/logOut">Выход</a></li>
+                    <li><a href="${pageContext.request.contextPath}/logOut">Log out</a></li>
                 </c:if>
             </ul>
         </nav>

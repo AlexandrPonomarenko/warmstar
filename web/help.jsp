@@ -12,18 +12,29 @@
     <meta content="text/html;charset=UTF-8">
     <title>Help</title>
     <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/validateFildHelp.js"></script>
 </head>
 <body>
+
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+
     <div><p>Усли у Вас появились вопросы, пишите нам на почту, обратитесь на горячую линию</p></div>
-    <form method="post" action="">
+    <form method="post" action="help">
         <label for="name">Выше имя</label>
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name" value="${user.nickName}">
+        <c:out value="${requestScope.errorHelp['name']}"></c:out>
 
         <label for="email">Ваша электронная почта</label>
-        <input type="text" name="email" id="email">
+        <input type="email" name="email" id="email" value="${user.email}">
+        <c:out value="${requestScope.errorHelp['email']}"></c:out>
 
         <p><textarea name="texthelp" id="textarea" cols="140" rows="10"></textarea></p>
-        <input type="submit" value="Отправить">
+        <c:out value="${requestScope.errorHelp['texthelp']}"></c:out>
+        <input type="submit" onclick="return validateFormHelp(this.form)" value="Отправить">
+        <c:out value="${requestScope.ok}"></c:out>
     </form>
     <div></div>
     <div></div>

@@ -20,7 +20,7 @@ public class Order extends HttpServlet {
             User user = (User)session.getAttribute("user");
             Product p = (Product)session.getAttribute("productBasket");
             controllerBasket.deleteAllIDUser(user.getId());
-            email = new Email(user.getFirstName(), "Myai_Tai@ukr.net", session.getAttribute("city").toString(), session.getAttribute("address").toString(),
+            email = new Email(user.getFirstName(), user.getEmail(), session.getAttribute("city").toString(), session.getAttribute("address").toString(),
                     p.getAllCost(),"all");
             email.sendEmail();
             p.deleteAllProduct();

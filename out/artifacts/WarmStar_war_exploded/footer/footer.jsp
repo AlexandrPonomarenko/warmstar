@@ -25,35 +25,35 @@
 <footer>
     <div class="top">
         <div class="left">
-            <span>Created:</span>
+            <span>Created: Alexandr Ponomarenko</span>
             <ul>
-                <li><a href="#">test1</a></li>
-                <li><a href="#">test2</a></li>
-                <li><a href="#">test3</a></li>
-                <li><a href="#">test4</a></li>
+                <li><a href="https://www.instagram.com/ponomarenko__alexandr/">instagram</a></li>
+                <li><a href="https://www.facebook.com/">facebook</a></li>
+                <li><a href="https://t.me/light_in_dakr">telegram</a></li>
+                <li><a href="${pageContext.request.contextPath}/author.jsp">Author</a></li>
                 <li><a href="#">test5</a></li>
             </ul>
         </div>
         <div class="right">
             <ul>
                 <li><a href="#">test1test1</a></li>
-                <li><a href="#">test2test1</a></li>
-                <li><a href="#">test3test1</a></li>
-                <li><a href="#">test4test1</a></li>
-                <li><a href="#">test5test1</a></li>
+                <li><a href="${pageContext.request.contextPath}/legal.jsp">Условия использования</a></li>
+                <li><a href="${pageContext.request.contextPath}/privacy.jsp">test3test1</a></li>
+                <li><a href="${pageContext.request.contextPath}/help">Help</a></li>
+                <li><p>Горячая линия: +380996243100</p></li>
             </ul>
         </div>
     </div>
     <div class="bottom">
         <div class="top">
-            О возможных способах покупки узнайте по телефону 8‑800‑333‑51‑73 или найдите реселлера.
+            Связь по телефону с автором по телефону 8‑099‑634‑31‑00.
         </div>
         <div class="bottom">
             <div class="rights">
-                © Apple Inc., 2018 г. Все права защищены.
+                © WarmStar Inc., 2018 г. Все права защищены.
             </div>
             <div class="links">
-                <a href="#">link</a>
+                <a href="${pageContext.request.contextPath}/sitemap.jsp">Site map</a>
                 <a href="#">link</a>
                 <a href="#">link</a>
                 <a href="#">link</a>

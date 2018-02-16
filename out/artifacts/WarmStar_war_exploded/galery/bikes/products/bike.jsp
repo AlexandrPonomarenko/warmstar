@@ -21,9 +21,9 @@
     <div>${bike.price}</div>
     <div>${bike.type}</div>
     <div>${bike.quantity}</div>
-    <div>${bike.path1}</div>
-    <div>${bike.path2}</div>
-    <div>${bike.path3}</div>
+    <div><img src="${pageContext.request.contextPath}/${bike.path1}"></div>
+    <div><img src="${pageContext.request.contextPath}/${bike.path2}"></div>
+    <div><img src="${pageContext.request.contextPath}/${bike.path3}"></div>
 
     <a href="${pageContext.request.contextPath}/buy?id=${bike.id}&model=${bike.model}&smodel=${bike.smodel}&type=bike">Купить</a>
 

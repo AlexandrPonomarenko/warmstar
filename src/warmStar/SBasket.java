@@ -1,5 +1,6 @@
 package warmStar;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -7,21 +8,39 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 @WebServlet(name = "SBasket", urlPatterns = "/youroffice/basket")
 public class SBasket extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        HttpSession session;
         ErrorOrder errorOrder;
+        PrintWriter out;
+        ServletContext servletContext;
+        ControllerBasket controllerBasket;
+//        ControllerBasket controllerBasket = (ControllerBasket)servletContext.getAttribute("controllerBasket");
         System.out.println("/youroffice/basket " + "dsdsdsdsdsdsdsdsdsd");
-        if(request.getParameter("model") != null && request.getParameter("model") != null && request.getParameter("model") != null){
-            System.out.println(request.getParameter("model") + " " +request.getParameter("model") + " ---- " +  request.getParameter("model"));
+        if(request.getParameter("model") != null && request.getParameter("smodel") != null && request.getParameter("iduser") != null){
+            System.out.println(request.getParameter("model") + " --- " +request.getParameter("smodel") + " ---- " +  request.getParameter("iduser"));
+            session = request.getSession(false);
+            servletContext = request.getServletContext();
+            controllerBasket = (ControllerBasket)servletContext.getAttribute("controllerBasket");
+            controllerBasket.deleteByIdUser(Integer.parseInt(request.getParameter("iduser")), request.getParameter("model"), request.getParameter("smodel"));
+            Product product = (Product)session.getAttribute("productBasket");
+            product.deleteProduct(request.getParameter("model"), request.getParameter("smodel"));
+            session.setAttribute("productBasket",product);
+
+//            response.setContentType("text/plant");
+//            response.setCharacterEncoding("UTF-8");
+//            out = response.getWriter();
+//            out.print();
         }else {
             System.out.println("tytytytyt");
             errorOrder = new ErrorOrder();
-            errorOrder.checkFild(request.getParameter("city"));
-            errorOrder.checkFild(request.getParameter("address"));
+            errorOrder.checkFild(request.getParameter("city"), "city");
+            errorOrder.checkFild(request.getParameter("address"), "address");
             if(errorOrder.getValidate()) {
-                HttpSession session = request.getSession(false);
+                session = request.getSession(false);
                 System.out.println(request.getParameter("city") + "  -- " + request.getParameter("address"));
                 session.setAttribute("city", request.getParameter("city"));
                 session.setAttribute("address", request.getParameter("address"));
@@ -31,7 +50,9 @@ public class SBasket extends HttpServlet {
 //                }
                 response.sendRedirect(request.getContextPath() + "/youroffice/order");
             }
-
+                System.out.println("BILL TYT");
+                request.setAttribute("errorOrder", errorOrder.getMapError());
+                request.getRequestDispatcher(request.getContextPath() + "/youroffice/basket.jsp").forward(request,response);
         }
     }
 

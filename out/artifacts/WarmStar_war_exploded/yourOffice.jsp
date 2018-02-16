@@ -27,7 +27,7 @@
     <h1>Добро пожаловать ${sessionScope.user.firstName} в личный кабинет </h1>
 
     <p><a href="${pageContext.request.contextPath}/youroffice/basket">Корзина</a> ${sessionScope.productBasket.length}</p>
-    <p><a href="${pageContext.request.contextPath}/">Помощь</a></p>
+    <p><a href="${pageContext.request.contextPath}/help">Помощь</a></p>
     <c:forEach items="${requestScope.user}" var="emp">
         <tr><td><c:out value="${emp.id}"></c:out></td>
             <td><c:out value="${emp.nickName}"></c:out></td>

@@ -90,7 +90,7 @@
       <img src="${car.path1}">
       <figcation>
         <p>${car.model} ${car.smodel}</p>
-        <a href="#">Подробнее >></a>
+        <a href="${pageContext.request.contextPath}/galery/bikes/products/car?id=${car.id}&model=${car.model}&smodel=${car.smodel}">Подробнее >></a>
       </figcation>
     </figure>
   </c:forEach>
@@ -102,7 +102,7 @@
         <img src="${bike.path1}">
         <figcation>
           <p>${bike.model} ${bike.smodel}</p>
-          <a href="#">Подробнее >></a>
+          <a href="${pageContext.request.contextPath}/galery/bikes/products/bike?id=${bike.id}&model=${bike.model}&smodel=${bike.smodel}">Подробнее >></a>
         </figcation>
       </figure>
     </c:forEach>

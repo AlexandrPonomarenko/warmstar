@@ -10,7 +10,7 @@
 <html>
 <head>
     <meta content="text/html;charset=UTF-8">
-    <title>Title</title>
+    <title>Карта сайта</title>
     <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
 </head>
 <body>
@@ -20,6 +20,7 @@
     <span><a>telegramm</a></span>
     <span><a>cv</a></span>
     <div>
+        <p><a>Автор</a></p>
         <p><a>Главная</a></p>
         <p><a>О нас</a></p>
         <p><a>Помощь</a></p>
@@ -34,7 +35,7 @@
         <p><a>Карта сайта</a></p>
         <p><a>Горячая линия</a></p>
         <p><a>Условия использования</a></p>
-        <p><a>Юридическая информация</a></p>
+        <p><a>Политика конфиденциальности</a></p>
     </div>
     <div></div>
     <div></div>

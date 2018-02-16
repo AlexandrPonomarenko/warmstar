@@ -31,7 +31,7 @@
                 <p><c:out value="${i.typeProduct}"></c:out></p>
                 <p name="model" value="${i.model}"><c:out value="${i.model}"></c:out></p>
                 <p name="smodel" value="${i.smodel}"><c:out value="${i.smodel}"></c:out></p>
-                <p><c:out value="${i.cost}"></c:out></p>
+                <p id="cost_item"><c:out value="${i.cost}"></c:out></p>
                 <p>-----------------------------------------</p>
             </div>
             <button product="${i.id}" type="button" class="btn_delete">Удалить из корзины</button>
@@ -53,11 +53,14 @@
     <p>
         <label for="city">Город</label>
         <input type="text" name="city" id="city">
+        <c:out value="${requestScope.errorOrder['city']}"/>
     </p>
 
     <p>
         <label for="address">Адресс</label>
         <input type="text" name="address" id="address">
+        <c:out value="${requestScope.errorOrder['address']}"/>
+
     </p>
     <%--<input type="hidden" name="buy" value="allBuy"/>--%>
     <p>Общая стоимость: <span id="cost">${cost}</span>$</p>

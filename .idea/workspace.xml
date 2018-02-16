@@ -7,48 +7,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="934605fe-e220-4564-91f5-83ad68284c4b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/Basket.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/Basket.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/BuyProduct.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/BuyProduct.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/ControllerBasket.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/ControllerBasket.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/Email$1.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/Email$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/Email.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/Email.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/GalleryBikes.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/GalleryBikes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/GalleryCars.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/GalleryCars.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/LogOn.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/LogOn.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/WarmStar.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/WarmStar.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/Basket.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/Basket.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/BuyProduct.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/BuyProduct.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/ErrorOrder.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/ErrorOrder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/LogOut.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/LogOut.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/Order.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/Order.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/SBasket.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/SBasket.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/ServHelp.class" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/classes/warmStar/ServHelp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/ControllerBasket.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/ControllerBasket.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/Email$1.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/Email$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/Email.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/Email.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/GalleryBikes.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/GalleryBikes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/GalleryCars.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/GalleryCars.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/LogOn.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/LogOn.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/WarmStar.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/WarmStar.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/5e22a3c7-d428-42c5-bc7a-200de3384d6b.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/5e22a3c7-d428-42c5-bc7a-200de3384d6b.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/ErrorOrder.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/ErrorOrder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/LogOut.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/LogOut.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/Order.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/Order.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/SBasket.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/SBasket.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WarmStar/warmStar/ServHelp.class" afterPath="$PROJECT_DIR$/out/production/WarmStar/warmStar/ServHelp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/css/footerStyle.css" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/css/footerStyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/LogIn.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/LogIn.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/footer/footer.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/footer/footer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/galery/bikes/bikes.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/galery/bikes/bikes.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/galery/cars/cars.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/galery/cars/cars.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/galery/bikes/products/bike.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/galery/bikes/products/bike.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/headers/head.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/headers/head.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/help.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/help.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/js/deleteFromBasket.js" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/js/deleteFromBasket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/sitemap.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/sitemap.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/yourOffice.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/yourOffice.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/Basket.java" afterPath="$PROJECT_DIR$/src/warmStar/Basket.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/youroffice/basket.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WarmStar_war_exploded/youroffice/basket.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/ControllerBasket.java" afterPath="$PROJECT_DIR$/src/warmStar/ControllerBasket.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/Email.java" afterPath="$PROJECT_DIR$/src/warmStar/Email.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/ErrorLogOn.java" afterPath="$PROJECT_DIR$/src/warmStar/ErrorLogOn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/GalleryBikes.java" afterPath="$PROJECT_DIR$/src/warmStar/GalleryBikes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/GalleryCars.java" afterPath="$PROJECT_DIR$/src/warmStar/GalleryCars.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/LogOn.java" afterPath="$PROJECT_DIR$/src/warmStar/LogOn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/Product.java" afterPath="$PROJECT_DIR$/src/warmStar/Product.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/WarmStar.java" afterPath="$PROJECT_DIR$/src/warmStar/WarmStar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/footerStyle.css" afterPath="$PROJECT_DIR$/web/css/footerStyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/ErrorOrder.java" afterPath="$PROJECT_DIR$/src/warmStar/ErrorOrder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/LogOut.java" afterPath="$PROJECT_DIR$/src/warmStar/LogOut.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/Order.java" afterPath="$PROJECT_DIR$/src/warmStar/Order.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/SBasket.java" afterPath="$PROJECT_DIR$/src/warmStar/SBasket.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/warmStar/ServHelp.java" afterPath="$PROJECT_DIR$/src/warmStar/ServHelp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/LogIn.jsp" afterPath="$PROJECT_DIR$/web/LogIn.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/footer/footer.jsp" afterPath="$PROJECT_DIR$/web/footer/footer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/galery/bikes/bikes.jsp" afterPath="$PROJECT_DIR$/web/galery/bikes/bikes.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/galery/cars/cars.jsp" afterPath="$PROJECT_DIR$/web/galery/cars/cars.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/galery/bikes/products/bike.jsp" afterPath="$PROJECT_DIR$/web/galery/bikes/products/bike.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/headers/head.jsp" afterPath="$PROJECT_DIR$/web/headers/head.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/help.jsp" afterPath="$PROJECT_DIR$/web/help.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/deleteFromBasket.js" afterPath="$PROJECT_DIR$/web/js/deleteFromBasket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/sitemap.jsp" afterPath="$PROJECT_DIR$/web/sitemap.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/yourOffice.jsp" afterPath="$PROJECT_DIR$/web/yourOffice.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/youroffice/basket.jsp" afterPath="$PROJECT_DIR$/web/youroffice/basket.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,43 +95,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="deleteFromBasket.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/js/deleteFromBasket.js">
+      <file leaf-file-name="WarmStar.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/warmStar/WarmStar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="272">
+              <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="help.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/help.jsp">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="1887">
+              <caret line="111" column="38" lean-forward="false" selection-start-line="111" selection-start-column="38" selection-end-line="111" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basket.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/youroffice/basket.jsp">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="62" column="34" lean-forward="false" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="38" />
-              <folding>
-                <marker date="1518216084467" expanded="true" signature="1806:1904" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ajaxQuery.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/ajaxQuery.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+            <state relative-caret-position="782">
+              <caret line="46" column="40" lean-forward="false" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -138,31 +128,50 @@
       <file leaf-file-name="head.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/headers/head.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+            <state relative-caret-position="578">
+              <caret line="34" column="92" lean-forward="false" selection-start-line="34" selection-start-column="92" selection-end-line="34" selection-end-column="92" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ErrorOrder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/warmStar/ErrorOrder.java">
+      <file leaf-file-name="ControllerDAOBike.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/warmStar/ControllerDAOBike.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="731">
+              <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="41" />
               <folding>
-                <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#795#796#0" expanded="true" />
+                <marker date="1517411241805" expanded="true" signature="483:512" ph="SELECT * FRO... bike" />
+                <marker date="1517411241805" expanded="true" signature="1746:1835" ph="SELECT id FR... bike" />
+                <marker date="1517411241805" expanded="true" signature="2504:2593" ph="SELECT id FR... bike" />
+                <marker date="1517411241805" expanded="true" signature="3062:3182" ph="INSERT INTO bike... " />
+                <marker date="1517411241805" expanded="true" signature="4007:4025" ph="SELECT * FRO... bike" />
+                <marker date="1517411241805" expanded="true" signature="5139:5254" ph="UPDATE bike " />
+                <marker date="1517411241805" expanded="true" signature="6383:6421" ph="UPDATE bike " />
+                <marker date="1517411241805" expanded="true" signature="6882:6909" ph="DELETE FROM " />
+                <marker date="1517411241805" expanded="true" signature="7255:7273" ph="DELETE * FRO... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajaxQjueryCar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/ajaxQjueryCar.js">
+      <file leaf-file-name="ConnectionPool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/warmStar/ConnectionPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="52" lean-forward="true" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+            <state relative-caret-position="408">
+              <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SBike.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/warmStar/SBike.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -171,21 +180,29 @@
       <file leaf-file-name="bikes.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/galery/bikes/bikes.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="42" column="63" lean-forward="false" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
+            <state relative-caret-position="476">
+              <caret line="28" column="142" lean-forward="false" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="142" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SBasket.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/warmStar/SBasket.java">
+      <file leaf-file-name="bike.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/galery/bikes/products/bike.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="22" column="42" lean-forward="false" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="197">
+              <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BuyProduct.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/warmStar/BuyProduct.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="41" column="56" lean-forward="false" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -218,21 +235,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/warmStar/Bike.java" />
-        <option value="$PROJECT_DIR$/web/css/styleMainPage.css" />
-        <option value="$PROJECT_DIR$/src/warmStar/LogOut.java" />
-        <option value="$PROJECT_DIR$/web/css/gallery.css" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/warmStar/SBike.java" />
-        <option value="$PROJECT_DIR$/src/warmStar/SCar.java" />
-        <option value="$PROJECT_DIR$/web/LogIn.jsp" />
-        <option value="$PROJECT_DIR$/web/galery/bikes/products/bike.jsp" />
-        <option value="$PROJECT_DIR$/web/galery/cars/products/car.jsp" />
-        <option value="$PROJECT_DIR$/src/warmStar/interfaceDAOBike.java" />
-        <option value="$PROJECT_DIR$/src/warmStar/interfaceDAOCar.java" />
-        <option value="$PROJECT_DIR$/src/warmStar/FilterCheckLogOn.java" />
-        <option value="$PROJECT_DIR$/web/LogOn.jsp" />
-        <option value="$PROJECT_DIR$/web/noProduct.html" />
         <option value="$PROJECT_DIR$/web/noProduct.jsp" />
         <option value="$PROJECT_DIR$/src/warmStar/ControllerCar.java" />
         <option value="$PROJECT_DIR$/web/buy.jsp" />
@@ -249,26 +251,41 @@
         <option value="$PROJECT_DIR$/web/galery/bikes/bikes.jsp" />
         <option value="$PROJECT_DIR$/web/galery/cars/cars.jsp" />
         <option value="$PROJECT_DIR$/src/warmStar/Product.java" />
-        <option value="$PROJECT_DIR$/src/warmStar/Email.java" />
-        <option value="$PROJECT_DIR$/src/warmStar/ControllerBasket.java" />
         <option value="$PROJECT_DIR$/web/youroffice/success.jsp" />
         <option value="$PROJECT_DIR$/web/youroffice/order.jsp" />
-        <option value="$PROJECT_DIR$/web/yourOffice.jsp" />
         <option value="$PROJECT_DIR$/src/warmStar/WarmStar.java" />
-        <option value="$PROJECT_DIR$/src/warmStar/Order.java" />
         <option value="$PROJECT_DIR$/src/warmStar/FilterCheckOrder.java" />
-        <option value="$PROJECT_DIR$/web/footer/footer.jsp" />
         <option value="$PROJECT_DIR$/web/css/footerStyle.css" />
-        <option value="$PROJECT_DIR$/web/sitemap.jsp" />
-        <option value="$PROJECT_DIR$/src/warmStar/ErrorOrder.java" />
         <option value="$PROJECT_DIR$/src/warmStar/ErrorLogOn.java" />
-        <option value="$PROJECT_DIR$/src/warmStar/SBasket.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/web/headers/head.jsp" />
-        <option value="$PROJECT_DIR$/src/warmStar/ServHelp.java" />
-        <option value="$PROJECT_DIR$/web/youroffice/basket.jsp" />
-        <option value="$PROJECT_DIR$/web/help.jsp" />
+        <option value="$PROJECT_DIR$/src/warmStar/ControllerBasket.java" />
         <option value="$PROJECT_DIR$/web/js/deleteFromBasket.js" />
+        <option value="$PROJECT_DIR$/src/warmStar/LogOut.java" />
+        <option value="$PROJECT_DIR$/web/yourOffice.jsp" />
+        <option value="$PROJECT_DIR$/web/js/ValidateJS.js" />
+        <option value="$PROJECT_DIR$/web/LogIn.jsp" />
+        <option value="$PROJECT_DIR$/web/js/validateJS.js" />
+        <option value="$PROJECT_DIR$/src/warmStar/Email.java" />
+        <option value="$PROJECT_DIR$/web/js/validateFildHelp.js" />
+        <option value="$PROJECT_DIR$/src/warmStar/FilterCheckFilds.java" />
+        <option value="$PROJECT_DIR$/src/warmStar/Order.java" />
+        <option value="$PROJECT_DIR$/src/warmStar/ErrorOrder.java" />
+        <option value="$PROJECT_DIR$/src/warmStar/SBasket.java" />
+        <option value="$PROJECT_DIR$/web/youroffice/basket.jsp" />
+        <option value="$PROJECT_DIR$/src/warmStar/ErrorHelp.java" />
+        <option value="$PROJECT_DIR$/web/help.jsp" />
+        <option value="$PROJECT_DIR$/src/warmStar/ServHelp.java" />
+        <option value="$PROJECT_DIR$/web/author.jsp" />
+        <option value="$PROJECT_DIR$/web/about.jsp" />
+        <option value="$PROJECT_DIR$/web/partners.jsp" />
+        <option value="$PROJECT_DIR$/web/headers/head.jsp" />
+        <option value="$PROJECT_DIR$/web/legal.jsp" />
+        <option value="$PROJECT_DIR$/web/privacy.jsp" />
+        <option value="$PROJECT_DIR$/web/sitemap.jsp" />
+        <option value="$PROJECT_DIR$/web/footer/footer.jsp" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/warmStar/ConnectionPool.java" />
+        <option value="$PROJECT_DIR$/web/galery/bikes/products/bike.jsp" />
       </list>
     </option>
   </component>
@@ -448,6 +465,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -475,7 +494,13 @@
               <item name="WebSiteWarmStar" type="b2602c69:ProjectViewProjectNode" />
               <item name="WarmStar" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="bike_for_sale_img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebSiteWarmStar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WarmStar" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="footer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebSiteWarmStar" type="b2602c69:ProjectViewProjectNode" />
@@ -494,13 +519,9 @@
               <item name="WebSiteWarmStar" type="b2602c69:ProjectViewProjectNode" />
               <item name="WarmStar" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="headers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebSiteWarmStar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WarmStar" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="galery" type="462c0819:PsiDirectoryNode" />
+              <item name="bikes" type="462c0819:PsiDirectoryNode" />
+              <item name="products" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebSiteWarmStar" type="b2602c69:ProjectViewProjectNode" />
@@ -514,8 +535,6 @@
       </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -526,10 +545,10 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21149425" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
     <property name="last_opened_file_path" value="E:/java/java mail/activation-1.1.jar/activation-1.1.jar!/" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -802,11 +821,18 @@
       <workItem from="1517910444604" duration="24392000" />
       <workItem from="1517993922193" duration="24431000" />
       <workItem from="1518171418722" duration="24341000" />
+      <workItem from="1518429973504" duration="11262000" />
+      <workItem from="1518509794744" duration="17656000" />
+      <workItem from="1518606304778" duration="12494000" />
+      <workItem from="1518691600532" duration="2103000" />
+      <workItem from="1518709257475" duration="7628000" />
+      <workItem from="1518774828090" duration="3131000" />
+      <workItem from="1518788252427" duration="980000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="584477000" />
+    <option name="totallyTimeSpent" value="639731000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -819,10 +845,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -835,8 +861,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20726173" sideWeight="0.5891089" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20726173" sideWeight="0.4108911" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22541603" sideWeight="0.548718" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22541603" sideWeight="0.45128205" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.48979592" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -848,6 +874,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -861,7 +888,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -870,342 +897,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/noProduct.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="58" lean-forward="false" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/interfaceDAOBike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="14" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/ControllerCar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="164" column="13" lean-forward="true" selection-start-line="164" selection-start-column="13" selection-end-line="164" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/ControllerDAOBike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="154" column="94" lean-forward="false" selection-start-line="154" selection-start-column="94" selection-end-line="154" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/LogInTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="60" column="17" lean-forward="false" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsLibrary/jquery-3.3.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102080">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/ControllerMySQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="98" column="26" lean-forward="true" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
-          <folding>
-            <marker date="1515864080920" expanded="true" signature="943:972" ph="SELECT * FRO... user" />
-            <marker date="1515864080920" expanded="true" signature="2090:2151" ph="SELECT nickn... user" />
-            <marker date="1515864080920" expanded="true" signature="2667:2778" ph="SELECT nickn... user" />
-            <marker date="1515864080920" expanded="true" signature="3286:3340" ph="SELECT id FR... user" />
-            <marker date="1515864080920" expanded="true" signature="4011:4141" ph="INSERT INTO user... " />
-            <marker date="1515864080920" expanded="true" signature="4974:4992" ph="SELECT * FRO... user" />
-            <marker date="1515864080920" expanded="true" signature="6055:6181" ph="UPDATE user " />
-            <marker date="1515864080920" expanded="true" signature="7209:7236" ph="DELETE FROM " />
-            <marker date="1515864080920" expanded="true" signature="7582:7600" ph="DELETE * FRO... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/gallery.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/GalleryCars.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="17" column="45" lean-forward="true" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/YourOfficeS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="25" column="81" lean-forward="false" selection-start-line="25" selection-start-column="81" selection-end-line="25" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/galery/bikes/products/bike.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="27" column="116" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="129" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/Bike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="123" column="4" lean-forward="false" selection-start-line="123" selection-start-column="4" selection-end-line="130" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/buy.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/ListenerWarmStar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="30" column="53" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/BuyProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="73" column="40" lean-forward="false" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="24" />
-          <folding>
-            <element signature="e#814#815#0" expanded="false" />
-            <element signature="e#858#859#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/Email.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="54" column="57" lean-forward="false" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/youroffice/success.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/yourOffice.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/FilterCheckLogOn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/WarmStar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="138" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="138" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="116" column="54" lean-forward="false" selection-start-line="116" selection-start-column="54" selection-end-line="116" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="29" column="76" lean-forward="false" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/youroffice/order.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="68" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/interfaceDAOBascet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="59" lean-forward="false" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/footerStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/Basket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding>
-            <element signature="e#977#978#0" expanded="false" />
-            <element signature="e#1009#1010#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/SBike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/SCar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/GalleryBikes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="20" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/ControllerBasket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="104" column="37" lean-forward="false" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="37" />
-          <folding>
-            <marker date="1518011521418" expanded="true" signature="488:526" ph="SELECT iduse... basket" />
-            <marker date="1518011521418" expanded="true" signature="1462:1554" ph="INSERT INTO basket... " />
-            <marker date="1518011521418" expanded="true" signature="2308:2322" ph="SELECT * FRO... car" />
-            <marker date="1518011521418" expanded="true" signature="2308:2328" ph="SELECT iduse... basket" />
-            <marker date="1518011521418" expanded="true" signature="2308:2342" ph="SELECT * FRO... basket" />
-            <marker date="1518011521418" expanded="true" signature="2308:2359" ph="SELECT * FRO... basket" />
-            <marker date="1518011521418" expanded="true" signature="3282:3314" ph="DELETE FROM " />
-            <marker date="1518011521418" expanded="true" signature="3282:3320" ph="DELETE FROM " />
-            <marker date="1518011521418" expanded="true" signature="3282:3331" ph="DELETE FROM " />
-            <marker date="1518011521418" expanded="true" signature="3282:3346" ph="DELETE FROM " />
-            <marker date="1518011521418" expanded="true" signature="3282:3352" ph="DELETE FROM " />
-            <marker date="1518011521418" expanded="true" signature="3282:3366" ph="DELETE FROM " />
-            <marker date="1518011521418" expanded="true" signature="3282:3382" ph="DELETE FROM " />
-            <marker date="1518011521418" expanded="true" signature="3282:3388" ph="DELETE FROM " />
-            <marker date="1518011521418" expanded="true" signature="3282:3403" ph="DELETE FROM " />
-            <marker date="1518011521418" expanded="true" signature="3761:3794" ph="DELETE FROM " />
-            <marker date="1518011521418" expanded="true" signature="3761:3795" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/galery/cars/cars.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/sitemap.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/footer/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="21" column="109" lean-forward="false" selection-start-line="21" selection-start-column="102" selection-end-line="21" selection-end-column="109" />
-          <folding>
-            <marker date="1518033290930" expanded="false" signature="509:515" ph="©" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/ErrorLogIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/ErrorLogOn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="64" lean-forward="false" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/FilterCheckOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/warmStar/LogOn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1217,36 +912,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/headers/head.jsp">
+    <entry file="file://$PROJECT_DIR$/web/js/ajaxQjueryCar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        <state relative-caret-position="51">
+          <caret line="3" column="52" lean-forward="false" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/ListenerWarmStar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="30" column="53" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/warmStar/GalleryBikes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="179" column="24" lean-forward="true" selection-start-line="179" selection-start-column="24" selection-end-line="179" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="272">
+          <caret line="48" column="50" lean-forward="true" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/ServHelp.java">
+    <entry file="file://$PROJECT_DIR$/src/warmStar/ControllerBasket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="74" lean-forward="false" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/SBasket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="22" column="42" lean-forward="false" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        <state relative-caret-position="1428">
+          <caret line="88" column="38" lean-forward="false" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1518447369848" expanded="true" signature="488:526" ph="SELECT iduse... basket" />
+            <marker date="1518447369848" expanded="true" signature="1462:1554" ph="INSERT INTO basket... " />
+            <marker date="1518447369848" expanded="true" signature="2308:2322" ph="SELECT * FRO... car" />
+            <marker date="1518447369848" expanded="true" signature="2308:2328" ph="SELECT iduse... basket" />
+            <marker date="1518447369848" expanded="true" signature="2308:2342" ph="SELECT * FRO... basket" />
+            <marker date="1518447369848" expanded="true" signature="2308:2359" ph="SELECT * FRO... basket" />
+            <marker date="1518447369848" expanded="true" signature="3282:3314" ph="DELETE FROM " />
+            <marker date="1518447369848" expanded="true" signature="3282:3320" ph="DELETE FROM " />
+            <marker date="1518447369848" expanded="true" signature="3282:3331" ph="DELETE FROM " />
+            <marker date="1518447369848" expanded="true" signature="3282:3346" ph="DELETE FROM " />
+            <marker date="1518447369848" expanded="true" signature="3282:3352" ph="DELETE FROM " />
+            <marker date="1518447369848" expanded="true" signature="3282:3366" ph="DELETE FROM " />
+            <marker date="1518447369848" expanded="true" signature="3282:3382" ph="DELETE FROM " />
+            <marker date="1518447369848" expanded="true" signature="3282:3388" ph="DELETE FROM " />
+            <marker date="1518447369848" expanded="true" signature="3282:3403" ph="DELETE FROM " />
+            <marker date="1518447369848" expanded="true" signature="3840:3873" ph="DELETE FROM " />
+            <marker date="1518447369848" expanded="true" signature="3840:3874" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -1255,59 +964,366 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/yourOffice.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/ajaxQjueryCar.js">
+    <entry file="file://$PROJECT_DIR$/web/js/deleteFromBasket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="39" lean-forward="false" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/Email.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="101" column="18" lean-forward="false" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/LogInTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="87" column="31" lean-forward="false" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/validateJS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/validateFildHelp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/LogOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="25" column="58" lean-forward="false" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="52" lean-forward="true" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/galery/bikes/bikes.jsp">
+    <entry file="file://$PROJECT_DIR$/src/warmStar/FilterCheckFilds.java" />
+    <entry file="file://$PROJECT_DIR$/src/warmStar/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="42" column="63" lean-forward="false" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
+        <state relative-caret-position="204">
+          <caret line="26" column="57" lean-forward="false" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/FilterCheckLogOn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/Basket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="14" column="58" lean-forward="true" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/FilterTrim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="21" column="62" lean-forward="false" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/youroffice/order.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="68" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/YourOfficeS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="25" column="81" lean-forward="false" selection-start-line="25" selection-start-column="81" selection-end-line="25" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/SBasket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="53" column="48" lean-forward="false" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/LogIn.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="29" column="59" lean-forward="true" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/youroffice/basket.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="62" column="34" lean-forward="false" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="38" />
+        <state relative-caret-position="969">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/ErrorOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <marker date="1518216084467" expanded="true" signature="1806:1904" ph="..." />
+            <element signature="e#500#501#0" expanded="false" />
+            <element signature="e#531#532#0" expanded="false" />
+            <element signature="e#582#583#0" expanded="false" />
+            <element signature="e#610#611#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/FilterCheckOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="27" column="49" lean-forward="false" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/ServHelp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Access.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/ErrorHelp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="54" />
+          <folding>
+            <element signature="e#876#877#0" expanded="false" />
+            <element signature="e#907#908#0" expanded="false" />
+            <element signature="e#958#959#0" expanded="false" />
+            <element signature="e#986#987#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/help.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="537">
+          <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="78" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/warmStar/ErrorOrder.java">
+    <entry file="file://$PROJECT_DIR$/web/author.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="493">
+          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/sitemap.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/footer/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/about.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/privacy.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/legal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/partners.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/WarmStar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/galery/cars/cars.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="134" lean-forward="false" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/ControllerDAOBike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="41" />
           <folding>
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#795#796#0" expanded="true" />
+            <marker date="1517411241805" expanded="true" signature="483:512" ph="SELECT * FRO... bike" />
+            <marker date="1517411241805" expanded="true" signature="1746:1835" ph="SELECT id FR... bike" />
+            <marker date="1517411241805" expanded="true" signature="2504:2593" ph="SELECT id FR... bike" />
+            <marker date="1517411241805" expanded="true" signature="3062:3182" ph="INSERT INTO bike... " />
+            <marker date="1517411241805" expanded="true" signature="4007:4025" ph="SELECT * FRO... bike" />
+            <marker date="1517411241805" expanded="true" signature="5139:5254" ph="UPDATE bike " />
+            <marker date="1517411241805" expanded="true" signature="6383:6421" ph="UPDATE bike " />
+            <marker date="1517411241805" expanded="true" signature="6882:6909" ph="DELETE FROM " />
+            <marker date="1517411241805" expanded="true" signature="7255:7273" ph="DELETE * FRO... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/deleteFromBasket.js">
+    <entry file="file://$PROJECT_DIR$/src/warmStar/ConnectionPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="408">
+          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1887">
+          <caret line="111" column="38" lean-forward="false" selection-start-line="111" selection-start-column="38" selection-end-line="111" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="40" lean-forward="false" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/headers/head.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="92" lean-forward="false" selection-start-line="34" selection-start-column="92" selection-end-line="34" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/SBike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/warmStar/BuyProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="41" column="56" lean-forward="false" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/galery/bikes/bikes.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="142" lean-forward="false" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="142" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/galery/bikes/products/bike.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding />
         </state>
       </provider>

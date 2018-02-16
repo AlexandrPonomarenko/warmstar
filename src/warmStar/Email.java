@@ -8,14 +8,15 @@ import java.util.Properties;
 public class Email {
     private String subject;
     private String textMessage;
-    private final String WARMSTAREMAIL = "furriets@gmail.com";
-    private final String WARMSTARPASSWORD = "199223ATDHFKZ";
+    private final String WARMSTAREMAIL = "mainwarmstar@gmail.com";
+    private final String WARMSTARPASSWORD = "warmStar1992";
     private String receiverName;
     private String receiverEmail;
     private String city;
     private String address;
     private int price;
     private String type;
+    private String help;
     private Properties properties;
     private Session session;
     private Message message;
@@ -31,6 +32,15 @@ public class Email {
         setTextMessage();
         setType(this.type);
         setSubject();
+        setProperties();
+    }
+
+    public Email(String receiverName, String receiverEmail, String textMessage, String help){
+        subject = "teamWarmStar";
+        this.help = help;
+        this.receiverName = receiverName;
+        this.receiverEmail = receiverEmail;
+        this.textMessage = textMessage;
         setProperties();
     }
 
@@ -69,30 +79,38 @@ public class Email {
         return properties;
     }
 
-    private Session getSession(){
+    private Session getSession(String email, String password) {
         session = Session.getInstance(getProperties(),new javax.mail.Authenticator(){
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(WARMSTAREMAIL, WARMSTARPASSWORD);
+                return new PasswordAuthentication(email, password);
             }
         });
         return session;
     }
 
     public void sendEmail(){
-        message = new MimeMessage(getSession());
+        message = new MimeMessage(getSession(WARMSTAREMAIL, WARMSTARPASSWORD));
         try {
+            if(help == null) {
                 message.setFrom(new InternetAddress(WARMSTAREMAIL));
                 message.setRecipient(Message.RecipientType.TO, new InternetAddress(receiverEmail));
                 message.setSubject(subject);
                 message.setText(textMessage);
 
                 Transport.send(message);
-            System.out.println("Acces");
+            }else{
+                message.setFrom(new InternetAddress(WARMSTAREMAIL));
+                message.setRecipient(Message.RecipientType.TO, new InternetAddress("furriets@gmail.com"));
+                message.setSubject(subject);
+                message.setText(textMessage + " От " + receiverName + " " + receiverEmail);
+
+                Transport.send(message);
+            }
+            System.out.println("Acces send mail");
         }catch(MessagingException m){
             System.out.println("no send message");
             m.printStackTrace();
         }
     }
-
 }
