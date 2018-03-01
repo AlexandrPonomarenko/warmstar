@@ -8,10 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <meta content="text/html" charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/success.css"/>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/fontAllSite.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <title>Success</title>
 </head>
 <body>
-    <p>Спасибо за покупку ${sessionScope.user.firstName}</p>
-    <p><a href="${pageContext.request.contextPath}/warmStar">На главную</a></p>
+    <p>Thank you for your purchase${sessionScope.user.firstName}</p>
+    <p><a href="${pageContext.request.contextPath}/warmStar">Main page</a></p>
 </body>
 </html>

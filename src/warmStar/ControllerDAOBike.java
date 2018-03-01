@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ControllerDAOBike implements interfaceDAOBike {
-    private String userMySQL = "root";
-    private String passwordMySQL = "root";
+//    private String userMySQL = "root";
+//    private String passwordMySQL = "root";
 
     public  ControllerDAOBike(){
 
@@ -33,6 +33,7 @@ public class ControllerDAOBike implements interfaceDAOBike {
                 bike.setPath1(resultSet.getString(11));
                 System.out.println(bike.toString() + "bike");
             }
+            closeRs(resultSet);
         }catch (SQLException e){
             e.printStackTrace();
         }
@@ -117,6 +118,7 @@ public class ControllerDAOBike implements interfaceDAOBike {
                 bike.setPath1(r.getString("path1"));
                 bikes.add(bike);
             }
+            closeRs(r);
         }catch (SQLException ee){
             ee.printStackTrace();
         }
@@ -178,10 +180,12 @@ public class ControllerDAOBike implements interfaceDAOBike {
     public void deleteAll() {
         try(Connection c =  ConnectionPool.getInstance().getConnection()){
             PreparedStatement ps = c.prepareStatement("DELETE * FROM bike");
-            ResultSet rs = ps.executeQuery();
-            while (rs.next()){
-
-            }
+            ps.executeUpdate();
+//            ResultSet rs = ps.executeQuery();
+//            while (rs.next()){
+//
+//            }
+            ps.close();
         }catch (SQLException s){
             s.printStackTrace();
         }

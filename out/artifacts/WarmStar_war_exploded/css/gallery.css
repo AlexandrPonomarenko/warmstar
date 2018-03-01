@@ -1,14 +1,27 @@
 .gallery_bikes {
     padding-top: 10px;
     display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: column;*/
+    justify-content: space-around;
+    align-items: stretch;
 }
 
 .gallery_bikes figure {
     margin: 0;
-    display: inline-block;
+    display: block;
     vertical-align: top;
     align-items: stretch;
 }
 .gallery_bikes figure img {
     width: 100%;
+}
+.product{
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.s .p {
+    margin: 0px;
 }

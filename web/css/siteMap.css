@@ -1,0 +1,57 @@
+body{
+
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: #FF9000;
+}
+
+h2{
+    text-align: center; | and justify;
+}
+
+.map{
+    margin-top: 15px;
+}
+
+#siteMap {
+    margin-top: 100px;
+    margin-left: 0px;
+    width: 100%;
+    height: 400px;
+}
+#img{
+    width: 100%;
+    height: 400px;
+}
+.conList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.list{
+    height: 500px;
+}
+
+.listTwo{
+    height: 500px;
+}
+
+.listThree{
+    height: 500px;
+}
+
+.inside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mar{
+    padding-top: 15px;
+}

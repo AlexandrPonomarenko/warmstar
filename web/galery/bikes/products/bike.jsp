@@ -10,22 +10,27 @@
 <html>
 <head>
     <meta content="text/html;charset=UTF-8">
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/gallery.css"/>
-    <title>Title</title>
+    <title>Bike</title>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/galleryProduct.css"/>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/fontAllSite.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <%--<title>Bike</title>--%>
     <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
 </head>
 <body>
-    <div>${bike.model}</div>
-    <div>${bike.smodel}</div>
-    <div>${bike.color}</div>
-    <div>${bike.price}</div>
-    <div>${bike.type}</div>
-    <div>${bike.quantity}</div>
-    <div><img src="${pageContext.request.contextPath}/${bike.path1}"></div>
-    <div><img src="${pageContext.request.contextPath}/${bike.path2}"></div>
-    <div><img src="${pageContext.request.contextPath}/${bike.path3}"></div>
-
-    <a href="${pageContext.request.contextPath}/buy?id=${bike.id}&model=${bike.model}&smodel=${bike.smodel}&type=bike">Купить</a>
+    <h2 class="inform">Model: ${bike.model} ${bike.smodel}   Color: ${bike.color}    Type: ${bike.type}    Cost: ${bike.price}</h2>
+    <div class="main">
+    <%--<div>${bike.model}</div>--%>
+    <%--<div>${bike.smodel}</div>--%>
+    <%--<div>${bike.color}</div>--%>
+    <%--<div>${bike.price}</div>--%>
+    <%--<div>${bike.type}</div>--%>
+    <%--<div>${bike.quantity}</div>--%>
+        <div class="product"><img class="img" src="${pageContext.request.contextPath}/${bike.path1}"></div>
+        <div class="product"><img class="img" src="${pageContext.request.contextPath}/${bike.path2}"></div>
+        <div class="product"><img class="img" src="${pageContext.request.contextPath}/${bike.path3}"></div>
+    </div>
+    <a href="${pageContext.request.contextPath}/buy?id=${bike.id}&model=${bike.model}&smodel=${bike.smodel}&type=bike">Buy</a>
 
 <%@include file="../../../footer/footer.jsp"%>
 <%--<jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp" flush="">--%>

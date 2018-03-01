@@ -29,7 +29,7 @@
         <url-pattern>/buy</url-pattern>
         <url-pattern>/youroffice/basket</url-pattern>
         <url-pattern>/youroffice/order</url-pattern>
-        <url-pattern>/youroffice/success.jsp</url-pattern>
+        <url-pattern>/youroffice/success</url-pattern>
     </filter-mapping>
 
     <filter>
@@ -44,7 +44,7 @@
     <filter-mapping>
         <filter-name>FilterCheckOrder</filter-name>
         <url-pattern>/youroffice/order</url-pattern>
-        <url-pattern>/youroffice/success.jsp</url-pattern>
+        <url-pattern>/youroffice/success</url-pattern>
     </filter-mapping>
 
     <resource-ref>
@@ -132,7 +132,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>SCar</servlet-name>
-        <url-pattern>/galery/bikes/products/car</url-pattern>
+        <url-pattern>/galery/cars/products/car</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -178,5 +178,14 @@
     <servlet-mapping>
         <servlet-name>ServHelp</servlet-name>
         <url-pattern>/help</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SSuccess</servlet-name>
+        <servlet-class>warmStar.SSuccess</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SSuccess</servlet-name>
+        <url-pattern>/youroffice/success</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -10,22 +10,23 @@
 <head>
     <meta content="text/html" charset="UTF-8">
     <title>Privacy</title>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/privacy.css">
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/fontAllSite.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
 </head>
 <body>
-    <h1>Политика конфиденциальности</h1>
-    <h2>Сбор и использование личной информации</h2>
-    <div>
-        <p>Личная информация — это данные, позволяющие опознать человека или связаться с ним.</p>
-        <p>Если вы обратитесь в Apple или дочернюю компанию Apple, вас могут попросить предоставить личную информацию.
-            Apple и ее дочерние компании могут обмениваться этой личной информацией друг с другом и использовать ее в соответствии с
-            данной политикой конфиденциальности. Эти сведения могут быть объединены с другими в целях предоставления и улучшения наших
-            продуктов, услуг, контента и рекламы. Вы не обязаны предоставлять личную информацию по нашему запросу, однако, если вы ее не
-            укажете, в некоторых случаях мы не сможем предоставить вам продукт, оказать услугу или ответить на запрос.
+    <h1 id="privacy">Privacy policy</h1>
+    <h2 id="collection">Collection and use of personal information</h2>
+    <div class="text">
+        <p>Personal information is data that allows you to identify a person or contact him.</p>
+        <p>If you contact WarmStar or a subsidiary of WarmStar, you may be asked to provide personal information.
+           WarmStar and its subsidiaries can share this personal information with each other and use it in accordance with
+           this privacy policy. This information can be combined with others in order to provide and improve our
+           products, services, content and advertising. You are not required to provide personal information on our request, however, if you do not have it
+           specify, in some cases we will not be able to provide you with a product, provide a service, or respond to a request.
         </p>
-        <p>Вот несколько примеров того, какую личную информацию может попросить вас предоставить компания
-            Apple и как она может нами использоваться.
-        </p>
+        <p>Here are some examples of what personal information WarmStar can ask you to provide and how it can be used by us.</p>
     </div>
     <jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>
 </body>

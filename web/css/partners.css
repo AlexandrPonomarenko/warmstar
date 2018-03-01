@@ -1,0 +1,35 @@
+body{
+
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: #FF9000;
+}
+
+.text{
+    margin-top: 100px;
+}
+.h2{
+    text-align: center;
+}
+
+.p{
+    text-align: center;
+}
+#list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.m{
+    margin-top: 10px;
+}
+#styleNone{
+    list-style-type: none;
+}
+

@@ -12,58 +12,65 @@
 <head>
     <meta content="text/html;charset=UTF-8">
     <title>LogIn</title>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/LogIn.css">
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/fontAllSite.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/validateJS.js"></script>
 
 </head>
 <body>
 
-    <div class="text-article">
-        <form method="POST" action="logIn">
-            <p>
-                <label for="login" class="Login">Логин*</label>
-                <input type="text" name="login" id="login"/>
-                <c:out value = "${requestScope.error['login']}"/>
-            <p>
-                <label for="email" class="Email">E-Mail*</label>
-                <input type="email" name="email" id="email"/>
-                <c:out value = "${requestScope.error['email']}"/>
-            </p>
-            <p>
-                <label for="FName" class="FName">First name*</label>
-                <input type="text" name="FName" id="fName"/>
-                <c:out value = "${requestScope.error['FName']}"/>
-            </p>
-            <p>
-                <label for="LName" class="LName">Last name*</label>
-                <input type="text" name="LName" id="lName"/>
-                <c:out value = "${requestScope.error['LName']}"/>
-            </p>
+    <h1 id="user">User registration</h1>
+    <div class="form">
+        <div class="one">
+            <form method="POST" action="logIn">
+                <div>
+                    <label for="login" class="Login">Nick name*</label>
+                    <input type="text" name="login" id="login"/>
+                    <c:out value = "${requestScope.error['login']}"/>
 
-            <p>
-                <label for="PNumber" class="PNumber">Phone number*</label>
-                <input type="text" name="PNumber" id="pNumber"/>
-                <c:out value = "${requestScope.error['PNumber']}"/>
-            </p>
-            <p>
-                <label for="age" class="Age">Age*</label>
-                <input type="text" name="age" id="age"/>
-                <c:out value = "${requestScope.error['age']}"/>
-            </p>
+                    <label for="email" class="Email">E-Mail*</label>
+                    <input type="email" name="email" id="email"/>
+                    <c:out value = "${requestScope.error['email']}"/>
+                </div>
+                <div class="inside">
+                    <label for="FName" class="FName">First name*</label>
+                    <input type="text" name="FName" id="fName"/>
+                    <c:out value = "${requestScope.error['FName']}"/>
 
-            <p>
-                <label for="password" class="Password">Пароль*</label>
-                <input type="password" name="password" id="password"/>
-                <c:out value = "${requestScope.error['password']}"/>
+                    <label for="LName" class="LName">Last name*</label>
+                    <input type="text" name="LName" id="lName"/>
+                    <c:out value = "${requestScope.error['LName']}"/>
+                </div>
 
-                <label for="password2" class="Password2">Повторите пароль*</label>
-                <input type="password" name="password2" id="password2"/>
-                <c:out value = "${requestScope.error['password2']}"/>
-            </p>
-            <p>
-                <button type="submit" onclick="validateForm(this)">Зарегистрироваться</button>
-            </p>
-        </form>
+                <div class="inside">
+                    <label for="PNumber" class="PNumber">Phone number*</label>
+                    <input type="text" name="PNumber" id="pNumber"/>
+                    <c:out value = "${requestScope.error['PNumber']}"/>
+
+                    <label for="age" class="Age">Age*</label>
+                    <input type="text" name="age" id="age"/>
+                    <c:out value = "${requestScope.error['age']}"/>
+                </div>
+
+                <div class="inside">
+                    <label for="password" class="Password">Password*</label>
+                    <input type="password" name="password" id="password"/>
+                    <c:out value = "${requestScope.error['password']}"/>
+
+                    <label for="password2" class="Password2">Repeat password*</label>
+                    <input type="password" name="password2" id="password2"/>
+                    <c:out value = "${requestScope.error['password2']}"/>
+                </div>
+                <p>
+                    <button type="submit" onclick="validateForm(this)">LogIn</button>
+                </p>
+            </form>
+        </div>
+        <div class="two">
+            <p>get full access</p>
+        </div>
     </div>
 
     <jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>

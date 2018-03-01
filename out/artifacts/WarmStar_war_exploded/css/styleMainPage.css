@@ -1,6 +1,6 @@
 body {
-    background: #e2eedc ;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    /*background: #D5EAED;*/
+    /*font-family: 'Quicksand', Georgia, "Times New Roman";*/
     margin: 0px;
 }
 header {
@@ -113,79 +113,41 @@ header .garage span {
     text-align: center;
     font-weight: bold;
     padding: 10px;
+    margin-top: 150px;
 }
 .bloc1{
     width: 100%;
-    height: 300px;
     white-space: nowrap;
     font-size: 0;
 }
+
 .bloc1 #shop{
     display: inline-block;
-    width: 70%;
-    height: 300px;
-    vertical-align: top;
-    left: 0;
-    position: relative;
-    overflow: hidden;
+    width: 100%;
+    height: 500px;
 }
 .bloc1 #shop #imgShop{
     width: 100%;
-    top: 50%;
-    left: 50%;
-    position: relative;
-    transform: translate(-50%, -50%);
-}
-#textOpenShop{
-    display: inline-block;
-    width: 30%;
-    height: 300px;
-    vertical-align: top;
-    left: 0;
-    top: 0;
-    position: relative;
-}
-#textOpenShop #textOpen{
-    color: burlywood;
-    text-align: center;
-    white-space: initial;
-    font-size: 16px;
+    height: 500px;
 }
 
 .bloc2{
     white-space: nowrap;
     width: 100%;
-    height: 300px;
-    font-size: 0;
+    height: 550px;
+    margin-top: 100px;
 }
-.bloc2 .containerVideoKitchen {
+.bloc2 .placeMagic {
     display: inline-block;
-    width: 70%;
-    height: 300px;
+    width: 100%;
+    height: 550px;
     overflow: hidden;
 }
 
-.bloc2 .videoKitchen {
-    top: 50%;
+.bloc2 .placeMagic #imgMagic{
     width: 100%;
+    height: 550px;
     position: relative;
-    transform: translateY(-50%);
-}
-.bloc2 #textKitchen{
-    display: inline-block;
-    width: 30%;
-    height: 300px;
-    vertical-align: top;
-    left: 0;
-    top: 0;
-    position: relative
-}
-
-#textKitchen #textKitchenIn{
-    color: burlywood;
-    text-align: center;
-    white-space: initial;
-    font-size: 16px;
 }
 
 #willOnSale{
@@ -196,12 +158,12 @@ header .garage span {
     padding: 10px;
 }
 .cars {
-    padding-top: 10px;
+    /*padding-top: 10px;*/
     display: flex;
 }
 
 .cars figure {
-    margin: 0;
+    margin: 10px;
     display: inline-block;
     vertical-align: top;
     align-items: stretch;

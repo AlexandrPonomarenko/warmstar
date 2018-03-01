@@ -10,26 +10,29 @@
 <head>
     <meta content="text/html" charset="UTF-8">
     <title>Legal</title>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/legal.css">
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/fontAllSite.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
 </head>
 <body>
-    <h1>
-        Юридическая информация и официальные уведомления
+    <h1 class="h1">
+        Legal information and official notices
     </h1>
-    <div>
-        <p>
-            Право собственности на сайт; согласие с условиями использования
-            Настоящие положения и условия использования («Условия использования») относятся к веб-сайту компании Apple,
-            расположенному по адресу www.apple.com, и ко всем соответствующим сайтам, связанным с веб-сайтом www.apple.com и
-            принадлежащим компании Apple, её дочерним предприятиям и филиалам, включая сайты Apple по всему миру (совместно именуемые
-            «Сайт»). Сайт является собственностью компании Apple Inc. («Apple») и её лицензиаров. ИСПОЛЬЗУЯ САЙТ,
-            ВЫ ПРИНИМАЕТЕ НАСТОЯЩИЕ УСЛОВИЯ ИСПОЛЬЗОВАНИЯ; В СЛУЧАЕ НЕСОГЛАСИЯ С УСЛОВИЯМИ НЕ ИСПОЛЬЗУЙТЕ САЙТ.
+    <div class="text-con">
+        <p id="text">
+            Ownership of the site; acceptance of terms of use
+            These Terms and Conditions of Use (the "Terms of Use") refer to the WarmStar website,
+            located at www.WarmStar.com, and to all relevant sites linked to the website www.apple.com and
+            owned by WarmStar, its subsidiaries and affiliates, including WarmStar sites around the world (collectively,
+            "Site"). The site is owned by WarmStar Inc. ("WarmStar") and its licensors. USING THE SITE,
+            YOU ACCEPT THESE TERMS OF USE; IN THE EVENT OF CONSIDERATION WITH CONDITIONS DO NOT USE THE SITE.
 
-            Apple оставляет за собой право в любое время по своему усмотрению изменять, добавлять или удалять пункты настоящих
-            Условий использования. Вы несёте ответственность за периодическую проверку настоящих Условий использования на наличие
-            изменений. Продолжение использования Сайта после внесения изменений означает принятие вами этих изменений.
-            При условии соблюдения вами настоящих Условий использования Apple предоставляет вам личное, неисключительное,
-            не подлежащее передаче другому лицу, ограниченное право на посещение и использование Сайта.
+            WarmStar reserves the right at any time at its discretion to modify, add or delete items of these
+            Terms of use. You are responsible for periodically reviewing these Terms and Conditions for availability
+            changes. Continued use of the Site after making changes means acceptance of these changes.
+            Subject to you following these Terms of Use, WarmStar grants you a personal, non-exclusive,
+            not subject to transfer to another person, limited right to visit and use the Site.
         </p>
     </div>
     <jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>

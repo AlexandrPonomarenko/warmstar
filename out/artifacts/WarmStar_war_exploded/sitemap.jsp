@@ -10,35 +10,43 @@
 <html>
 <head>
     <meta content="text/html;charset=UTF-8">
-    <title>Карта сайта</title>
+    <title>Site map</title>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/siteMap.css"/>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/fontAllSite.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
 </head>
 <body>
-    <h2>Автор</h2>
-    <span><a>facebuke</a></span>
-    <span><a>instagramm</a></span>
-    <span><a>telegramm</a></span>
-    <span><a>cv</a></span>
-    <div>
-        <p><a>Автор</a></p>
-        <p><a>Главная</a></p>
-        <p><a>О нас</a></p>
-        <p><a>Помощь</a></p>
-        <p><a>Наши партнеры</a></p>
-        <p><a>Регистрация</a></p>
-        <p><a>Вход</a></p>
-        <p><a>Личный кабинет</a></p>
-        <p><a>Корзина</a></p>
-        <p><a>Галлерея</a></p>
-        <p><a>Галлерея велосипедов</a></p>
-        <p><a>Галлерея машин</a></p>
-        <p><a>Карта сайта</a></p>
-        <p><a>Горячая линия</a></p>
-        <p><a>Условия использования</a></p>
-        <p><a>Политика конфиденциальности</a></p>
+    <div id="siteMap"><img id="img" src="${pageContext.request.contextPath}/images/puteshestviev2.jpeg"></div>
+    <span class="map"><h2>Map Site</h2></span>
+    <div class="conList">
+        <div class="list">
+            <div class="inside">
+                <p class="mar"><a href="${pageContext.request.contextPath}/author.jsp">Author</a></p>
+                <p class="mar"><a href="${pageContext.request.contextPath}/warmStar">WarmStar</a></p>
+                <p class="mar"><a href="${pageContext.request.contextPath}/about.jsp">About</a></p>
+                <p class="mar"><a href="${pageContext.request.contextPath}/help">Help</a></p>
+            </div>
+        </div>
+        <div class="listTwo">
+            <div class="inside">
+                <p class="mar"><a href="${pageContext.request.contextPath}/partners.jsp">Partners</a></p>
+                <p class="mar"><a href="${pageContext.request.contextPath}/logIn">LogIn</a></p>
+                <p class="mar"><a href="${pageContext.request.contextPath}/logOn">LogOn</a></p>
+                <p class="mar"><a href="${pageContext.request.contextPath}/yourOffice">Home</a></p>
+                <p class="mar"><a href="${pageContext.request.contextPath}/youroffice/basket">Basket</a></p>
+            </div>
+        </div>
+        <div class="listThree">
+            <div class="inside">
+                <p class="mar"><a href="${pageContext.request.contextPath}/galery/bikes">Gallery bikes</a></p>
+                <p class="mar"><a href="${pageContext.request.contextPath}/galery/cars">Gallery cars</a></p>
+                <p class="mar"><a href="${pageContext.request.contextPath}/sitemap.jsp">Site Map</a></p>
+                <p class="mar"><a href="${pageContext.request.contextPath}/legal.jsp">Terms of Use</a></p>
+                <p class="mar"><a href="${pageContext.request.contextPath}/privacy.jsp">Privacy policy</a></p>
+            </div>
+        </div>
     </div>
-    <div></div>
-    <div></div>
     <jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>
 </body>
 </html>

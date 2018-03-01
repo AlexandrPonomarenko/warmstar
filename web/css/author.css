@@ -1,0 +1,19 @@
+body{
+    /*background: #D5EAED;*/
+    /*font-family: 'Quicksand', Georgia, "Times New Roman";*/
+}
+#author{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#vacancy{
+    text-align: justify;
+}
+
+.styleNone{
+    list-style-type: none;
+}
+#list{
+    text-align: center;
+}

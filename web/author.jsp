@@ -10,23 +10,32 @@
 <head>
     <meta content="text/html;charset=UTF-8">
     <title>Author</title>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/author.css">
+    <link type="text/css" rel="stylesheet" href="css/fontAllSite.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
 </head>
 <body>
-    <span>Автор проекта Ponomarenko Alexandr</span>
+    <h1 id="author">Author of the project Ponomarenko Alexandr</h1>
     <div>
-        <p>Проект создавался с целью интереса к Java web разработке и поиска работы на вакансию Java Junior Developer</p>
-        <p>Ниже приведен список технологий использующихся при разработке данного проекта:</p>
+        <h2 id="vacancy">The project was created with the purpose of interest to Java web development and job search for a vacancy Java Junior Developer.</h2>
     </div>
     <div>
-        <p>Навыки разработчика:</p>
+        <h3 id="list">List technologies:</h3>
 
-    </div>
-    <div>
-        <p>Список технологий:</p>
+        <ul class="styleNone">
+            <li><p class="m">Java SE: core</p></li>
+            <li><p class="m">Java EE: servlet and JSTL, JSP</p></li>
+            <li><p class="m">Data Base: JDBC MySQL</p></li>
+            <li><p class="m">Web Server: TomCat</p></li>
+            <li><p class="m">JavaScript: core, JQuery(Ajax)</p></li>
+            <li><p class="m">HTML, CSS</p></li>
+            <li><a class="a" href="https://github.com/AlexandrPonomarenko/warmstar">Link to project</a></li>
+            <li><a class="a" href="https://github.com/AlexandrPonomarenko?tab=repositories">Link to developer in GITHub</a></li>
+        </ul>
     </div>
 
-    <span>Обратная связь: furriets@gmail.com, покозать больше...</span>
+    <span>Feedback: furriets@gmail.com, show more...</span>
     <jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>
 </body>
 </html>

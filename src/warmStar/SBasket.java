@@ -18,7 +18,6 @@ public class SBasket extends HttpServlet {
         PrintWriter out;
         ServletContext servletContext;
         ControllerBasket controllerBasket;
-//        ControllerBasket controllerBasket = (ControllerBasket)servletContext.getAttribute("controllerBasket");
         System.out.println("/youroffice/basket " + "dsdsdsdsdsdsdsdsdsd");
         if(request.getParameter("model") != null && request.getParameter("smodel") != null && request.getParameter("iduser") != null){
             System.out.println(request.getParameter("model") + " --- " +request.getParameter("smodel") + " ---- " +  request.getParameter("iduser"));
@@ -30,17 +29,15 @@ public class SBasket extends HttpServlet {
             product.deleteProduct(request.getParameter("model"), request.getParameter("smodel"));
             session.setAttribute("productBasket",product);
 
-//            response.setContentType("text/plant");
-//            response.setCharacterEncoding("UTF-8");
-//            out = response.getWriter();
-//            out.print();
         }else {
             System.out.println("tytytytyt");
             errorOrder = new ErrorOrder();
             errorOrder.checkFild(request.getParameter("city"), "city");
             errorOrder.checkFild(request.getParameter("address"), "address");
-            if(errorOrder.getValidate()) {
+            if(errorOrder.getValidate()){
                 session = request.getSession(false);
+                Product product = (Product)session.getAttribute("productBasket");
+                session.setAttribute("productBasket",product);
                 System.out.println(request.getParameter("city") + "  -- " + request.getParameter("address"));
                 session.setAttribute("city", request.getParameter("city"));
                 session.setAttribute("address", request.getParameter("address"));
@@ -49,8 +46,14 @@ public class SBasket extends HttpServlet {
                     session.setAttribute("order", "order");
 //                }
                 response.sendRedirect(request.getContextPath() + "/youroffice/order");
+                System.out.println("pered return");
+                return;
             }
                 System.out.println("BILL TYT");
+                session = request.getSession(false);
+                Product product = (Product)session.getAttribute("productBasket");
+                request.setAttribute("out", product.getProducts());
+                request.setAttribute("cost", product.getAllCost());
                 request.setAttribute("errorOrder", errorOrder.getMapError());
                 request.getRequestDispatcher(request.getContextPath() + "/youroffice/basket.jsp").forward(request,response);
         }
@@ -58,6 +61,22 @@ public class SBasket extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession(false);
+//        Product p = (Product)session.getAttribute("productBasket");
+//        System.out.println("111 " + request.getContextPath() + " dddddd " + request.getRequestURI() + " rrr " + request.getServletPath());
+//        if(p.getLength() > 0){
+//            System.out.println(p.getLength() + "SBasket");
+//            p.products();
+//            request.setAttribute("out", p.getProducts());
+//            request.setAttribute("cost", p.getAllCost());
+//            request.getRequestDispatcher(request.getContextPath() + "/youroffice/basket.jsp").forward(request, response);
+//        }else if(p.getLength() <= 0){
+//            request.setAttribute("ziro", "Корзина пуста");
+//            request.getRequestDispatcher(request.getContextPath() + "/youroffice/basket.jsp").forward(request, response);
+//        }
+        proccess(request, response, session);
+    }
+
+    private void proccess(HttpServletRequest request, HttpServletResponse response, HttpSession session) throws ServletException, IOException{
         Product p = (Product)session.getAttribute("productBasket");
         System.out.println("111 " + request.getContextPath() + " dddddd " + request.getRequestURI() + " rrr " + request.getServletPath());
         if(p.getLength() > 0){
@@ -67,18 +86,8 @@ public class SBasket extends HttpServlet {
             request.setAttribute("cost", p.getAllCost());
             request.getRequestDispatcher(request.getContextPath() + "/youroffice/basket.jsp").forward(request, response);
         }else if(p.getLength() <= 0){
-            request.setAttribute("ziro", "Корзина пуста");
+            request.setAttribute("ziro", "The basket is empty.");
             request.getRequestDispatcher(request.getContextPath() + "/youroffice/basket.jsp").forward(request, response);
         }
-    }
-
-    private void proccess(HttpServletRequest request, HttpSession session){
-//        HttpSession s  = session;
-//        Product p = (Product)s.getAttribute("productBasket");
-//        if(p.getLength() <= 0){
-//            request.setAttribute("ziro", "Корзина пуста");
-//        }else if(p.getLength() > 0){
-//            request.setAttribute("out", p.getProducts());
-//        }
     }
 }

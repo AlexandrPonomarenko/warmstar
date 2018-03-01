@@ -10,27 +10,33 @@
 <html>
 <head>
     <meta content="text/html;charset=UTF-8">
-    <title>Подтверждение заказа</title>
+    <title>Confirmation of an order</title>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/order.css"/>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/fontAllSite.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
 </head>
 <body>
-    <p>${sessionScope.user.firstName} Ваш заказ:</p>
-    <p>Город : ${sessionScope.city}</p>
-    <p>Адресс : ${sessionScope.address}</p>
+    <h2 class="user">User card</h2>
+    <span><p>${sessionScope.user.firstName} your order:  City : ${sessionScope.city}    Address : ${sessionScope.address}</p></span>
+    <%--<p>City : ${sessionScope.city}</p>--%>
+    <%--<p>Address : ${sessionScope.address}</p>--%>
 
-    <div>
-        <p><c:out value="${sessionScope.user.firstName}"></c:out></p>
+    <div class="order">
+        <%--<p><c:out value="${sessionScope.user.firstName}"></c:out></p>--%>
         <c:forEach var="product" items="${sessionScope.productBasket.products}">
-            <p><c:out value="${product.typeProduct}"></c:out></p>
-            <p><c:out value="${product.model}"></c:out></p>
-            <p><c:out value="${product.smodel}"></c:out></p>
-            <p><c:out value="${product.cost}"></c:out></p>
-            <p>-----------------------------------------</p>
+            <div class="inside">
+                <p>Type: <c:out value="${product.typeProduct}"></c:out></p>
+                <p>Model: <c:out value="${product.model}"></c:out></p>
+                <p>Type model: <c:out value="${product.smodel}"></c:out></p>
+                <p>Cost: <c:out value="${product.cost}"></c:out></p>
+            <%--<p>-----------------------------------------</p>--%>
+            </div>
         </c:forEach>
     </div>
     <form method="POST" action="${pageContext.request.contextPath}/youroffice/order">
         <input type="hidden" name="buy" value="allBuy"/>
-        <button type="submit">Подтверждение заказа</button>
+        <button type="submit">Confirm the order</button>
     </form>
     <jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>
 </body>

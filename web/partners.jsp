@@ -10,23 +10,41 @@
 <head>
     <meta content="text/html" charset="UTF-8">
     <title>Partners</title>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/partners.css">
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/fontAllSite.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
 </head>
 <body>
-    <div>
-        <h2>Наши парнеры</h2>
-        <p>
-            Одни из самых главных наших парнеров является мастера своего дела в кастомизации автомобилей это ребята из <a> компании Vossen.com</a>
-            именно оди занимаются внешним видом все автомобилей которые вы найдете у нас на сайте и в нашем оффисе, который находится по адресу
-            Украина г. Харьков пр. Пояс Сатурна ул. Тихоя Гавань.
-            Мы сотрудничаем почти со всеми фирмами которые производят автомобили, а от недавнего времени и велосипедов!
-            Мы не собираемся останавливаться на достигнутом и вскоре у нас будет все средства передвижения в кастомном виде.
+    <div class="text">
+        <h2 class="h2">Our partners</h2>
+        <p class="p">
+            One of the most important of our partners is the master of their business in customizing cars, these are the guys from the company <a href="https://vossenwheels.com/"> Vossen</a>
+            they are engaged in the appearance of all the cars that you will find on our website and in our store, which is located at
+            Ukraine Kharkov pr. Saturn's Belt st. Quiet Harbor.
+            We cooperate with almost all firms that produce cars, and from recent times and bicycles.
+            We are not going to stop there and soon we will have all the means of transportation in a custom form.
         </p>
     </div>
-    <div>
-        <p>
-            Краткий список наших партнеров:
-        </p>
+
+    <h2 class="h2">Short list of our partners:</h2>
+    <div id="list">
+        <div>
+            <p><a href="https://www.audi.com">Audi</a></p>
+            <p><a href="https://www.mercedes-benz.com/">Mercedes-benz</a></p>
+        </div>
+        <div>
+            <p><a href="http://www.lexus.com/">Lexus</a></p>
+            <p><a href="https://www.bmw.com/">BMW</a></p>
+        </div>
+        <div>
+            <p><a href="https://www.lamborghini.com">Lamborghini</a></p>
+            <p><a href="https://www.porsche.com/">Porsche</a></p>
+        </div>
+        <div>
+            <p><a href="https://www.ford.com">Ford</a></p>
+            <p><a href="https://www.tesla.com">Tesla</a></p>
+        </div>
     </div>
     <jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>
 </body>

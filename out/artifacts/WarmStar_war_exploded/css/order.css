@@ -1,0 +1,18 @@
+body{
+
+}
+.user{
+    margin-top: 100px;
+    text-align: center;
+}
+.order{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
+}
+.inside{
+    width: 300px;
+    height: 200px;
+}

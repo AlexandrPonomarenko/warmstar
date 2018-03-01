@@ -31,8 +31,9 @@ public class ControllerCar implements interfaceDAOCar {
                 car.setPath3(resultSet.getString(9));
                 car.setPath2(resultSet.getString(10));
                 car.setPath1(resultSet.getString(11));
-                System.out.println(car.toString() + "car");
+//                System.out.println(car.toString() + "car");
             }
+            closeRs(resultSet);
         }catch (SQLException e){
             e.printStackTrace();
         }
@@ -117,6 +118,7 @@ public class ControllerCar implements interfaceDAOCar {
                 car.setPath1(r.getString("path1"));
                 cars.add(car);
             }
+            closeRs(r);
         }catch (SQLException ee){
             ee.printStackTrace();
         }
@@ -178,10 +180,13 @@ public class ControllerCar implements interfaceDAOCar {
     public void deleteAll() {
         try(Connection c =  ConnectionPool.getInstance().getConnection()){
             PreparedStatement ps = c.prepareStatement("DELETE * FROM car");
-            ResultSet rs = ps.executeQuery();
-            while (rs.next()){
+            int  cc = ps.executeUpdate();
 
-            }
+//            while (rs.next()){
+//
+//            }
+            ps.close();
+//            closeRs(rs);
         }catch (SQLException s){
             s.printStackTrace();
         }

@@ -14,70 +14,76 @@
 
     <title>WARM STAR</title>
     <%--<link type="text/css" rel="stylesheet" href="css/fonts.css"/>--%>
-    <link type="text/css" rel="stylesheet" href="css/styleMainPage.css"/>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/styleMainPage.css"/>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/fontAllSite.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script type="text/javascript" src="${pageContext.request.contextPath}/jsLibrary/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/autoPlay.js"></script>
   </head>
   <body>
 
   <jsp:include page="headers/head.jsp"/>
 
   <div class="video-container">
-    <video  class="videos" autoplay poster="images/garage.png">
-      <source src="video/BMW M6 - 'Gran Coupe' - Vossen VFS-2.mp4">
-    </video>
+    <%--<video  class="videos" autoplay="" poster="images/garage.png">--%>
+      <%--&lt;%&ndash;<source class="video_source" src="video/BMW M6 - 'Gran Coupe' - Vossen VFS-2.mp4">&ndash;%&gt;--%>
+        <%--<source class="video_source" src="" onload="autoPlay()">--%>
+    <%--</video>--%>
   </div>
 
   <div id="inside">Узнай первым</div>
 
 
   <div class="bloc1">
-    <div id="shop"><img id="imgShop" src="images/WarmShop.jpg"></div>
-    <div id="textOpenShop">
-      <p id="textOpen">Ура теперь мы в Украине, наш первый салон эксклюзивных машин в городе Харьков!
-          Приходи и ты увидишь над чем трудились многие месяци десятки лучших мастеров мира.
-          МЫ хотели и мы сделали! Теперь в Украине эксклюзинвые машины не нужно ждать по 3 месяца,
-          можно просто прийти к нам и выбрать то Вы хотите!
-      </p>
-    </div>
+    <div id="shop"><img id="imgShop" src="images/mainIm.jpg"></div>
+    <%--<div id="textOpenShop">--%>
+      <%--<p id="textOpen">Ура теперь мы в Украине, наш первый салон эксклюзивных машин в городе Харьков!--%>
+          <%--Приходи и ты увидишь над чем трудились многие месяци десятки лучших мастеров мира.--%>
+          <%--МЫ хотели и мы сделали! Теперь в Украине эксклюзинвые машины не нужно ждать по 3 месяца,--%>
+          <%--можно просто прийти к нам и выбрать то Вы хотите!--%>
+      <%--</p>--%>
+    <%--</div>--%>
   </div>
 
   <div class="bloc2">
-    <div id="textKitchen">
-      <p id="textKitchenIn">Все мы знаем что совершенства достич очень сложно, и у каждого есть особое место где он это делает!
-        Представляем вашему вниманию, место наших партнеров где творится Магия, та самая кухня где люди с горящими глазами
-        создают из обычной машины произведения исскуства.
-      </p>
-    </div>
-    <div class="containerVideoKitchen">
-      <video class="videoKitchen" controls="controls">
-        <source src="video/Vossen x Work Wheels - 'The Collaboration'.mp4">
-      </video>
+    <%--<div id="textKitchen">--%>
+      <%--<p id="textKitchenIn">Все мы знаем что совершенства достич очень сложно, и у каждого есть особое место где он это делает!--%>
+        <%--Представляем вашему вниманию, место наших партнеров где творится Магия, та самая кухня где люди с горящими глазами--%>
+        <%--создают из обычной машины произведения исскуства.--%>
+      <%--</p>--%>
+    <%--</div>--%>
+    <div class="placeMagic">
+      <%--<video class="videoKitchen" controls="controls">--%>
+        <%--<source src="video/Vossen x Work Wheels - 'The Collaboration'.mp4">--%>
+      <%--</video>--%>
+        <img id="imgMagic" src="images/placeMagic.jpg">
     </div>
   </div>
 
   <div id="willOnSale">Скоро будут в продаже</div>
 
   <div class="cars">
-    <figure>
-      <img src="images/Lamborghini_Gallardo_VPS-306_d3e17a0e.jpg">
-      <figcation>
-        <p>LAMBORGHINI Gallardo - Vossen Forged: Precision series: VPS - 306</p>
-        <a href="#">Подробнее >></a>
-      </figcation>
-    </figure>
+    <%--<figure>--%>
+      <%--<img src="images/Lamborghini_Gallardo_VPS-306_d3e17a0e.jpg">--%>
+      <%--<figcation>--%>
+        <%--<p>LAMBORGHINI Gallardo - Vossen Forged: Precision series: VPS - 306</p>--%>
+        <%--<a href="#">Подробнее >></a>--%>
+      <%--</figcation>--%>
+    <%--</figure>--%>
 
     <figure>
       <img src="images/Audi_R8_VPS-315T_a2fb0e77.jpg">
       <figcation>
-        <p>AUDI R8 - Vossen Forged: Precision series: VPS - 315T</p>
-        <a href="#">Подробнее >></a>
+        <p>AUDI R8 - Forged: Precision series: VPS - 315T</p>
+        <%--<a href="#">Подробнее >></a>--%>
       </figcation>
     </figure>
 
     <figure>
       <img src="images/Porsche_Macan_VFS1_87249905.jpg">
       <figcation>
-        <p>PORSCHE Macan - Vossen Flow Formed eries: VFS - 1</p>
-        <a href="#">Подробнее >></a>
+        <p>PORSCHE Macan - Flow Formed series: VFS - 1</p>
+        <%--<a href="#">Подробнее >></a>--%>
       </figcation>
     </figure>
   </div>

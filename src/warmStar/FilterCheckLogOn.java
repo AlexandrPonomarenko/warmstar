@@ -28,7 +28,7 @@ public class FilterCheckLogOn implements Filter {
         }
 //        if(url.)
         if(filterConfig.getInitParameter("active").equals("true")){
-            System.out.println(filterConfig.getInitParameter("active") + "+++++++++++++++++++++++++++++++++");
+            System.out.println(filterConfig.getInitParameter("active") + "+++++++++++++++++++++++++++++++++" + " eto v logonFILTER");
             System.out.println("111 " + request.getContextPath() + " dddddd " + request.getRequestURI() + "rrr " + request.getServletPath());
             if(session == null || session.getAttribute("user") == null){
                 System.out.println("===" + session);
@@ -41,6 +41,7 @@ public class FilterCheckLogOn implements Filter {
 //                String password =(String)session.getAttribute("password");
 //                System.out.println(login + " 44444444444444444444444 " +  password);
 //                response.sendRedirect(url);
+                System.out.println("PERED chain.doFilter(req, resp) FILTERLOGON");
                 chain.doFilter(req, resp);
             }
         }

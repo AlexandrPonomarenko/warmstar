@@ -13,21 +13,22 @@ import java.io.IOException;
 public class Order extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         if (request.getParameter("buy").equals("allBuy")){
-            ServletContext servletContext = request.getServletContext();
+//            ServletContext servletContext = request.getServletContext();
             Email email;
-            ControllerBasket controllerBasket = (ControllerBasket)servletContext.getAttribute("controllerBasket");
+//            ControllerBasket controllerBasket = (ControllerBasket)servletContext.getAttribute("controllerBasket");
             HttpSession session = request.getSession(false);
             User user = (User)session.getAttribute("user");
             Product p = (Product)session.getAttribute("productBasket");
-            controllerBasket.deleteAllIDUser(user.getId());
+//            controllerBasket.deleteAllIDUser(user.getId());
             email = new Email(user.getFirstName(), user.getEmail(), session.getAttribute("city").toString(), session.getAttribute("address").toString(),
                     p.getAllCost(),"all");
             email.sendEmail();
-            p.deleteAllProduct();
+//            p.deleteAllProduct();
+            System.out.println("TYT BILL I");
             if(session.getAttribute("order") != null){
                 session.setAttribute("orderTwo", "orderTwo");
             }
-            response.sendRedirect(request.getContextPath() + "/youroffice/success.jsp");
+            response.sendRedirect(request.getContextPath() + "/youroffice/success");
         }
     }
 

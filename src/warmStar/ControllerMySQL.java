@@ -42,12 +42,10 @@ public class ControllerMySQL implements interfaceDAO{
                 u.setPassword(resultSet.getString(10));
 //                System.out.println(u.toString() + "trererer");
             }
+            resultSet.close();
         }catch (SQLException e){
             e.printStackTrace();
         }
-//        catch (ClassNotFoundException e){
-//            e.printStackTrace();
-//        }
         return u;
     }
 
@@ -88,7 +86,6 @@ public class ControllerMySQL implements interfaceDAO{
     @Override
     public int getIdUser(String user) {
         int id;
-        int numero = 0;
         String sql = "SELECT id FROM user WHERE nickname=" + "'" + user + "'";
         try(Connection c = ConnectionPool.getInstance().getConnection();
             PreparedStatement ps = c.prepareStatement(sql)){
@@ -147,6 +144,7 @@ public class ControllerMySQL implements interfaceDAO{
                 u.setPassword(r.getString("password"));
                 users.add(u);
             }
+            r.close();
         }catch (SQLException ee){
             ee.printStackTrace();
         }
@@ -193,10 +191,12 @@ public class ControllerMySQL implements interfaceDAO{
     public void deleteAll() {
         try(Connection c = ConnectionPool.getInstance().getConnection();){
             PreparedStatement ps = c.prepareStatement("DELETE * FROM user");
-            ResultSet rs = ps.executeQuery();
-            while (rs.next()){
-
-            }
+            ps.executeUpdate();
+//            ResultSet rs = ps.executeQuery();
+//            while (rs.next()){
+//
+//            }
+            ps.close();
         }catch (SQLException s){
             s.printStackTrace();
         }

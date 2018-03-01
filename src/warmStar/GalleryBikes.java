@@ -24,7 +24,7 @@ public class GalleryBikes extends HttpServlet {
         HttpSession session = request.getSession(false);
         if(session.getAttribute("user")== null){
 //            System.out.println(request.getParameter("cost"));
-            out.print("Для того что бы добавить в корзину, Вам нужно авторизоваться.");
+            out.print("To add to the cart, you must be logged in.");
 //            request.setAttribute("out", "Для того что бы добавить Вам нужно авторизоваться.");
         }else if(session.getAttribute("user")!= null){
             User user = (User)session.getAttribute("user");
@@ -47,7 +47,7 @@ public class GalleryBikes extends HttpServlet {
             System.out.println("THIS IS GALLERY bikes");
             p.products();
             session.setAttribute("productBasket", p);
-            out.print("Добавлено");
+            out.print("Add");
             System.out.println(basket.toString());
         }
         out.close();

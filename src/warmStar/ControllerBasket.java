@@ -84,9 +84,6 @@ public class ControllerBasket implements interfaceDAOBascet {
     public void deleteByIdUser(int id, String model, String smodel) {
         try(Connection c =  ConnectionPool.getInstance().getConnection()){
             PreparedStatement ps = c.prepareStatement("DELETE FROM basket WHERE iduser=" + "'" + id + "'" + "AND model=" + "'" + model + "'" + "AND smodel=" + "'" + smodel + "'");
-//            ps.setInt(2,id);
-//            ps.setString(5, model);
-//            ps.setString(6, smodel);
             ps.executeUpdate();
             ps.close();
         }catch (SQLException s){

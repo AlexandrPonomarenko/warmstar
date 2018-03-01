@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "SCar", urlPatterns = "/galery/bikes/products/car")
+@WebServlet(name = "SCar", urlPatterns = "/galery/cars/products/car")
 public class SCar extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -17,7 +17,7 @@ public class SCar extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("This is a Servlet car");
         procces(request);
-        request.getRequestDispatcher(request.getContextPath() + "/galery/bikes/products/bike.jsp").forward(request,response);
+        request.getRequestDispatcher(request.getContextPath() + "/galery/cars/products/car.jsp").forward(request,response);
 //        response.sendRedirect(request.getContextPath()+"/galery/bikes/products/bike.jsp");
     }
 

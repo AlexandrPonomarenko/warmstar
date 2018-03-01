@@ -11,10 +11,12 @@
 <head>
     <meta content="text/html;charset=UTF-8">
     <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/fontAllSite.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
 </head>
 <body>
-<div><a href="${pageContext.request.contextPath} /warmStar">Вы не выбрали товар</a></div>
+<div><a href="${pageContext.request.contextPath}/warmStar">You have not selected a product</a></div>
 <jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>
 </body>
 </html>

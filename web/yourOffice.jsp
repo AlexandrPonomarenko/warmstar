@@ -13,32 +13,43 @@
 <html>
 <head>
     <meta content="text/html;charset=UTF-8">
-    <title>Office</title>
+    <title>Home</title>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/home.css"/>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/fontAllSite.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/fonts.css"/>
     <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
 </head>
 <body>
 
-    <p>1</p>
-    <p>1</p>
-    <p>1</p>
-    <p>1</p>
-
-    <h1>Добро пожаловать ${sessionScope.user.firstName} в личный кабинет </h1>
-
-    <p><a href="${pageContext.request.contextPath}/youroffice/basket">Корзина</a> ${sessionScope.productBasket.length}</p>
-    <p><a href="${pageContext.request.contextPath}/help">Помощь</a></p>
+    <h1 class="welcome">Welcome ${sessionScope.user.firstName} to the home </h1>
+    <div><img id="home" src="${pageContext.request.contextPath}/images/garage-Home.jpg"></div>
+    <%--<span class="link"><a href="${pageContext.request.contextPath}/youroffice/basket">Basket</a> ${sessionScope.productBasket.length}</span>--%>
+    <%--<span class="link"><a href="${pageContext.request.contextPath}/help">Help</a></span>--%>
+    <h3 class="personal">Personal information</h3>
     <c:forEach items="${requestScope.user}" var="emp">
-        <tr><td><c:out value="${emp.id}"></c:out></td>
-            <td><c:out value="${emp.nickName}"></c:out></td>
-            <td><c:out value="${emp.firstName}"></c:out></td>
-            <td><c:out value="${emp.lastName}"></c:out></td>
-            <td><c:out value="${emp.email}"></c:out></td>
-            <td><c:out value="${emp.phoneNamber}"></c:out></td>
-        <td><c:out value="${emp.data}"></c:out></td>
-        <td><c:out value="${emp.password}"></c:out></td>
-        <td><c:out value="${emp.passwordTwo}"></c:out></td></tr>
+        <%--<tr><td><c:out value="${emp.id}"></c:out></td>--%>
+            <%--<td><c:out value="${emp.nickName}"></c:out></td>--%>
+            <%--<td><c:out value="${emp.firstName}"></c:out></td>--%>
+            <%--<td><c:out value="${emp.lastName}"></c:out></td>--%>
+            <%--<td><c:out value="${emp.email}"></c:out></td>--%>
+            <%--<td><c:out value="${emp.phoneNamber}"></c:out></td>--%>
+        <%--<td><c:out value="${emp.data}"></c:out></td>--%>
+        <%--<td><c:out value="${emp.password}"></c:out></td>--%>
+        <%--<td><c:out value="${emp.passwordTwo}"></c:out></td></tr>--%>
+
+        <ul class="styleNone">
+            <li><p class="m"><c:out value="${emp.nickName}"></c:out></p></li>
+            <li><p class="m"><c:out value="${emp.firstName}"></c:out></p></li>
+            <li><p class="m"><c:out value="${emp.lastName}"></c:out></p></li>
+            <li><p class="m"><c:out value="${emp.email}"></c:out></p></li>
+            <li><p class="m"><c:out value="${emp.phoneNamber}"></c:out></p></li>
+            <li><p><c:out value="${emp.data}"></c:out></p></li>
+        </ul>
     </c:forEach>
+
+    <span class="linkOne"><a href="${pageContext.request.contextPath}/youroffice/basket">Basket${sessionScope.productBasket.length}</a></span>
+    <span class="linkTwo"><a href="${pageContext.request.contextPath}/help">Help</a></span>
     <jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>
 </body>
 </html>

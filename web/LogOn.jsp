@@ -9,41 +9,51 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
+    <meta content="text/html" charset="UTF-8">
     <title>LogOn</title>
-    <%--<link type="text/css" rel="stylesheet" href="css/LogIn.css"/>--%>
-    <%--<link type="text/css" rel="stylesheet" href="css/fonts.css"/>--%>
+    <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/logOn.css">
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/fontAllSite.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script type="text/javascript" src="${pageContext.request.contextPath}/jsLibrary/jquery-3.3.1.js"></script>
+    <script src="${pageContext.request.contextPath}/js/validate.js"></script>
 </head>
 <body>
 
-<jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
+<%--<jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>--%>
 
-
-<div><p>123</p></div>
-    <div><p>12312</p></div>
-        <div><p>123123</p></div>
-            <div><p>123123</p></div>
-
-
-
-
-
-    <div class="text-article">
-    <form method="POST" action="logOn">
-        <p>
-            <label for="login">Логин</label>
-            <input type="text" name="login" id="login"/>
-            <c:out value = "${requestScope.error['login']}"/>
-        </p>
-        <p>
-            <label for="password">Пароль</label>
-            <input type="password" name="password" id="password"/>
-            <c:out value = "${requestScope.error['password']}"/>
-        </p>
-        <p>
-            <button type="submit">Вход</button>
-        </p>
-    </form>
-</div>
+    <div class="parent">
+        <div class="child1">
+            <span id="one">Choose your dream</span>
+            <span id="two">Just do it</span>
+        </div>
+        <div class="child2">
+        <%--<h2>Home</h2>--%>
+            <form method="POST" action="logOn">
+                <%--<div class="insideForm">--%>
+                    <div class="one">
+                        <label for="login">Nick name</label>
+                        <input type="text" name="login" id="login" class="validate"/>
+                        <span class="empty-message">Empty</span>
+                        <span class="small-length-message">Small length</span>
+                        <span class="bad-words-message">Bad words</span>
+                        <c:out value = "${requestScope.error['login']}"/>
+                    </div>
+                    <div class="one">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" class="validate"/>
+                        <span class="empty-message">Empty</span>
+                        <span class="small-length-message">Small length</span>
+                        <span class="bad-words-message">Bad words</span>
+                        <c:out value = "${requestScope.error['password']}"/>
+                    </div>
+                <%--</div>--%>
+                <div class="but">
+                    <button class="submit-button" type="submit" disabled>Home</button>
+                </div>
+            </form>
+        </div>
+    </div>
 <jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>
 
 </body>

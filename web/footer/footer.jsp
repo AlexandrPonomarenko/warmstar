@@ -9,7 +9,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <%--<title>Title</title>--%>
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/footerStyle.css"/>
 </head>
 <body>
@@ -30,27 +29,27 @@
                 <li><a href="https://www.instagram.com/ponomarenko__alexandr/">instagram</a></li>
                 <li><a href="https://www.facebook.com/">facebook</a></li>
                 <li><a href="https://t.me/light_in_dakr">telegram</a></li>
-                <li><a href="${pageContext.request.contextPath}/author.jsp">Author</a></li>
                 <li><a href="#">test5</a></li>
+                <li><a href="${pageContext.request.contextPath}/author.jsp">Author</a></li>
             </ul>
         </div>
         <div class="right">
             <ul>
                 <li><a href="#">test1test1</a></li>
-                <li><a href="${pageContext.request.contextPath}/legal.jsp">Условия использования</a></li>
-                <li><a href="${pageContext.request.contextPath}/privacy.jsp">test3test1</a></li>
+                <li><a href="${pageContext.request.contextPath}/legal.jsp">Terms of Use</a></li>
+                <li><a href="${pageContext.request.contextPath}/privacy.jsp">Privacy policy</a></li>
                 <li><a href="${pageContext.request.contextPath}/help">Help</a></li>
-                <li><p>Горячая линия: +380996243100</p></li>
+                <li><p>Hot line: +38(099)624 31 00</p></li>
             </ul>
         </div>
     </div>
     <div class="bottom">
         <div class="top">
-            Связь по телефону с автором по телефону 8‑099‑634‑31‑00.
+            Contacting the author by phone 8(099)634 31 00
         </div>
         <div class="bottom">
             <div class="rights">
-                © WarmStar Inc., 2018 г. Все права защищены.
+                © WarmStar Inc., 2018.All rights reserved.
             </div>
             <div class="links">
                 <a href="${pageContext.request.contextPath}/sitemap.jsp">Site map</a>

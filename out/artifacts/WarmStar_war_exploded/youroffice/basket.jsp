@@ -12,29 +12,29 @@
 <head>
     <meta content="text/html;charset=UTF-8">
     <title>Basket</title>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/basket.css"/>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/fontAllSite.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <script type="text/javascript" src="${pageContext.request.contextPath}/jsLibrary/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/deleteFromBasket.js"></script>
     <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
 </head>
 <body>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
+    <h2 class="baskethat">Basket</h2>
 
     <p>${ziro}</p>
 
-    <div>
+    <div class="basket">
         <c:forEach var="i" items="${requestScope.out}">
-        <div productform="${i.id}">
+        <div id="inside" productform="${i.id}">
             <div name="iduser" value="${i.idUser}">
-                <p><c:out value="${i.typeProduct}"></c:out></p>
-                <p name="model" value="${i.model}"><c:out value="${i.model}"></c:out></p>
-                <p name="smodel" value="${i.smodel}"><c:out value="${i.smodel}"></c:out></p>
-                <p id="cost_item"><c:out value="${i.cost}"></c:out></p>
-                <p>-----------------------------------------</p>
+                <p> Type: <c:out value="${i.typeProduct}"></c:out></p>
+                <p name="model" value="${i.model}">Model: <c:out value="${i.model}"></c:out></p>
+                <p name="smodel" value="${i.smodel}">Type model: <c:out value="${i.smodel}"></c:out></p>
+                <p id="cost_item">Cost: <c:out value="${i.cost}"></c:out>$</p>
+                <%--<p>-----------------------------------------</p>--%>
             </div>
-            <button product="${i.id}" type="button" class="btn_delete">Удалить из корзины</button>
+            <button product="${i.id}" type="button" class="btn_delete">Delete from basket</button>
         </div>
 
         <%--<form basket="${i.id}">--%>
@@ -51,20 +51,20 @@
 <form method="POST" action="${pageContext.request.contextPath}/youroffice/basket">
 
     <p>
-        <label for="city">Город</label>
+        <label for="city">City</label>
         <input type="text" name="city" id="city">
         <c:out value="${requestScope.errorOrder['city']}"/>
     </p>
 
     <p>
-        <label for="address">Адресс</label>
+        <label for="address">Address</label>
         <input type="text" name="address" id="address">
         <c:out value="${requestScope.errorOrder['address']}"/>
 
     </p>
     <%--<input type="hidden" name="buy" value="allBuy"/>--%>
-    <p>Общая стоимость: <span id="cost">${cost}</span>$</p>
-    <button type="submit">Оформить заказ</button>
+    <p>Total cost: <span id="cost">${cost}</span>$</p>
+    <button type="submit">Сheckout</button>
 </form>
 
     <jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>

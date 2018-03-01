@@ -10,13 +10,16 @@
 <html>
 <head>
     <meta content="text/html;charset=UTF-8">
-    <title>Title</title>
+    <title>Buy</title>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/buy.css"/>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/fontAllSite.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
 </head>
 <body>
     <p>${error}</p>
 
-    <p>${sessionScope.firstname} ваш выбор</p>
+    <p>${sessionScope.firstname} Your Chose</p>
     <div>${product.model}</div>
     <div>${product.smodel}</div>
     <div>${product.color}</div>
@@ -30,17 +33,17 @@
 <form method="post" action="buy" >
 
     <p>
-        <label for="city">Город</label>
+        <label for="city">City</label>
         <input type="text" name="city" id="city">
     </p>
 
     <p>
-        <label for="address">Место проживания</label>
+        <label for="address">Address</label>
         <input type="text" name="address" id="address">
     </p>
 
     <p>
-        <button type="submit">Оформить заказ</button>
+        <button type="submit">Checkout</button>
     </p>
 </form>
     

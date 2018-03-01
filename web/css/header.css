@@ -1,8 +1,16 @@
-body {
-    background: #e2eedc ;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    margin: 0px;
+/*body {*/
+    /*background: #e2eedc ;*/
+    /*font-family: Georgia, "Times New Roman", Times, serif;*/
+    /*margin: 0px;*/
+/*}*/
+a{
+    text-decoration: none;
 }
+a:hover{
+    text-decoration: none;
+    color: #FF9000;
+}
+
 header {
     top: 0;
     left: 0;
@@ -40,6 +48,10 @@ header:hover #nav-curtain {
 header .nav-content {
     position: relative;
     z-index: 2;
+}
+
+header.no-invisible #nav-curtain {
+    opacity: 1 !important;
 }
 
 

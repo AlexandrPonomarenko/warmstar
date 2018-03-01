@@ -31,9 +31,9 @@ public class FilterCheckOrder implements Filter {
                         System.out.println("ORDER PERENAPRAVIL ");
                         response.sendRedirect(request.getContextPath()+"/youroffice/basket");
                     }
-                }else if(url.equals("/youroffice/success.jsp")){
+                }else if(url.equals("/youroffice/success")){
                     if( p.getLength() > 0 && session.getAttribute("order") != null &&  session.getAttribute("orderTwo") != null && session.getAttribute("city") != null && session.getAttribute("address") != null){
-                        System.out.println("success ");
+                        System.out.println("В блоке пропуска на покупку success");
                         chain.doFilter(req,resp);
                         return;
                     }else{
