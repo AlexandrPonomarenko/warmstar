@@ -13,10 +13,10 @@
      <meta content="text/html;charset=UTF-8">
 
     <title>WARM STAR</title>
-    <%--<link type="text/css" rel="stylesheet" href="css/fonts.css"/>--%>
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/styleMainPage.css"/>
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/fontAllSite.css"/>
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Plaster" rel="stylesheet">
     <script type="text/javascript" src="${pageContext.request.contextPath}/jsLibrary/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/autoPlay.js"></script>
   </head>
@@ -25,57 +25,28 @@
   <jsp:include page="headers/head.jsp"/>
 
   <div class="video-container">
-    <%--<video  class="videos" autoplay="" poster="images/garage.png">--%>
-      <%--&lt;%&ndash;<source class="video_source" src="video/BMW M6 - 'Gran Coupe' - Vossen VFS-2.mp4">&ndash;%&gt;--%>
-        <%--<source class="video_source" src="" onload="autoPlay()">--%>
-    <%--</video>--%>
   </div>
 
-  <div id="inside">Узнай первым</div>
-
-
-  <div class="bloc1">
-    <div id="shop"><img id="imgShop" src="images/mainIm.jpg"></div>
-    <%--<div id="textOpenShop">--%>
-      <%--<p id="textOpen">Ура теперь мы в Украине, наш первый салон эксклюзивных машин в городе Харьков!--%>
-          <%--Приходи и ты увидишь над чем трудились многие месяци десятки лучших мастеров мира.--%>
-          <%--МЫ хотели и мы сделали! Теперь в Украине эксклюзинвые машины не нужно ждать по 3 месяца,--%>
-          <%--можно просто прийти к нам и выбрать то Вы хотите!--%>
-      <%--</p>--%>
-    <%--</div>--%>
-  </div>
-
-  <div class="bloc2">
-    <%--<div id="textKitchen">--%>
-      <%--<p id="textKitchenIn">Все мы знаем что совершенства достич очень сложно, и у каждого есть особое место где он это делает!--%>
-        <%--Представляем вашему вниманию, место наших партнеров где творится Магия, та самая кухня где люди с горящими глазами--%>
-        <%--создают из обычной машины произведения исскуства.--%>
-      <%--</p>--%>
-    <%--</div>--%>
-    <div class="placeMagic">
-      <%--<video class="videoKitchen" controls="controls">--%>
-        <%--<source src="video/Vossen x Work Wheels - 'The Collaboration'.mp4">--%>
-      <%--</video>--%>
-        <img id="imgMagic" src="images/placeMagic.jpg">
+    <div id="shop">
+      <img id="imgShop" src="images/mainIm.jpg">
+      <h1><span>Become by first and choose your dream.</span></h1>
     </div>
-  </div>
 
-  <div id="willOnSale">Скоро будут в продаже</div>
+    <div class="placeMagic">
+
+        <img id="imgMagic" src="images/placeMagic.jpg">
+        <h1><span>magic is already here.</span></h1>
+    </div>
+
+
+  <div id="willOnSale">Soon</div>
 
   <div class="cars">
-    <%--<figure>--%>
-      <%--<img src="images/Lamborghini_Gallardo_VPS-306_d3e17a0e.jpg">--%>
-      <%--<figcation>--%>
-        <%--<p>LAMBORGHINI Gallardo - Vossen Forged: Precision series: VPS - 306</p>--%>
-        <%--<a href="#">Подробнее >></a>--%>
-      <%--</figcation>--%>
-    <%--</figure>--%>
 
     <figure>
       <img src="images/Audi_R8_VPS-315T_a2fb0e77.jpg">
       <figcation>
         <p>AUDI R8 - Forged: Precision series: VPS - 315T</p>
-        <%--<a href="#">Подробнее >></a>--%>
       </figcation>
     </figure>
 
@@ -83,20 +54,18 @@
       <img src="images/Porsche_Macan_VFS1_87249905.jpg">
       <figcation>
         <p>PORSCHE Macan - Flow Formed series: VFS - 1</p>
-        <%--<a href="#">Подробнее >></a>--%>
       </figcation>
     </figure>
   </div>
 
-  <div id="onSale">В продаже</div>
+  <div id="onSale">For you</div>
 
   <div class="cars_for_sale">
   <c:forEach items="${requestScope.cars}" var="car">
     <figure>
       <img src="${car.path1}">
       <figcation>
-        <p>${car.model} ${car.smodel}</p>
-        <a href="${pageContext.request.contextPath}/galery/bikes/products/car?id=${car.id}&model=${car.model}&smodel=${car.smodel}">Подробнее >></a>
+        <a href="${pageContext.request.contextPath}/galery/cars/products/car?id=${car.id}&model=${car.model}&smodel=${car.smodel}">${car.model} ${car.smodel} Show</a>
       </figcation>
     </figure>
   </c:forEach>
@@ -107,19 +76,12 @@
       <figure>
         <img src="${bike.path1}">
         <figcation>
-          <p>${bike.model} ${bike.smodel}</p>
-          <a href="${pageContext.request.contextPath}/galery/bikes/products/bike?id=${bike.id}&model=${bike.model}&smodel=${bike.smodel}">Подробнее >></a>
+          <a href="${pageContext.request.contextPath}/galery/bikes/products/bike?id=${bike.id}&model=${bike.model}&smodel=${bike.smodel}">${bike.model} ${bike.smodel} Show</a>
         </figcation>
       </figure>
     </c:forEach>
   </div>
 
-  <div class="socialNetwork">
-    <a href="#"><span class="icon-instagram"></span></a>
-    <a href="#"><span class="icon-facebook2"></span></a>
-  </div>
-
-  <%--<%@include file="footer/footer.jsp"%>--%>
   <jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>
   </body>
 </html>

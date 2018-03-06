@@ -1,6 +1,4 @@
-body{
 
-}
 .baskethat{
     margin-top: 100px;
     text-align: center;
@@ -16,4 +14,22 @@ body{
 #inside{
     width: 300px;
     height: 200px;
+}
+
+.inside .empty-message,
+.inside .small-length-message,
+.inside .bad-words-message {
+    display: none;
+}
+
+.inside.empty .empty-message {
+    display: inline;
+}
+
+.inside.length .small-length-message {
+    display: inline;
+}
+
+.inside.bad-words .bad-words-message {
+    display: inline;
 }

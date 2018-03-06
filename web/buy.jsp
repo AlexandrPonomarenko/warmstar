@@ -14,39 +14,47 @@
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/buy.css"/>
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/fontAllSite.css"/>
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script type="text/javascript" src="${pageContext.request.contextPath}/jsLibrary/jquery-3.3.1.js"></script>
+    <script src="${pageContext.request.contextPath}/js/validate.js"></script>
     <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
 </head>
 <body>
     <p>${error}</p>
 
-    <p>${sessionScope.firstname} Your Chose</p>
-    <div>${product.model}</div>
-    <div>${product.smodel}</div>
-    <div>${product.color}</div>
-    <div>${product.price}</div>
-    <div>${product.type}</div>
-    <div>${product.quantity}</div>
-    <div>${product.path1}</div>
-    <div>${product.path2}</div>
-    <div>${product.path3}</div>
+    <h2 id="hat">${sessionScope.firstname} Your Chose</h2>
+    <ul class="styleNone">
+        <li><p class="m">Model: ${product.model}</p></li>
+        <li><p class="m">Type model: ${product.smodel}</p></li>
+        <li><p class="m">Color: ${product.color}</p></li>
+        <li><p class="m">Cost: ${product.price}</p></li>
+        <li><p class="m">Type bike: ${product.type}</p></li>
+    </ul>
 
-<form method="post" action="buy" >
+    <form method="post" action="buy" >
 
-    <p>
-        <label for="city">City</label>
-        <input type="text" name="city" id="city">
-    </p>
+        <div class="inside">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" class="validate"/>
 
-    <p>
-        <label for="address">Address</label>
-        <input type="text" name="address" id="address">
-    </p>
+            <span class="empty-message">Empty</span>
+            <span class="small-length-message">Small length</span>
+            <span class="bad-words-message">Bad words</span>
+        </div>
 
-    <p>
-        <button type="submit">Checkout</button>
-    </p>
-</form>
+        <div class="inside">
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address" class="validate"/>
+
+            <span class="empty-message">Empty</span>
+            <span class="small-length-message">Small length</span>
+            <span class="bad-words-message">Bad words</span>
+        </div>
+
+        <p>
+            <button class="submit-button" type="submit" disabled>Checkout</button>
+        </p>
+    </form>
     
-<jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>
+    <jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>
 </body>
 </html>

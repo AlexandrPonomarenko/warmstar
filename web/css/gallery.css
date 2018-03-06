@@ -1,19 +1,18 @@
-.gallery_bikes {
+.gallery {
     padding-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    /*flex-direction: column;*/
     justify-content: space-around;
     align-items: stretch;
 }
 
-.gallery_bikes figure {
+.gallery figure {
     margin: 0;
     display: block;
     vertical-align: top;
     align-items: stretch;
 }
-.gallery_bikes figure img {
+.gallery figure img {
     width: 100%;
 }
 .product{
@@ -24,4 +23,9 @@
 
 .s .p {
     margin: 0px;
+}
+
+#galleryHat{
+    text-align: center;
+    margin-top: 100px;
 }

@@ -3,11 +3,14 @@ body{
 }
 .text{
     margin-top: 100px;
-    height: 400px;
+    text-align: center;
+    height: 200px;
 }
 
 .insideText{
+    display: inline-block;
     text-align: justify;
+    max-width: 80%;
 }
 .videos{
     height: 400px;

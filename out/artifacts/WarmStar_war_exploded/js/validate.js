@@ -10,7 +10,7 @@
     }
 
     function isSmallLength (value) {
-        return value.length < 1;
+        return value.length < 5;
     }
 
     function isBadWords (value) {

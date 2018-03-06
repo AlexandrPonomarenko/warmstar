@@ -19,14 +19,6 @@ public class WarmStar extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        HttpSession httpSession = request.getSession();
-        if(httpSession == null){
-            System.out.println("dsdsdsdsdsdsdsdsdsdsdsssdsdsdsdsdsds");
-        }
-
-        System.out.println("111 " + request.getContextPath() + " dddddd " + request.getRequestURI() + " rrr " + request.getServletPath());
-        System.out.println("TYTYTYYTY");
         processCar(request, response);
         processBike(request, response);
         request.getRequestDispatcher("index.jsp").forward(request,response);
@@ -38,23 +30,18 @@ public class WarmStar extends HttpServlet {
         ControllerCar controllerCar = (ControllerCar) servletContext.getAttribute("controllerCar");
 
         Car car = controllerCar.getById(controllerCar.getIDCar("Tesla","S"));
-        System.out.println(car.getModel());
         arrayList.add(car);
 
         car = controllerCar.getById(controllerCar.getIDCar("Audi","A4"));
-        System.out.println(car.getModel());
         arrayList.add(car);
 
         car = controllerCar.getById(controllerCar.getIDCar("Ferrari","488"));
-        System.out.println(car.getModel());
         arrayList.add(car);
 
         car = controllerCar.getById(controllerCar.getIDCar("Ford Mustang","VFS 5"));
-        System.out.println(car.getModel());
         arrayList.add(car);
 
         car = controllerCar.getById(controllerCar.getIDCar("Lexus","RS"));
-        System.out.println(car.getModel());
         arrayList.add(car);
 
         request.setAttribute("cars", arrayList);
@@ -68,23 +55,18 @@ public class WarmStar extends HttpServlet {
         if(controllerDAOBike.checkBikeModel("State Bicycle", "MTB") && controllerDAOBike.checkBikeModel("Vossen","SV") && controllerDAOBike.checkBikeModel("State Bicycle","Ashford")
                 && controllerDAOBike.checkBikeModel("State Bicycle","Black Label V2") && controllerDAOBike.checkBikeModel("State Bicycle","Simpsons X")){
             Bike bike = controllerDAOBike.getById(controllerDAOBike.getIDBike("State Bicycle","MTB"));
-            System.out.println(bike.getModel());
             arrayList.add(bike);
 
             bike = controllerDAOBike.getById(controllerDAOBike.getIDBike("Vossen","SV"));
-            System.out.println(bike.getModel());
             arrayList.add(bike);
 
             bike = controllerDAOBike.getById(controllerDAOBike.getIDBike("State Bicycle","Ashford"));
-            System.out.println(bike.getModel());
             arrayList.add(bike);
 
             bike = controllerDAOBike.getById(controllerDAOBike.getIDBike("State Bicycle","Black Label V2"));
-            System.out.println(bike.getModel());
             arrayList.add(bike);
 
             bike = controllerDAOBike.getById(controllerDAOBike.getIDBike("State Bicycle","Simpsons X"));
-            System.out.println(bike.getModel());
             arrayList.add(bike);
 
             request.setAttribute("bikes", arrayList);

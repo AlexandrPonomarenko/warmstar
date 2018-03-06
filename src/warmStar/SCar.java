@@ -18,7 +18,6 @@ public class SCar extends HttpServlet {
         System.out.println("This is a Servlet car");
         procces(request);
         request.getRequestDispatcher(request.getContextPath() + "/galery/cars/products/car.jsp").forward(request,response);
-//        response.sendRedirect(request.getContextPath()+"/galery/bikes/products/bike.jsp");
     }
 
 
@@ -26,7 +25,6 @@ public class SCar extends HttpServlet {
         ServletContext servletContext = request.getServletContext();
         Car car;
         ControllerCar controllerCar = (ControllerCar) servletContext.getAttribute("controllerCar");
-        System.out.println(request.getParameter("id") + "sdsdsdsdssdsdsds" + request.getParameter("model") + " rrrrv " + request.getParameter("smodel"));
         controllerCar.getById(Integer.parseInt(request.getParameter("id")));
         if(controllerCar.checkCarModel(request.getParameter("model"),request.getParameter("smodel"))){
             car = controllerCar.getById(Integer.parseInt(request.getParameter("id")));

@@ -12,7 +12,6 @@ public class ControllerBasket implements interfaceDAOBascet {
 
     }
 
-
     @Override
     public Basket getById(int id) {
         Basket basket = new Basket();
@@ -50,7 +49,6 @@ public class ControllerBasket implements interfaceDAOBascet {
             ps.setInt(6,basket.getCost());
             ps.executeUpdate();
             ps.close();
-            System.out.println(getClass().getName() + "insert work");
         }catch (SQLException ex){
             ex.printStackTrace();
         }
@@ -101,7 +99,6 @@ public class ControllerBasket implements interfaceDAOBascet {
         }catch (SQLException s){
             s.printStackTrace();
         }
-        System.out.println("access");
     }
     private void closeRs(ResultSet resultSet){
         try {

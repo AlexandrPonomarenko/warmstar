@@ -22,23 +22,15 @@ public class ServHelp extends HttpServlet {
             email.sendEmail();
             request.setAttribute("ok", "your message has been sent.");
             request.getRequestDispatcher(request.getContextPath() + "/help.jsp").forward(request,response);
-            System.out.println("ESSSSSSSSSSSSSSSSSSSS");
         }else{
             request.setAttribute("errorHelp", errorHelp.getMapError());
             request.getRequestDispatcher(request.getContextPath() + "/help.jsp").forward(request,response);
         }
-//        if(request.getParameter("name") != null && !request.getParameter("name").isEmpty()) {
-//            Email email = new Email(request.getParameter("name"), request.getParameter("email"), request.getParameter("texthelp"), "help");
-//            email.sendEmail();
-//            System.out.println("ESSSSSSSSSSSSSSSSSSSS");
-//        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession(false);
         if (session.getAttribute("name") != null){
-//            User user = (User)session.getAttribute("user");
-//            request.setAttribute("user",session.getAttribute("user"));
             request.setAttribute("user",session.getAttribute("user"));
         }
         request.getRequestDispatcher(request.getContextPath() + "/help.jsp").forward(request,response);

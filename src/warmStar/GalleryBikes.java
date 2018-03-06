@@ -23,17 +23,13 @@ public class GalleryBikes extends HttpServlet {
         ControllerBasket controllerBasket = (ControllerBasket)servletContext.getAttribute("controllerBasket");
         HttpSession session = request.getSession(false);
         if(session.getAttribute("user")== null){
-//            System.out.println(request.getParameter("cost"));
             out.print("To add to the cart, you must be logged in.");
-//            request.setAttribute("out", "Для того что бы добавить Вам нужно авторизоваться.");
         }else if(session.getAttribute("user")!= null){
             User user = (User)session.getAttribute("user");
             Product p = (Product)session.getAttribute("productBasket");
             Basket basket = new Basket();
             basket.setIdUser(user.getId());
             basket.setIdProduct(Integer.parseInt(request.getParameter("idproduct")));
-//            int f = Integer.parseInt(request.getParameter("idproduct"));
-//            System.out.println(" ---------------- " + f);
             basket.setModel(request.getParameter("model"));
             basket.setSmodel(request.getParameter("smodel"));
             basket.setCost(Integer.parseInt(request.getParameter("cost")));
@@ -41,25 +37,17 @@ public class GalleryBikes extends HttpServlet {
             controllerBasket.insert(basket);
             Basket bb = new Basket();
             bb = controllerBasket.getById(basket.getIdProduct());
-            System.out.println("THIS IS bb "  + bb.toString());
-//            bb.toString();
             p.addProduct(controllerBasket.getById(basket.getIdProduct()));
-            System.out.println("THIS IS GALLERY bikes");
             p.products();
             session.setAttribute("productBasket", p);
             out.print("Add");
-            System.out.println(basket.toString());
         }
         out.close();
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("i am in gallery");
-        System.out.println(request.getContextPath() + " vvv " + request.getServletPath() + " vv " + request.getRequestURI());
         process(request,response);
-        System.out.println("before gallery");
         request.getRequestDispatcher(request.getContextPath() + "/galery/bikes/bikes.jsp").forward(request,response);
-        System.out.println("after gallery");
     }
 
     private void process(HttpServletRequest request, HttpServletResponse response){
@@ -68,10 +56,7 @@ public class GalleryBikes extends HttpServlet {
         ControllerDAOBike controllerDAOBike = (ControllerDAOBike) servletContext.getAttribute("controllerDAOBike");
 
         galleryBikes = controllerDAOBike.getAll();
-//        if(controllerDAOBike.checkBikeModel("State Bicycle", "MTB") && controllerDAOBike.checkBikeModel("Vossen","SV") && controllerDAOBike.checkBikeModel("State Bicycle","Ashford")
-//                && controllerDAOBike.checkBikeModel("State Bicycle","Black Label V2") && controllerDAOBike.checkBikeModel("State Bicycle","Simpsons X")){
         request.setAttribute("allbikes", galleryBikes);
-        System.out.println("TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT");
     }
 
 }

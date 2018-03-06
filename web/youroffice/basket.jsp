@@ -7,7 +7,6 @@
 --%>
 <%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>--%>
 <html>
 <head>
     <meta content="text/html;charset=UTF-8">
@@ -17,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <script type="text/javascript" src="${pageContext.request.contextPath}/jsLibrary/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/deleteFromBasket.js"></script>
+    <script src="${pageContext.request.contextPath}/js/validate.js"></script>
     <jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>
 </head>
 <body>
@@ -32,39 +32,33 @@
                 <p name="model" value="${i.model}">Model: <c:out value="${i.model}"></c:out></p>
                 <p name="smodel" value="${i.smodel}">Type model: <c:out value="${i.smodel}"></c:out></p>
                 <p id="cost_item">Cost: <c:out value="${i.cost}"></c:out>$</p>
-                <%--<p>-----------------------------------------</p>--%>
             </div>
             <button product="${i.id}" type="button" class="btn_delete">Delete from basket</button>
         </div>
-
-        <%--<form basket="${i.id}">--%>
-            <%--<input type="hidden" name="model" value="${i.model}"/>--%>
-            <%--<input type="hidden" name="smodel" value="${i.smodel}"/>--%>
-            <%--<input type="hidden" name="iduser" value="${i.idUser}">--%>
-        <%--</form>--%>
-        <%--<button basket="${i.id}" type="button" class="btn_delete">Удалить из корзины</button>--%>
         </c:forEach>
     </div>
-
-<%--<input type="hidden" name="idproduct" value="${i.idProduct}"/>--%>
-<%--<input type="hidden" name="type" value="${i.typeProduct}"/>--%>
 <form method="POST" action="${pageContext.request.contextPath}/youroffice/basket">
 
-    <p>
+    <div class="inside">
         <label for="city">City</label>
-        <input type="text" name="city" id="city">
+        <input type="text" name="city" id="city" class="validate">
         <c:out value="${requestScope.errorOrder['city']}"/>
-    </p>
+        <span class="empty-message">Empty</span>
+        <span class="small-length-message">Small length</span>
+        <span class="bad-words-message">Bad words</span>
+    </div>
 
-    <p>
+    <div class="inside">
         <label for="address">Address</label>
-        <input type="text" name="address" id="address">
+        <input type="text" name="address" id="address" class="validate">
         <c:out value="${requestScope.errorOrder['address']}"/>
+        <span class="empty-message">Empty</span>
+        <span class="small-length-message">Small length</span>
+        <span class="bad-words-message">Bad words</span>
 
-    </p>
-    <%--<input type="hidden" name="buy" value="allBuy"/>--%>
+    </div>
     <p>Total cost: <span id="cost">${cost}</span>$</p>
-    <button type="submit">Сheckout</button>
+    <button class="submit-button" type="submit" disabled>Сheckout</button>
 </form>
 
     <jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>

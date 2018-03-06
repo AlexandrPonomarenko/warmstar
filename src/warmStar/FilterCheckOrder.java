@@ -24,27 +24,21 @@ public class FilterCheckOrder implements Filter {
             if(session.getAttribute("user") != null) {
                 if (url.equals("/youroffice/order")) {
                     if (p.getLength() > 0 && session.getAttribute("order") != null && session.getAttribute("city") != null && session.getAttribute("address") != null) {
-                        System.out.println("ORDER");
                         chain.doFilter(req,resp);
                         return;
                     }else{
-                        System.out.println("ORDER PERENAPRAVIL ");
                         response.sendRedirect(request.getContextPath()+"/youroffice/basket");
                     }
                 }else if(url.equals("/youroffice/success")){
                     if( p.getLength() > 0 && session.getAttribute("order") != null &&  session.getAttribute("orderTwo") != null && session.getAttribute("city") != null && session.getAttribute("address") != null){
-                        System.out.println("В блоке пропуска на покупку success");
                         chain.doFilter(req,resp);
                         return;
                     }else{
-                        System.out.println("success PERENAPRAVIL");
                         response.sendRedirect(request.getContextPath()+"/youroffice/order");
                     }
                 }
             }
         }
-        System.out.println("otrabotal 232323232");
-//        chain.doFilter(req, resp);
     }
 
     public void init(FilterConfig config) throws ServletException {

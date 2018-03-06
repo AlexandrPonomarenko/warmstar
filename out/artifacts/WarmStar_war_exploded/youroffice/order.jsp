@@ -19,18 +19,14 @@
 <body>
     <h2 class="user">User card</h2>
     <span><p>${sessionScope.user.firstName} your order:  City : ${sessionScope.city}    Address : ${sessionScope.address}</p></span>
-    <%--<p>City : ${sessionScope.city}</p>--%>
-    <%--<p>Address : ${sessionScope.address}</p>--%>
 
     <div class="order">
-        <%--<p><c:out value="${sessionScope.user.firstName}"></c:out></p>--%>
         <c:forEach var="product" items="${sessionScope.productBasket.products}">
             <div class="inside">
                 <p>Type: <c:out value="${product.typeProduct}"></c:out></p>
                 <p>Model: <c:out value="${product.model}"></c:out></p>
                 <p>Type model: <c:out value="${product.smodel}"></c:out></p>
                 <p>Cost: <c:out value="${product.cost}"></c:out></p>
-            <%--<p>-----------------------------------------</p>--%>
             </div>
         </c:forEach>
     </div>

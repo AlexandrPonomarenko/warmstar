@@ -20,9 +20,6 @@ public class ListenerWarmStar implements ServletContextListener {
     // ServletContextListener implementation
     // -------------------------------------------------------
     public void contextInitialized(ServletContextEvent sce) {
-//      ControllerMySQL controllerMySQL = new ControllerMySQL();
-//      ControllerCar controllerCar = new ControllerCar();
-//      ControllerDAOBike controllerDAOBike = new ControllerDAOBike();
 
         ServletContext servletContext = sce.getServletContext();
         servletContext.setAttribute("controllerUser", new ControllerMySQL());

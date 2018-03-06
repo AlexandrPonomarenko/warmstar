@@ -1,12 +1,16 @@
-body{
-    /*background: #D5EAED;*/
-    /*font-family: 'Quicksand', Georgia, "Times New Roman";*/
-}
+
 #author{
     margin-top: 100px;
     text-align: center;
 }
+.textHad{
+    text-align: center;
+}
 
+.textHad #vacancy{
+    display: inline-block;
+    max-width: 80%;
+}
 #vacancy{
     text-align: justify;
 }

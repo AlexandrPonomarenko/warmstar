@@ -14,7 +14,6 @@ import java.util.ArrayList;
 @WebServlet(name = "GalleryCars", urlPatterns = "/galery/cars")
 public class GalleryCars extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("ТЫ В ПОСТЕ В ГАЛЕРЕЕ CARS");
         response.setContentType("text/plain");
         response.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
@@ -34,16 +33,10 @@ public class GalleryCars extends HttpServlet {
             basket.setCost(Integer.parseInt(request.getParameter("cost")));
             basket.setTypeProduct(request.getParameter("type"));
             controllerBasket.insert(basket);
-//            Basket cc = new Basket();
-//            cc = controllerBasket.getById(basket.getIdProduct());
-//            System.out.println("THIS IS bb "  + cc.toString());
-////            bb.toString();
             p.addProduct(controllerBasket.getById(basket.getIdProduct()));
-            System.out.println("THIS IS GALLERY bikes");
             p.products();
             session.setAttribute("productBasket", p);
             out.print("Add");
-            System.out.println(basket.toString());
         }
         out.close();
     }

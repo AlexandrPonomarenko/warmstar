@@ -12,33 +12,22 @@
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/css/footerStyle.css"/>
 </head>
 <body>
-<%--<footer id="footer">--%>
-    <%--&copy; 2017, Warm Star--%>
-    <%--<br/>--%>
-    <%--Все торговые марки, которые появляются на данном сайте,--%>
-    <%--являются собственностью их владельцев. Все права защищены.--%>
-    <%--<br>--%>
-    <%--<a href="#">Политика конфиденциальности</a> <a href="#">Использование cookies</a> <a href="#">Продажа и возврат</a> <a href="#">Карта сайта</a>--%>
-<%--</footer>--%>
-
 <footer>
     <div class="top">
         <div class="left">
             <span>Created: Alexandr Ponomarenko</span>
             <ul>
-                <li><a href="https://www.instagram.com/ponomarenko__alexandr/">instagram</a></li>
-                <li><a href="https://www.facebook.com/">facebook</a></li>
-                <li><a href="https://t.me/light_in_dakr">telegram</a></li>
-                <li><a href="#">test5</a></li>
-                <li><a href="${pageContext.request.contextPath}/author.jsp">Author</a></li>
+                <li><a class="a-color" href="https://www.instagram.com/ponomarenko__alexandr/">instagram</a></li>
+                <li><a class="a-color" href="https://www.facebook.com/">facebook</a></li>
+                <li><a class="a-color" href="https://t.me/light_in_dakr">telegram</a></li>
+                <li><a class="a-color" href="${pageContext.request.contextPath}/author.jsp">Author</a></li>
             </ul>
         </div>
         <div class="right">
             <ul>
-                <li><a href="#">test1test1</a></li>
-                <li><a href="${pageContext.request.contextPath}/legal.jsp">Terms of Use</a></li>
-                <li><a href="${pageContext.request.contextPath}/privacy.jsp">Privacy policy</a></li>
-                <li><a href="${pageContext.request.contextPath}/help">Help</a></li>
+                <li><a class="a-color" href="${pageContext.request.contextPath}/legal.jsp">Terms of Use</a></li>
+                <li><a class="a-color" href="${pageContext.request.contextPath}/privacy.jsp">Privacy policy</a></li>
+                <li><a class="a-color" href="${pageContext.request.contextPath}/help">Help</a></li>
                 <li><p>Hot line: +38(099)624 31 00</p></li>
             </ul>
         </div>
@@ -52,11 +41,7 @@
                 © WarmStar Inc., 2018.All rights reserved.
             </div>
             <div class="links">
-                <a href="${pageContext.request.contextPath}/sitemap.jsp">Site map</a>
-                <a href="#">link</a>
-                <a href="#">link</a>
-                <a href="#">link</a>
-                <a href="#">link</a>
+                <a class="a-color" href="${pageContext.request.contextPath}/sitemap.jsp">Site map</a>
             </div>
         </div>
     </div>

@@ -1,11 +1,9 @@
-body {
-    /*background: #e2eedc ;*/
-    /*font-family: Georgia, "Times New Roman", Times, serif;*/
-    /*margin: 0px;*/
-}
+
 #user{
     margin-top: 100px;
-    text-align: center;
+    margin-left: 50px;
+    width: 300px;
+    text-align: left;
 }
 
 .form{
@@ -14,21 +12,69 @@ body {
     justify-content: space-between;
     align-items: stretch;
     height: 400px;
+    width: 100%;
 }
-
-.one{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: stretch;
+.one {
     width: 50%;
+}
+.one form{
+    width: 100%;
     height: 400px;
+    margin-top: 50px;
 }
 .two{
     width: 50%;
     height: 400px;
     background-color: #FF9000;
 }
-.inside{
-    margin-top: 50px
+.inside {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+    position: relative;
+    line-height: 42px;
+}
+
+.inside label {
+    position: relative;
+    min-width: 133px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1em;
+}
+
+.inside input {
+    vertical-align: top;
+}
+
+.inside span {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    bottom: 5px;
+    line-height: 1em;
+    white-space: nowrap;
+    left: 136px;
+}
+
+.inside .empty-message,
+.inside .small-length-message,
+.inside .bad-words-message {
+    display: none;
+}
+
+.inside.empty .empty-message {
+    display: inline;
+}
+
+.inside.length .small-length-message {
+    display: inline;
+}
+
+.inside.bad-words .bad-words-message {
+    display: inline;
+}
+
+form button {
+    margin-left: 10px;
 }

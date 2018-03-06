@@ -1,6 +1,4 @@
-body{
 
-}
 .inform{
     margin-top: 100px;
     text-align: center;
@@ -12,9 +10,7 @@ body{
     justify-content: space-around;
     align-items: baseline;
 }
-/*#img{*/
-    /*height: 400px;*/
-/*}*/
+
 .product{
     width: 50%;
     height: 400px;

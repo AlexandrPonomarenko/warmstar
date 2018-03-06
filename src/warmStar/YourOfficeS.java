@@ -17,13 +17,10 @@ public class YourOfficeS extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession(false);
-        System.out.println(session.getId());
         User user = (User)session.getAttribute("user");
         ArrayList<User> arrayList = new ArrayList<>();
         arrayList.add(user);
         request.setAttribute("user", arrayList);
-        System.out.println(user.toString());
         request.getRequestDispatcher("yourOffice.jsp").forward(request,response);
-        System.out.println("1111111111111111111111111111111111");
     }
 }

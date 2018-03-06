@@ -45,11 +45,11 @@ public class Email {
     }
 
     private void setTextMessage(){
-        textMessage = "Здравствуйте Уважаемый " + receiverName + " спасибо за покупку в нашей сети салонов WarmStar. " +
-                "В течении 10 минут с Вами свяжется наша команда, для уточнения деталей покупок. По указанному Вами адресу " + city + " " + address + " выедет наша "  +
-                "команда специалистов доставит Вам покупку и оформит детали." +
-                "По всем вопросам вы можите обращатся на нашу почту furriets@gmail.com или приехать к нам в салон по адресу" +
-                " г. Харьков пр. Ленина 54 Б. Сумма к оплате " + price +" Хорошего вам дня.";
+        textMessage = "Hello dear " + receiverName + " Thank you for purchasing in our network of WarmStar salons. " +
+                "Within 10 minutes our team will contact you to clarify the details of the purchases. To the address specified by you " + city + " " + address + " выедет наша "  +
+                "a team of specialists will deliver you a purchase and arrange the details." +
+                "On all questions you can contact us at furriets@gmail.com or come to our salon at" +
+                " c. Kharkov pr. Saturn's Belt st. Quiet Harbor. Amount to be paid " + price +" Have a nice day.";
     }
 
     private void setSubject(){
@@ -58,11 +58,11 @@ public class Email {
 
     private void setType(String type){
         if(type.equals("car")){
-            this.type = "Поздравляем Вы приобрели автомобиль";
+            this.type = "Congratulations you have purchased a car";
         }else if (type.equals("bike")){
-            this.type = "Поздравляем Вы приобрели велосипед";
+            this.type = "Congratulations you have purchased a bike";
         }else if(type.equals("all")){
-            this.type = "Поздравляем Вы приобрели технику";
+            this.type = "Congratulations you have purchased the equipment";
         }
     }
 

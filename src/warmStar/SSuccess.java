@@ -23,10 +23,7 @@ public class SSuccess extends HttpServlet {
         Product p = (Product)session.getAttribute("productBasket");
         controllerBasket.deleteAllIDUser(user.getId());
         p.deleteAllProduct();
-        System.out.println(p.getLength());
         if(session.getAttribute("order") != null && session.getAttribute("orderTwo") != null)  {
-//            session.setAttribute("orderTwo", "orderTwo");
-            System.out.println("DELETE");
             session.removeAttribute("order");
             session.removeAttribute("orderTwo");
         }

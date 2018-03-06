@@ -1,10 +1,7 @@
-/*body {*/
-    /*background: #e2eedc ;*/
-    /*font-family: Georgia, "Times New Roman", Times, serif;*/
-    /*margin: 0px;*/
-/*}*/
+
 a{
     text-decoration: none;
+    color: grey;
 }
 a:hover{
     text-decoration: none;
@@ -17,7 +14,6 @@ header {
     width: 100%;
     height: 60px;
     position: fixed;
-    /*background-color: #b5a754;*/
     z-index: 42;
 }
 
@@ -33,8 +29,9 @@ header #nav-curtain {
     z-index: 1;
     opacity: 0;
     position: absolute;
-    background-color: rebeccapurple;
-    transition: opacity 2s linear;
+    background-color: #4d0a0a;
+    color: #AA021D;
+    transition: opacity 1s linear;
 }
 
 header #nav-curtain.bg {

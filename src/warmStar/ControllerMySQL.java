@@ -17,11 +17,6 @@ public class ControllerMySQL implements interfaceDAO{
         this.user = user;
     }
 
-//    public Connection getConnection()throws ClassNotFoundException, SQLException{
-//        Class.forName("com.mysql.cj.jdbc.Driver");
-//        return DriverManager.getConnection("jdbc:mysql://localhost:3306/warmstar?autoReconnect=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC",
-//                userMySQL, passwordMySQL);
-//    }
     @Override
     public User getById(int id) {
         User u = new User();
@@ -40,7 +35,6 @@ public class ControllerMySQL implements interfaceDAO{
                 u.setData(resultSet.getDate(8));
                 u.setPasswordTwo(resultSet.getString(9));
                 u.setPassword(resultSet.getString(10));
-//                System.out.println(u.toString() + "trererer");
             }
             resultSet.close();
         }catch (SQLException e){
@@ -72,10 +66,8 @@ public class ControllerMySQL implements interfaceDAO{
             ResultSet resultSet = ps.executeQuery();
             if (resultSet.next()){
                 resultSet.close();
-                System.out.println("TRUE");
                 return true;
             }
-            System.out.println("FALSE");
             resultSet.close();
         }catch (SQLException e){
             e.printStackTrace();
@@ -118,7 +110,6 @@ public class ControllerMySQL implements interfaceDAO{
             ps.setString(9,user.getPassword());
             ps.executeUpdate();
             ps.close();
-            System.out.println("OTRABOTAL");
         }catch (SQLException ex){
             ex.printStackTrace();
         }
@@ -192,10 +183,6 @@ public class ControllerMySQL implements interfaceDAO{
         try(Connection c = ConnectionPool.getInstance().getConnection();){
             PreparedStatement ps = c.prepareStatement("DELETE * FROM user");
             ps.executeUpdate();
-//            ResultSet rs = ps.executeQuery();
-//            while (rs.next()){
-//
-//            }
             ps.close();
         }catch (SQLException s){
             s.printStackTrace();

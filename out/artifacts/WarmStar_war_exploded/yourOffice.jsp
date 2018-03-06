@@ -24,19 +24,8 @@
 
     <h1 class="welcome">Welcome ${sessionScope.user.firstName} to the home </h1>
     <div><img id="home" src="${pageContext.request.contextPath}/images/garage-Home.jpg"></div>
-    <%--<span class="link"><a href="${pageContext.request.contextPath}/youroffice/basket">Basket</a> ${sessionScope.productBasket.length}</span>--%>
-    <%--<span class="link"><a href="${pageContext.request.contextPath}/help">Help</a></span>--%>
     <h3 class="personal">Personal information</h3>
     <c:forEach items="${requestScope.user}" var="emp">
-        <%--<tr><td><c:out value="${emp.id}"></c:out></td>--%>
-            <%--<td><c:out value="${emp.nickName}"></c:out></td>--%>
-            <%--<td><c:out value="${emp.firstName}"></c:out></td>--%>
-            <%--<td><c:out value="${emp.lastName}"></c:out></td>--%>
-            <%--<td><c:out value="${emp.email}"></c:out></td>--%>
-            <%--<td><c:out value="${emp.phoneNamber}"></c:out></td>--%>
-        <%--<td><c:out value="${emp.data}"></c:out></td>--%>
-        <%--<td><c:out value="${emp.password}"></c:out></td>--%>
-        <%--<td><c:out value="${emp.passwordTwo}"></c:out></td></tr>--%>
 
         <ul class="styleNone">
             <li><p class="m"><c:out value="${emp.nickName}"></c:out></p></li>

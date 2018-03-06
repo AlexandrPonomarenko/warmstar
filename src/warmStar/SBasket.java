@@ -41,10 +41,7 @@ public class SBasket extends HttpServlet {
                 System.out.println(request.getParameter("city") + "  -- " + request.getParameter("address"));
                 session.setAttribute("city", request.getParameter("city"));
                 session.setAttribute("address", request.getParameter("address"));
-//                if (request.getParameter("city") != null && !request.getParameter("city").isEmpty() &&
-//                        request.getParameter("address") != null && !request.getParameter("address").isEmpty()) {
-                    session.setAttribute("order", "order");
-//                }
+                session.setAttribute("order", "order");
                 response.sendRedirect(request.getContextPath() + "/youroffice/order");
                 System.out.println("pered return");
                 return;
@@ -61,26 +58,12 @@ public class SBasket extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession(false);
-//        Product p = (Product)session.getAttribute("productBasket");
-//        System.out.println("111 " + request.getContextPath() + " dddddd " + request.getRequestURI() + " rrr " + request.getServletPath());
-//        if(p.getLength() > 0){
-//            System.out.println(p.getLength() + "SBasket");
-//            p.products();
-//            request.setAttribute("out", p.getProducts());
-//            request.setAttribute("cost", p.getAllCost());
-//            request.getRequestDispatcher(request.getContextPath() + "/youroffice/basket.jsp").forward(request, response);
-//        }else if(p.getLength() <= 0){
-//            request.setAttribute("ziro", "Корзина пуста");
-//            request.getRequestDispatcher(request.getContextPath() + "/youroffice/basket.jsp").forward(request, response);
-//        }
         proccess(request, response, session);
     }
 
     private void proccess(HttpServletRequest request, HttpServletResponse response, HttpSession session) throws ServletException, IOException{
         Product p = (Product)session.getAttribute("productBasket");
-        System.out.println("111 " + request.getContextPath() + " dddddd " + request.getRequestURI() + " rrr " + request.getServletPath());
         if(p.getLength() > 0){
-            System.out.println(p.getLength() + "SBasket");
             p.products();
             request.setAttribute("out", p.getProducts());
             request.setAttribute("cost", p.getAllCost());

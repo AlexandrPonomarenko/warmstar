@@ -1,20 +1,4 @@
-body{
 
-}
-/*.color{*/
-    /*position : absolute;*/
-    /*left: 0px;*/
-    /*width: 50%;*/
-    /*height: 100%;*/
-    /*background-color:  #FF9000;*/
-/*}*/
-/*.form{*/
-    /*position: absolute;*/
-    /*right: 50%;*/
-    /*width: 50%;*/
-    /*height: 100%;*/
-    /*!*color: #FF9000;*!*/
-/*}*/
 .parent{
     display: flex;
     margin-top: 100px;
@@ -35,13 +19,6 @@ body{
     align-items: center;
     width: 50%;
 }
-
-/*.insideForm{*/
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*justify-content: center;*/
-    /*align-items: stretch;*/
-/*}*/
 
 .one .empty-message,
 .one .small-length-message,

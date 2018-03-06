@@ -17,7 +17,7 @@
 </head>
 <body>
     <h1 id="author">Author of the project Ponomarenko Alexandr</h1>
-    <div>
+    <div class="textHad">
         <h2 id="vacancy">The project was created with the purpose of interest to Java web development and job search for a vacancy Java Junior Developer.</h2>
     </div>
     <div>
@@ -35,7 +35,7 @@
         </ul>
     </div>
 
-    <span>Feedback: furriets@gmail.com, show more...</span>
+    <span>Feedback: furriets@gmail.com</span>
     <jsp:include page="${pageContext.request.contextPath}/footer/footer.jsp"/>
 </body>
 </html>

@@ -16,37 +16,21 @@ public class FilterCheckLogOn implements Filter {
     }
 
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
-        System.out.println("FILTER FilterCheckLogOn ");
         HttpServletRequest  request = (HttpServletRequest)req;
         HttpServletResponse  response = (HttpServletResponse)resp;
         HttpSession session = request.getSession(false);
         String url = "/galery/bikes";
         if(session != null) {
-            System.out.println(session + " NOT NULL");
         }else {
-            System.out.println("null");
         }
-//        if(url.)
         if(filterConfig.getInitParameter("active").equals("true")){
-            System.out.println(filterConfig.getInitParameter("active") + "+++++++++++++++++++++++++++++++++" + " eto v logonFILTER");
-            System.out.println("111 " + request.getContextPath() + " dddddd " + request.getRequestURI() + "rrr " + request.getServletPath());
             if(session == null || session.getAttribute("user") == null){
-                System.out.println("===" + session);
                 response.sendRedirect(request.getContextPath()+"/logOn");
             }else if (session != null && session.getAttribute("user") != null){
                 User uu = (User) session.getAttribute("user");
-                System.out.println(uu.toString());
-//                System.out.println(uu.getPassword() + " +++++++++++++ " + uu.);
-//                String login =(String)session.getAttribute("login");
-//                String password =(String)session.getAttribute("password");
-//                System.out.println(login + " 44444444444444444444444 " +  password);
-//                response.sendRedirect(url);
-                System.out.println("PERED chain.doFilter(req, resp) FILTERLOGON");
                 chain.doFilter(req, resp);
             }
         }
-//        chain.doFilter(req, resp);
-        System.out.println("END");
     }
 
     public void init(FilterConfig config) throws ServletException {

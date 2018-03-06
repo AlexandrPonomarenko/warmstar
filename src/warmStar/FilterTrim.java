@@ -13,8 +13,6 @@ public class FilterTrim implements Filter {
     }
 
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
-//        chain.doFilter(req, resp);
-        System.out.println("Filter work");
         Enumeration enumeration = req.getParameterNames();
         while (enumeration.hasMoreElements()){
             String parameterName = (String) enumeration.nextElement();

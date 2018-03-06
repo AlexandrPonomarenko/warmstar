@@ -5,11 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ControllerCar implements interfaceDAOCar {
-//    private String userMySQL = "root";
-//    private String passwordMySQL = "root";
 
     public  ControllerCar(){
-
     }
 
     @Override
@@ -31,7 +28,6 @@ public class ControllerCar implements interfaceDAOCar {
                 car.setPath3(resultSet.getString(9));
                 car.setPath2(resultSet.getString(10));
                 car.setPath1(resultSet.getString(11));
-//                System.out.println(car.toString() + "car");
             }
             closeRs(resultSet);
         }catch (SQLException e){
@@ -181,12 +177,7 @@ public class ControllerCar implements interfaceDAOCar {
         try(Connection c =  ConnectionPool.getInstance().getConnection()){
             PreparedStatement ps = c.prepareStatement("DELETE * FROM car");
             int  cc = ps.executeUpdate();
-
-//            while (rs.next()){
-//
-//            }
             ps.close();
-//            closeRs(rs);
         }catch (SQLException s){
             s.printStackTrace();
         }

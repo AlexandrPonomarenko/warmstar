@@ -20,17 +20,13 @@
 </head>
 <body>
 
-<%--<jsp:include page="${pageContext.request.contextPath}/headers/head.jsp"/>--%>
-
     <div class="parent">
         <div class="child1">
             <span id="one">Choose your dream</span>
             <span id="two">Just do it</span>
         </div>
         <div class="child2">
-        <%--<h2>Home</h2>--%>
             <form method="POST" action="logOn">
-                <%--<div class="insideForm">--%>
                     <div class="one">
                         <label for="login">Nick name</label>
                         <input type="text" name="login" id="login" class="validate"/>
@@ -47,7 +43,6 @@
                         <span class="bad-words-message">Bad words</span>
                         <c:out value = "${requestScope.error['password']}"/>
                     </div>
-                <%--</div>--%>
                 <div class="but">
                     <button class="submit-button" type="submit" disabled>Home</button>
                 </div>

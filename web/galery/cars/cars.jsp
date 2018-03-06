@@ -19,11 +19,9 @@
     <jsp:include page="../../headers/head.jsp"/>
 </head>
 <body>
-<p>1</p>
-<p>2</p>
-<p>3</p>
-<p>4</p>
-<div class="gallery_bikes">
+
+    <h2 id="galleryHat">Gallery Cars</h2>
+<div class="gallery">
     <c:forEach items="${requestScope.allcars}" var="car">
         <div class="product">
             <figure>

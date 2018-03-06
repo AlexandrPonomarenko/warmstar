@@ -5,11 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ControllerDAOBike implements interfaceDAOBike {
-//    private String userMySQL = "root";
-//    private String passwordMySQL = "root";
 
     public  ControllerDAOBike(){
-
     }
 
     @Override
@@ -31,7 +28,7 @@ public class ControllerDAOBike implements interfaceDAOBike {
                 bike.setPath3(resultSet.getString(9));
                 bike.setPath2(resultSet.getString(10));
                 bike.setPath1(resultSet.getString(11));
-                System.out.println(bike.toString() + "bike");
+                System.out.println();
             }
             closeRs(resultSet);
         }catch (SQLException e){
@@ -43,7 +40,6 @@ public class ControllerDAOBike implements interfaceDAOBike {
     @Override
     public int getIDBike(String model, String smodel) {
         int id;
-//        String sql = "SELECT id FROM car WHERE model=" + "'" + model + "'" + "AND smodel=" + "'" + smodel + "'";
         try(Connection c = ConnectionPool.getInstance().getConnection();
             PreparedStatement ps = c.prepareStatement("SELECT id FROM bike WHERE model=" + "'" + model + "'" + "AND smodel=" + "'" + smodel + "'")){
             ResultSet resultSet = ps.executeQuery();
@@ -61,7 +57,6 @@ public class ControllerDAOBike implements interfaceDAOBike {
 
     @Override
     public boolean checkBikeModel(String model, String smodel) {
-//        String sql = "SELECT id FROM bike WHERE model=" + "'" + model + "'" + "AND smodel=" + "'" + smodel + "'";
         try(Connection c = ConnectionPool.getInstance().getConnection();
             PreparedStatement ps = c.prepareStatement("SELECT id FROM bike WHERE model=" + "'" + model + "'" + "AND smodel=" + "'" + smodel + "'")){
             ResultSet resultSet = ps.executeQuery();
@@ -181,10 +176,6 @@ public class ControllerDAOBike implements interfaceDAOBike {
         try(Connection c =  ConnectionPool.getInstance().getConnection()){
             PreparedStatement ps = c.prepareStatement("DELETE * FROM bike");
             ps.executeUpdate();
-//            ResultSet rs = ps.executeQuery();
-//            while (rs.next()){
-//
-//            }
             ps.close();
         }catch (SQLException s){
             s.printStackTrace();
